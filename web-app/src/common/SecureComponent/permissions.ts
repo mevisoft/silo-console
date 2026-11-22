@@ -475,10 +475,10 @@ export const permissionTooltipHelper = (scopes: string[], name: string) => {
   const template =
     scopes.length > 1
       ? i18nKey(
-          "You require additional permissions in order to {name}. Please ask your SILO administrator to grant you {scopes} permissions in order to {name}.",
+          "You require additional permissions in order to {name}. Please ask your S3 LuisML administrator to grant you {scopes} permissions in order to {name}.",
         )
       : i18nKey(
-          "You require additional permissions in order to {name}. Please ask your SILO administrator to grant you {scopes} permission in order to {name}.",
+          "You require additional permissions in order to {name}. Please ask your S3 LuisML administrator to grant you {scopes} permission in order to {name}.",
         );
 
   return translate(lang, template)

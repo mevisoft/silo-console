@@ -9,7 +9,7 @@
 // Do not add ordinary UI copy here to bypass a missing translation.
 export const untranslatable: readonly string[] = [
   // Product names.
-  "SILO",
+  "S3 LuisML",
   "Etcd",
   "Kafka",
   // Protocols and standard technical acronyms.

@@ -5,7 +5,7 @@
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 
-// Console forwards each browser upload as one non-resumable PUT. SILO accepts
+// Console forwards each browser upload as one non-resumable PUT. S3 LuisML accepts
 // objects larger than this, so this is an advisory threshold rather than a
 // client-side rejection limit.
 export const multipartUploadAdvisorySize = 5 * 1024 * 1024 * 1024;

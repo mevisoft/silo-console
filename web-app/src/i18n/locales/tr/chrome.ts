@@ -134,12 +134,12 @@ const messages: Dictionary = {
     "Her türlü altyapıda (genel bulut, özel bulut veya yalın donanım) çalışan yüksek performanslı bir nesne deposu.",
   "Erasure coding, encryption, and replication power data lakes, AI/ML, and fast backup & recovery.":
     "Silme kodlaması, şifreleme ve çoğaltma; veri göllerine, AI/ML iş yüklerine ve hızlı yedekleme ile kurtarmaya güç verir.",
-  "MinIO® is a registered trademark of {minioInc}; SILO incorporates {minioSource}.":
-    "MinIO®, {minioInc} şirketinin tescilli ticari markasıdır; SILO, {minioSource}'nu içerir.",
+  "MinIO® is a registered trademark of {minioInc}; S3 LuisML incorporates {minioSource}.":
+    "MinIO®, {minioInc} şirketinin tescilli ticari markasıdır; S3 LuisML, {minioSource}'nu içerir.",
   "MinIO source code": "MinIO kaynak kodu",
-  "SILO is maintained by {pgsty}, without MinIO affiliation, endorsement, or sponsorship.":
-    "SILO, MinIO bağlantısı, onayı veya sponsorluğu olmadan {pgsty} tarafından sürdürülmektedir.",
-  "SILO website": "SILO web sitesi",
+  "S3 LuisML is maintained by {pgsty}, without MinIO affiliation, endorsement, or sponsorship.":
+    "S3 LuisML, MinIO bağlantısı, onayı veya sponsorluğu olmadan {pgsty} tarafından sürdürülmektedir.",
+  "S3 LuisML website": "S3 LuisML web sitesi",
   "Object Storage Console": "Nesne Depolama Konsolu",
   "Use Credentials": "Kimlik Bilgilerini Kullan",
   "Use STS": "STS Kullan",
@@ -203,16 +203,17 @@ const messages: Dictionary = {
   Navigation: "Navigasyon",
   Video: "Video",
   Blog: "Blog",
-  "SILO Blog": "SILO Blogu",
-  "Read SILO release notes, security advisories, and project updates.":
-    "SILO sürüm notlarını, güvenlik önerilerini ve proje güncellemelerini okuyun.",
-  "Read this update on the SILO Blog.": "Bu güncellemeyi SILO Blog'da okuyun.",
-  "SILO does not yet maintain a native video catalog. These links open upstream MinIO compatibility material.":
-    "SILO henüz yerel bir video kataloğuna sahip değil. Bu bağlantılar yukarı yönlü MinIO uyumluluk materyalini açar.",
-  "Visit SILO Documentation": "SILO Belgelerini ziyaret edin",
+  "S3 LuisML Blog": "S3 LuisML Blogu",
+  "Read S3 LuisML release notes, security advisories, and project updates.":
+    "S3 LuisML sürüm notlarını, güvenlik önerilerini ve proje güncellemelerini okuyun.",
+  "Read this update on the S3 LuisML Blog.":
+    "Bu güncellemeyi S3 LuisML Blog'da okuyun.",
+  "S3 LuisML does not yet maintain a native video catalog. These links open upstream MinIO compatibility material.":
+    "S3 LuisML henüz yerel bir video kataloğuna sahip değil. Bu bağlantılar yukarı yönlü MinIO uyumluluk materyalini açar.",
+  "Visit S3 LuisML Documentation": "S3 LuisML Belgelerini ziyaret edin",
   "Visit MinIO Videos (upstream)":
     "MinIO Videolarını ziyaret edin (yukarı akış)",
-  "Visit SILO Blog": "SILO Blogunu ziyaret edin",
+  "Visit S3 LuisML Blog": "S3 LuisML Blogunu ziyaret edin",
   "Learn more": "Daha fazlasını öğrenin",
   "Set by environment variable": "Ortam değişkenine göre ayarlanır",
   "Explore upstream videos about object storage, replication, and administration.":

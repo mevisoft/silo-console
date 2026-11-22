@@ -58,9 +58,9 @@ const MenuWrapper = () => {
       brandMark={<SiloBrand variant="emblem" width={28} height={28} />}
       logo={
         <SiloBrand
-          variant="wordmark"
+          variant="text"
           alt=""
-          height={20}
+          height={14}
           style={{ width: "auto", display: "block" }}
         />
       }

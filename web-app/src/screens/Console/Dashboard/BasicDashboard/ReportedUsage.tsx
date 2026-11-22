@@ -67,7 +67,7 @@ const ReportedUsage = ({
     },
     {
       value: usageValue,
-      color: get(theme, "signalColors.main", "#1D588C"),
+      color: get(theme, "signalColors.main", "#EF171D"),
       label: "Used Space",
     },
   ];

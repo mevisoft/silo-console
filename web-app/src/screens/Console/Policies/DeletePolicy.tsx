@@ -158,7 +158,7 @@ const DeletePolicy = ({
           {reset && (
             <p>
               {t(
-                "The built-in policy will be restored to the SILO default definition.",
+                "The built-in policy will be restored to the S3 LuisML default definition.",
               )}
             </p>
           )}

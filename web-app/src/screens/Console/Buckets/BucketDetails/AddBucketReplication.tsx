@@ -207,17 +207,17 @@ const AddBucketReplication = () => {
                   </Box>
                   <Box sx={{ paddingTop: "10px" }}>
                     {t(
-                      'For each write operation to this "source" bucket, SILO checks all configured replication rules and applies the matching rule with highest configured priority.',
+                      'For each write operation to this "source" bucket, S3 LuisML checks all configured replication rules and applies the matching rule with highest configured priority.',
                     )}
                   </Box>
                   <Box sx={{ paddingTop: "10px" }}>
                     {t(
-                      "SILO supports automatically replicating existing objects in a bucket; this setting is enabled by default. Please note that objects created before replication was configured or while replication is disabled are not synchronized to the target deployment in case this setting is not enabled.",
+                      "S3 LuisML supports automatically replicating existing objects in a bucket; this setting is enabled by default. Please note that objects created before replication was configured or while replication is disabled are not synchronized to the target deployment in case this setting is not enabled.",
                     )}
                   </Box>
                   <Box sx={{ paddingTop: "10px" }}>
                     {t(
-                      "SILO supports replicating delete operations, where SILO synchronizes deleting specific object versions and new delete markers. Delete operation replication uses the same replication process as all other replication operations.",
+                      "S3 LuisML supports replicating delete operations, where S3 LuisML synchronizes deleting specific object versions and new delete markers. Delete operation replication uses the same replication process as all other replication operations.",
                     )}
                   </Box>{" "}
                 </Fragment>

@@ -79,7 +79,7 @@ const AddKeyForm = () => {
             helpText={i18nKey("Encryption Key")}
             contents={[
               i18nKey(
-                "Create a new cryptographic key in the Key Management Service server connected to SILO.",
+                "Create a new cryptographic key in the Key Management Service server connected to S3 LuisML.",
               ),
             ]}
           />

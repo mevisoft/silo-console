@@ -172,22 +172,22 @@ const EditBucketReplication = () => {
                   <Fragment>
                     <Box sx={{ paddingTop: "10px" }}>
                       {t(
-                        "For each write operation to the bucket, SILO checks all configured replication rules for the bucket and applies the matching rule with highest configured priority.",
+                        "For each write operation to the bucket, S3 LuisML checks all configured replication rules for the bucket and applies the matching rule with highest configured priority.",
                       )}
                     </Box>
                     <Box sx={{ paddingTop: "10px" }}>
                       {t(
-                        "SILO supports enabling replication of existing objects in a bucket.",
+                        "S3 LuisML supports enabling replication of existing objects in a bucket.",
                       )}
                     </Box>
                     <Box sx={{ paddingTop: "10px" }}>
                       {t(
-                        "SILO does not enable existing object replication by default. Objects created before replication was configured or while replication is disabled are not synchronized to the target deployment unless replication of existing objects is enabled.",
+                        "S3 LuisML does not enable existing object replication by default. Objects created before replication was configured or while replication is disabled are not synchronized to the target deployment unless replication of existing objects is enabled.",
                       )}
                     </Box>
                     <Box sx={{ paddingTop: "10px" }}>
                       {t(
-                        "SILO supports replicating delete operations, where SILO synchronizes deleting specific object versions and new delete markers. Delete operation replication uses the same replication process as all other replication operations.",
+                        "S3 LuisML supports replicating delete operations, where S3 LuisML synchronizes deleting specific object versions and new delete markers. Delete operation replication uses the same replication process as all other replication operations.",
                       )}
                     </Box>{" "}
                   </Fragment>

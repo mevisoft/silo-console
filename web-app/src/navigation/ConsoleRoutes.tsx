@@ -26,7 +26,7 @@ const featureGuidance = {
   kms: {
     title: i18nKey("Encryption is not configured"),
     description: i18nKey(
-      "Configure KES or KMS on the SILO server to manage encryption keys in Console.",
+      "Configure KES or KMS on the S3 LuisML server to manage encryption keys in Console.",
     ),
     docsUrl:
       "https://silo.pgsty.com/operations/server-side-encryption/configure-minio-kes/",

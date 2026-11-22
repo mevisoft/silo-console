@@ -108,7 +108,7 @@ const AddUserServiceAccountHelpBox = () => {
           </Box>
           <Box sx={{ paddingTop: "10px" }}>
             {t(
-              "Access Keys support programmatic access by applications. You cannot use a Access Key to log into the SILO Console.",
+              "Access Keys support programmatic access by applications. You cannot use a Access Key to log into the S3 LuisML Console.",
             )}
           </Box>
         </Box>

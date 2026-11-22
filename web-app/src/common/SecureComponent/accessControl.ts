@@ -46,7 +46,7 @@ const hasPermission = (
     }
 
     // Grants whose resource is a pattern. They are matched with the anchored
-    // `*`/`?` semantics SILO applies to policy resources, never as regular
+    // `*`/`?` semantics S3 LuisML applies to policy resources, never as regular
     // expressions: a resource such as `bucket/foo[bar*` or `data.?` is a
     // literal pattern, not syntax.
     const wildcards = Object.keys(sessionGrants).filter(

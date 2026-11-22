@@ -92,12 +92,9 @@ cosign verify-blob --bundle silo-console_X.Y.Z_checksums.txt.sigstore.json \
 gh attestation verify silo-console_X.Y.Z_checksums.txt --repo pgsty/silo-console
 sha256sum --ignore-missing --check silo-console_X.Y.Z_checksums.txt
 image_identity="$identity"
-# v2.4.1's Docker Hub image packages the original signed release binaries.
-# Use this identity for images published through publish-image.yaml:
-# image_identity='https://github.com/pgsty/silo-console/.github/workflows/publish-image.yaml@refs/heads/main'
 cosign verify --certificate-identity "$image_identity" --certificate-oidc-issuer "$issuer" \
-  docker.io/pgsty/silo-console@sha256:IMAGE_DIGEST
-gh attestation verify oci://docker.io/pgsty/silo-console@sha256:IMAGE_DIGEST \
+  ghcr.io/mevisoft/silo-console@sha256:IMAGE_DIGEST
+gh attestation verify oci://ghcr.io/mevisoft/silo-console@sha256:IMAGE_DIGEST \
   --repo pgsty/silo-console --cert-identity "$image_identity"
 ```
 
@@ -109,9 +106,9 @@ an untrusted root supplied beside an untrusted artifact. GitHub's online
 attestation lookup is a separate check; retain its downloaded bundle if offline
 provenance verification is needed.
 
-## Publication on Docker Hub
+## Publication on GitHub Container Registry
 
-Docker Hub is the official container registry: `docker.io/pgsty/silo-console`.
+GitHub Container Registry is the official container registry: `ghcr.io/mevisoft/silo-console`.
 Creating a release tag builds the candidate version image and draft GitHub release. **It never advances
 `latest`.** The tag workflow refuses to overwrite a published release. A draft
 retry may replace candidate artifacts after reproducing and verifying them.
@@ -124,21 +121,9 @@ to `latest`. Drafts, prereleases, older release events and failed verification d
 not advance `latest`. Publication events are serialized and the latest release
 is checked again immediately before promotion.
 
-For an existing signed release, `publish-image.yaml` verifies the published
-checksum bundle and provenance against the original tag and source commit,
-then packages the unchanged Linux binaries and matching legal files. Its image
-signature identifies the packaging workflow on `main`; image provenance records
-that workflow commit, the original release commit and checksum digest. This
-workflow refreshes the release's image SBOM after image verification; binary,
-package, source and checksum assets remain unchanged. It does not overwrite an
-existing image or advance `latest`. Run the
-promotion workflow with the same tag after publication succeeds. Promotion
-accepts either the tag workflow's image identity or this packaging identity,
-while always requiring the original tag identity for the checksum manifest.
-
-Create a public `pgsty/silo-console` repository on Docker Hub and configure the
-repository Actions secrets `DOCKERHUB_USERNAME` and `DOCKERHUB_TOKEN` with push
-access. If anonymous pulls fail, correct Docker Hub repository visibility or
+After the first push, set the `silo-console` package to public in the GitHub
+package settings (packages created by `GITHUB_TOKEN` start private). If anonymous
+pulls fail, correct the package visibility or
 access and rerun the promotion workflow. A successful authenticated push does
 not prove anonymous availability. Never claim that a draft or a green repository
 build is a coordinated SILO product release.

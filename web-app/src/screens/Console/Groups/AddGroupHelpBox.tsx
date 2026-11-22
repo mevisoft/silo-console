@@ -92,7 +92,7 @@ const AddGroupHelpBox = () => {
         </Box>
         <Box sx={{ paddingTop: "10px", paddingBottom: "10px" }}>
           {t(
-            "Groups provide a simplified method for managing shared permissions among users with common access patterns and workloads. Client’s cannot authenticate to a SILO deployment using a group as an identity.",
+            "Groups provide a simplified method for managing shared permissions among users with common access patterns and workloads. Client’s cannot authenticate to a S3 LuisML deployment using a group as an identity.",
           )}
         </Box>
       </Box>

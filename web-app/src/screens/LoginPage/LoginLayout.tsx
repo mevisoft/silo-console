@@ -13,7 +13,7 @@ import WaveMeshCanvas from "./WaveMeshCanvas";
 import HelpMenu from "../Console/HelpMenu";
 import DarkModeActivator from "../Console/Common/DarkModeActivator/DarkModeActivator";
 import LanguageActivator from "../Console/Common/LanguageActivator/LanguageActivator";
-import { interpolate, useLanguage, useLocalizedLink, useT } from "i18n";
+import { interpolate, useLanguage, useT } from "i18n";
 import { useMobile } from "common/ui/useMediaQuery";
 
 // Chakra Petch (the wordmark typeface) is registered app-wide in index.css.
@@ -205,7 +205,7 @@ const FormPanel = styled.section(({ theme }) => ({
     },
     "& .wordmark": {
       display: "block",
-      height: 58,
+      height: 84,
       width: "auto",
     },
   },
@@ -273,7 +273,6 @@ interface LoginLayoutProps {
 const LoginLayout = ({ children, footer }: LoginLayoutProps) => {
   const t = useT();
   const language = useLanguage();
-  const pgstyURL = useLocalizedLink()("https://pgsty.com/");
   const firstLine = useRef<HTMLSpanElement>(null);
   const secondLine = useRef<HTMLSpanElement>(null);
   useEffect(() => {
@@ -307,7 +306,6 @@ const LoginLayout = ({ children, footer }: LoginLayoutProps) => {
       observer.disconnect();
     };
   }, [language]);
-  const localize = useLocalizedLink();
   const mobile = useMobile();
   const ConsoleTag = mobile ? "h1" : "span";
   const HeroHeading = mobile ? "div" : "h1";
@@ -334,36 +332,6 @@ const LoginLayout = ({ children, footer }: LoginLayoutProps) => {
               })}
             </span>
           </HeroHeading>
-          <p className="descriptor">
-            {interpolate(
-              t("{minio} fork maintained by {pgsty}, {agpl} License"),
-              {
-                minio: (
-                  <a
-                    href="https://github.com/minio/minio"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    MinIO
-                  </a>
-                ),
-                pgsty: (
-                  <a href={pgstyURL} target="_blank" rel="noopener">
-                    PGSTY
-                  </a>
-                ),
-                agpl: (
-                  <a
-                    href={localize("https://silo.pgsty.com/about/license/")}
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    AGPLv3
-                  </a>
-                ),
-              },
-            )}
-          </p>
           <p className="intro">
             <span className="introSentence">
               {t(
@@ -381,7 +349,7 @@ const LoginLayout = ({ children, footer }: LoginLayoutProps) => {
             <span className="legalLine">
               {interpolate(
                 t(
-                  "MinIO® is a registered trademark of {minioInc}; SILO incorporates {minioSource}.",
+                  "MinIO® is a registered trademark of {minioInc}; S3 LuisML incorporates {minioSource}.",
                 ),
                 {
                   minioInc: (
@@ -401,20 +369,6 @@ const LoginLayout = ({ children, footer }: LoginLayoutProps) => {
                 },
               )}
             </span>
-            <span className="legalLine">
-              {interpolate(
-                t(
-                  "SILO is maintained by {pgsty}, without MinIO affiliation, endorsement, or sponsorship.",
-                ),
-                {
-                  pgsty: (
-                    <a href={pgstyURL} target="_blank" rel="noopener">
-                      PGSTY
-                    </a>
-                  ),
-                },
-              )}
-            </span>
           </p>
         </BrandContent>
       </BrandPanel>
@@ -425,16 +379,9 @@ const LoginLayout = ({ children, footer }: LoginLayoutProps) => {
             <LanguageActivator />
             <DarkModeActivator />
           </div>
-          <a
-            className="logoLockup"
-            href={localize("https://silo.pgsty.com")}
-            target="_blank"
-            rel="noopener"
-            aria-label={t("SILO website")}
-          >
-            <SiloBrand variant="emblem" className="emblem" />
+          <div className="logoLockup">
             <SiloBrand variant="wordmark" className="wordmark" />
-          </a>
+          </div>
           <ConsoleTag className="consoleTag">
             {t("Object Storage Console")}
           </ConsoleTag>

@@ -86,7 +86,7 @@ const AddUserHelpBox = () => {
       </Box>
       <Box sx={{ fontSize: "var(--fs-body)", marginBottom: "15px" }}>
         {t(
-          "A SILO user consists of a unique access key (username) and corresponding secret key (password). Clients must authenticate their identity by specifying both a valid access key (username) and the corresponding secret key (password) of an existing SILO user.",
+          "A S3 LuisML user consists of a unique access key (username) and corresponding secret key (password). Clients must authenticate their identity by specifying both a valid access key (username) and the corresponding secret key (password) of an existing S3 LuisML user.",
         )}
         <br />
         <br />

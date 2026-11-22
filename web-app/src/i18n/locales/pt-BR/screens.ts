@@ -20,7 +20,7 @@ const ptScreens: Record<string, string> = {
   "Configure a destination, then add bucket notification rules to send S3 events to it.":
     "Configure um destino e depois adicione regras de notificação de bucket para enviar eventos S3 a ele.",
   "Event destinations": "Destinos de eventos",
-  "SILO version": "Versão do SILO",
+  "S3 LuisML version": "Versão do S3 LuisML",
   "Raw JSON": "JSON bruto",
   "Recursive inspections can be expensive. Limit the bucket and path before starting.":
     "Inspeções recursivas podem ser custosas. Limite o bucket e o caminho antes de começar.",
@@ -142,8 +142,8 @@ const ptScreens: Record<string, string> = {
   "Could not update policy": "Não foi possível atualizar a política",
   "Reset policy {name} to its default definition?":
     "Redefinir a política {name} para a definição padrão?",
-  "The built-in policy will be restored to the SILO default definition.":
-    "A política embutida será restaurada para a definição padrão do SILO.",
+  "The built-in policy will be restored to the S3 LuisML default definition.":
+    "A política embutida será restaurada para a definição padrão do S3 LuisML.",
   "Loading attachment information…": "Carregando informações de vínculo…",
   "This policy has changed or is no longer available. Refresh the list.":
     "Esta política foi alterada ou não está mais disponível. Atualize a lista.",
@@ -197,8 +197,8 @@ const ptScreens: Record<string, string> = {
     "Peça acesso ao seu administrador. Esta página verifica as seguintes ações IAM:",
   "Required IAM actions": "Ações IAM necessárias",
   "Encryption is not configured": "A criptografia não está configurada",
-  "Configure KES or KMS on the SILO server to manage encryption keys in Console.":
-    "Configure o KES ou o KMS no servidor SILO para gerenciar chaves de criptografia no Console.",
+  "Configure KES or KMS on the S3 LuisML server to manage encryption keys in Console.":
+    "Configure o KES ou o KMS no servidor S3 LuisML para gerenciar chaves de criptografia no Console.",
   "Local identity management is unavailable":
     "O gerenciamento local de identidades está indisponível",
   "LDAP is enabled. Manage users and groups in your LDAP directory; connection settings are available on the LDAP configuration page.":
@@ -216,10 +216,10 @@ const ptScreens: Record<string, string> = {
     "Verifique o endereço do Prometheus, o acesso à rede e a autenticação e tente novamente.",
   "Advanced metrics need Prometheus":
     "As métricas avançadas precisam do Prometheus",
-  "Configure Prometheus to collect SILO metrics, then set the URL for your deployment and restart the corresponding service.":
-    "Configure o Prometheus para coletar métricas do SILO, depois defina a URL da sua implantação e reinicie o serviço correspondente.",
+  "Configure Prometheus to collect S3 LuisML metrics, then set the URL for your deployment and restart the corresponding service.":
+    "Configure o Prometheus para coletar métricas do S3 LuisML, depois defina a URL da sua implantação e reinicie o serviço correspondente.",
   "Standalone Console": "Console independente",
-  "Console embedded in SILO": "Console embutido no SILO",
+  "Console embedded in S3 LuisML": "Console embutido no S3 LuisML",
   "Optional standalone settings": "Parâmetros opcionais do modo independente",
   "Bearer token: ": "Token bearer: ",
   "Or basic authentication: ": "Ou autenticação básica: ",
@@ -246,7 +246,7 @@ const ptScreens: Record<string, string> = {
   "Replace ALIAS with your configured mcli alias.":
     "Substitua ALIAS pelo alias configurado do mcli.",
   "Loading…": "Carregando…",
-  "SILO primitives": "Primitivas do SILO",
+  "S3 LuisML primitives": "Primitivas do S3 LuisML",
   "Shared building blocks for storage, identity and monitoring.":
     "Blocos compartilhados de armazenamento, identidade e monitoramento.",
   "Healthy capacity": "Capacidade saudável",
@@ -394,8 +394,8 @@ const ptScreens: Record<string, string> = {
   " and ": " e ",
   "'namespace' reflects current bucket/object list and 'access' reflects a journal of object operations, defaults to 'namespace'":
     "'namespace' reflete a lista atual de buckets/objetos e 'access' reflete um registro de operações com objetos; o padrão é 'namespace'",
-  "{compliance} lock protects Objects from write operations by all users, including the SILO root user.":
-    "O bloqueio {compliance} protege os objetos contra operações de escrita de todos os usuários, incluindo o usuário root do SILO.",
+  "{compliance} lock protects Objects from write operations by all users, including the S3 LuisML root user.":
+    "O bloqueio {compliance} protege os objetos contra operações de escrita de todos os usuários, incluindo o usuário root do S3 LuisML.",
   "{count} days": "{count} dias",
   "{count} Entities Found": "{count} entidades encontradas",
   "{count} Entity Found": "{count} entidade encontrada",
@@ -440,20 +440,20 @@ const ptScreens: Record<string, string> = {
   "* Warning: With Public access anyone will be able to upload, download and delete files from this Bucket *":
     "* Aviso: com acesso público, qualquer pessoa poderá enviar, baixar e excluir arquivos deste bucket *",
   "# Associated Access Keys": "Nº de chaves de acesso associadas",
-  "© 2026 Ruohang Feng / PGSTY and the SILO contributors.":
-    "© 2026 Ruohang Feng / PGSTY e os colaboradores do SILO.",
+  "© 2026 Ruohang Feng / PGSTY and the S3 LuisML contributors.":
+    "© 2026 Ruohang Feng / PGSTY e os colaboradores do S3 LuisML.",
   "<Day>": "<Dia>",
   "<Month>": "<Mês>",
   "<Year>": "<Ano>",
   "A bucket can only be deleted if it's empty.":
     "Um bucket só pode ser excluído se estiver vazio.",
-  "A group can have one attached IAM policy, where all users with membership in that group inherit that policy. Groups support more simplified management of user permissions on the SILO Tenant.":
-    "Um grupo pode ter uma política IAM anexada, herdada por todos os usuários membros desse grupo. Os grupos simplificam o gerenciamento de permissões de usuários no locatário do SILO.",
+  "A group can have one attached IAM policy, where all users with membership in that group inherit that policy. Groups support more simplified management of user permissions on the S3 LuisML Tenant.":
+    "Um grupo pode ter uma política IAM anexada, herdada por todos os usuários membros desse grupo. Os grupos simplificam o gerenciamento de permissões de usuários no locatário do S3 LuisML.",
   "A network error occurred.": "Ocorreu um erro de rede.",
   "A new {entity} has been created with the following details:":
     "Uma nova {entity} foi criada com os seguintes detalhes:",
-  "A SILO user consists of a unique access key (username) and corresponding secret key (password). Clients must authenticate their identity by specifying both a valid access key (username) and the corresponding secret key (password) of an existing SILO user.":
-    "Um usuário do SILO é formado por uma chave de acesso única (nome de usuário) e pela chave secreta correspondente (senha). Os clientes precisam se autenticar informando uma chave de acesso válida (nome de usuário) e a chave secreta correspondente (senha) de um usuário existente do SILO.",
+  "A S3 LuisML user consists of a unique access key (username) and corresponding secret key (password). Clients must authenticate their identity by specifying both a valid access key (username) and the corresponding secret key (password) of an existing S3 LuisML user.":
+    "Um usuário do S3 LuisML é formado por uma chave de acesso única (nome de usuário) e pela chave secreta correspondente (senha). Os clientes precisam se autenticar informando uma chave de acesso válida (nome de usuário) e a chave secreta correspondente (senha) de um usuário existente do S3 LuisML.",
   "A user can be a member of multiple groups.":
     "Um usuário pode ser membro de vários grupos.",
   "About Site Replication": "Sobre a replicação entre sites",
@@ -470,8 +470,8 @@ const ptScreens: Record<string, string> = {
     "Chaves de acesso excluídas com sucesso.",
   "Access Keys inherit the policies explicitly attached to the parent user, and the policies attached to each group in which the parent user has membership.":
     "As chaves de acesso herdam as políticas anexadas explicitamente ao usuário pai e as políticas anexadas a cada grupo de que ele é membro.",
-  "Access Keys support programmatic access by applications. You cannot use a Access Key to log into the SILO Console.":
-    "As chaves de acesso permitem o acesso programático por aplicações. Você não pode usar uma chave de acesso para entrar no Console do SILO.",
+  "Access Keys support programmatic access by applications. You cannot use a Access Key to log into the S3 LuisML Console.":
+    "As chaves de acesso permitem o acesso programático por aplicações. Você não pode usar uma chave de acesso para entrar no Console do S3 LuisML.",
   "Access Policy": "Política de acesso",
   "Access Policy:": "Política de acesso:",
   "Access Rule added successfully": "Regra de acesso adicionada com sucesso",
@@ -674,8 +674,8 @@ const ptScreens: Record<string, string> = {
   "Changes to Bucket features such as":
     "Alterações em recursos do bucket, como",
   "Choose or create a new path": "Escolha ou crie um novo caminho",
-  "Claim from which SILO will read the policy or role to use":
-    "Claim de onde o SILO lerá a política ou o papel a usar",
+  "Claim from which S3 LuisML will read the policy or role to use":
+    "Claim de onde o S3 LuisML lerá a política ou o papel a usar",
   "Claim Name": "Nome da claim",
   "Claim Prefix": "Prefixo da claim",
   "Claim User Info": "Claim de informações do usuário",
@@ -722,20 +722,20 @@ const ptScreens: Record<string, string> = {
   "Config URL for identity provider configuration":
     "URL de configuração do provedor de identidade",
   "Config URL is required": "A URL de configuração é obrigatória",
-  "Configuration cannot be disabled / enabled in this module as LDAP environment variables are set for this SILO instance.":
-    "A configuração não pode ser ativada ou desativada neste módulo porque há variáveis de ambiente LDAP definidas nesta instância do SILO.",
-  "Configuration cannot be disabled / enabled in this module as OpenID environment variables are set for this SILO instance.":
-    "A configuração não pode ser ativada ou desativada neste módulo porque há variáveis de ambiente OpenID definidas nesta instância do SILO.",
-  "Configuration cannot be edited in this module as LDAP environment variables are set for this SILO instance.":
-    "A configuração não pode ser editada neste módulo porque há variáveis de ambiente LDAP definidas nesta instância do SILO.",
-  "Configuration cannot be edited in this module as OpenID environment variables are set for this SILO instance.":
-    "A configuração não pode ser editada neste módulo porque há variáveis de ambiente OpenID definidas nesta instância do SILO.",
+  "Configuration cannot be disabled / enabled in this module as LDAP environment variables are set for this S3 LuisML instance.":
+    "A configuração não pode ser ativada ou desativada neste módulo porque há variáveis de ambiente LDAP definidas nesta instância do S3 LuisML.",
+  "Configuration cannot be disabled / enabled in this module as OpenID environment variables are set for this S3 LuisML instance.":
+    "A configuração não pode ser ativada ou desativada neste módulo porque há variáveis de ambiente OpenID definidas nesta instância do S3 LuisML.",
+  "Configuration cannot be edited in this module as LDAP environment variables are set for this S3 LuisML instance.":
+    "A configuração não pode ser editada neste módulo porque há variáveis de ambiente LDAP definidas nesta instância do S3 LuisML.",
+  "Configuration cannot be edited in this module as OpenID environment variables are set for this S3 LuisML instance.":
+    "A configuração não pode ser editada neste módulo porque há variáveis de ambiente OpenID definidas nesta instância do S3 LuisML.",
   "Configuration saved successfully": "Configuração salva com sucesso",
   "Configure a {remoteTier} to receive transitioned Objects":
     "Configure uma {remoteTier} para receber os objetos em transição",
   "Configure Bucket": "Configurar bucket",
-  "Configuring an external IDP enables Single-Sign On workflows, where applications authenticate against the external IDP before accessing SILO.":
-    "Configurar um IDP externo habilita fluxos de login único, em que as aplicações se autenticam no IDP externo antes de acessar o SILO.",
+  "Configuring an external IDP enables Single-Sign On workflows, where applications authenticate against the external IDP before accessing S3 LuisML.":
+    "Configurar um IDP externo habilita fluxos de login único, em que as aplicações se autenticam no IDP externo antes de acessar o S3 LuisML.",
   "Confirm Dialogs": "Caixas de confirmação",
   "connected server": "servidor conectado",
   "Connection String": "String de conexão",
@@ -753,8 +753,8 @@ const ptScreens: Record<string, string> = {
   "CPU Info": "Informações da CPU",
   "Create {idpType} configuration": "Criar configuração {idpType}",
   "create a bucket": "criar um bucket",
-  "Create a new cryptographic key in the Key Management Service server connected to SILO.":
-    "Crie uma nova chave criptográfica no servidor do serviço de gerenciamento de chaves conectado ao SILO.",
+  "Create a new cryptographic key in the Key Management Service server connected to S3 LuisML.":
+    "Crie uma nova chave criptográfica no servidor do serviço de gerenciamento de chaves conectado ao S3 LuisML.",
   "create a new path": "criar um novo caminho",
   "create a Policy": "criar uma política",
   "Create access key": "Criar chave de acesso",
@@ -905,8 +905,8 @@ const ptScreens: Record<string, string> = {
   "e.g. Method 2056": "ex.: Method 2056",
   "e.g. my-bucket/my-prefix/*": "ex.: my-bucket/my-prefix/*",
   "e.g. us-west-rack-2": "ex.: us-west-rack-2",
-  "Each user can access only those resources and operations which are explicitly granted by the built-in role. SILO denies access to any other resource or action by default.":
-    "Cada usuário só pode acessar os recursos e as operações concedidos explicitamente pelo papel embutido. Por padrão, o SILO nega o acesso a qualquer outro recurso ou ação.",
+  "Each user can access only those resources and operations which are explicitly granted by the built-in role. S3 LuisML denies access to any other resource or action by default.":
+    "Cada usuário só pode acessar os recursos e as operações concedidos explicitamente pelo papel embutido. Por padrão, o S3 LuisML nega o acesso a qualquer outro recurso ou ação.",
   Edit: "Editar",
   "edit a Policy": "editar uma política",
   "Edit Anonymous Access Rule for {target}":
@@ -1099,10 +1099,10 @@ const ptScreens: Record<string, string> = {
   Filters: "Filtros",
   "Folder cannot have the same name as an existing file":
     "A pasta não pode ter o mesmo nome de um arquivo existente",
-  "For each write operation to the bucket, SILO checks all configured replication rules for the bucket and applies the matching rule with highest configured priority.":
-    "Em cada operação de escrita no bucket, o SILO verifica todas as regras de replicação configuradas e aplica a regra correspondente de maior prioridade.",
-  'For each write operation to this "source" bucket, SILO checks all configured replication rules and applies the matching rule with highest configured priority.':
-    'Em cada operação de escrita neste bucket de "origem", o SILO verifica todas as regras de replicação configuradas e aplica a regra correspondente de maior prioridade.',
+  "For each write operation to the bucket, S3 LuisML checks all configured replication rules for the bucket and applies the matching rule with highest configured priority.":
+    "Em cada operação de escrita no bucket, o S3 LuisML verifica todas as regras de replicação configuradas e aplica a regra correspondente de maior prioridade.",
+  'For each write operation to this "source" bucket, S3 LuisML checks all configured replication rules and applies the matching rule with highest configured priority.':
+    'Em cada operação de escrita neste bucket de "origem", o S3 LuisML verifica todas as regras de replicação configuradas e aplica a regra correspondente de maior prioridade.',
   "For per-object retention settings, defer to the documentation for the PUT operation used by your preferred SDK.":
     "Para configurações de retenção por objeto, consulte a documentação da operação PUT do SDK de sua preferência.",
   "For SSE-S3 or SSE-KMS encryption via KMS, all sites must have access to a central KMS deployment server.":
@@ -1122,8 +1122,8 @@ const ptScreens: Record<string, string> = {
   "Group Mappings": "Mapeamentos de grupo",
   "Group Name": "Nome do grupo",
   "Group Status:": "Status do grupo:",
-  "Groups provide a simplified method for managing shared permissions among users with common access patterns and workloads. Client’s cannot authenticate to a SILO deployment using a group as an identity.":
-    "Os grupos oferecem uma forma simples de gerenciar permissões compartilhadas entre usuários com padrões de acesso e cargas de trabalho em comum. Os clientes não podem se autenticar em uma implantação do SILO usando um grupo como identidade.",
+  "Groups provide a simplified method for managing shared permissions among users with common access patterns and workloads. Client’s cannot authenticate to a S3 LuisML deployment using a group as an identity.":
+    "Os grupos oferecem uma forma simples de gerenciar permissões compartilhadas entre usuários com padrões de acesso e cargas de trabalho em comum. Os clientes não podem se autenticar em uma implantação do S3 LuisML usando um grupo como identidade.",
   "Groups with this Policy associated": "Grupos associados a esta política",
   "Guide to access policy structure":
     "Guia da estrutura de políticas de acesso",
@@ -1596,8 +1596,8 @@ const ptScreens: Record<string, string> = {
   "Server Insecure": "Servidor inseguro",
   "Server Location": "Localização do servidor",
   "server-side bucket replication": "replicação de bucket do lado do servidor",
-  "Server, client and Console are all AGPLv3. SILO's documentation is CC BY 4.0 — {licensing}.":
-    "Servidor, cliente e Console são todos AGPLv3. A documentação do SILO é CC BY 4.0 — {licensing}.",
+  "Server, client and Console are all AGPLv3. S3 LuisML's documentation is CC BY 4.0 — {licensing}.":
+    "Servidor, cliente e Console são todos AGPLv3. A documentação do S3 LuisML é CC BY 4.0 — {licensing}.",
   Service: "Serviço",
   "Service Accounts": "Contas de serviço",
   Services: "Serviços",
@@ -1627,8 +1627,8 @@ const ptScreens: Record<string, string> = {
   "Set to 'on' to enable TLS": "Defina como 'on' para ativar o TLS",
   "Set to 'on' to use streaming NATS server":
     "Defina como 'on' para usar o servidor NATS de streaming",
-  "Setting a {quota} assigns a hard limit to a bucket beyond which SILO does not allow writes.":
-    "Definir uma {quota} atribui a um bucket um limite rígido, acima do qual o SILO não permite escritas.",
+  "Setting a {quota} assigns a hard limit to a bucket beyond which S3 LuisML does not allow writes.":
+    "Definir uma {quota} atribui a um bucket um limite rígido, acima do qual o S3 LuisML não permite escritas.",
   "Setting an {anonymous} policy allows clients to access the Bucket or prefix contents and perform actions consistent with the specified policy without authentication.":
     "Definir uma política de acesso {anonymous} permite que clientes acessem o conteúdo do bucket ou prefixo e executem ações compatíveis com a política especificada, sem autenticação.",
   Share: "Compartilhar",
@@ -1645,56 +1645,56 @@ const ptScreens: Record<string, string> = {
   "Show deleted objects": "Mostrar objetos excluídos",
   "Show Rewind Data": "Mostrar dados retrocedidos",
   "Show/Hide": "Mostrar/ocultar",
-  "SILO {bucketNotifications} allow administrators to send notifications to supported external services on certain object or bucket events.":
-    "As {bucketNotifications} do SILO permitem que administradores enviem notificações a serviços externos compatíveis quando ocorrem determinados eventos de objeto ou de bucket.",
-  "SILO {objectLocking} enforces Write-Once Read-Many (WORM) immutability to protect versioned objects from deletion.":
-    "O {objectLocking} do SILO impõe imutabilidade WORM (Write-Once Read-Many) para proteger objetos versionados contra exclusão.",
-  "SILO {serverSideReplication} is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket.":
-    "A {serverSideReplication} do SILO é uma configuração automática em nível de bucket que sincroniza objetos entre um bucket de origem e um de destino.",
-  "SILO bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events. SILO supports bucket and object-level S3 events similar to the Amazon S3 Event Notifications.":
-    "As notificações de bucket do SILO permitem que administradores enviem notificações a serviços externos compatíveis quando ocorrem determinados eventos de objeto ou de bucket. O SILO aceita eventos S3 em nível de bucket e de objeto, semelhantes às notificações de eventos do Amazon S3.",
-  "SILO derives its behavior and syntax from {s3Lifecycle} for compatibility in migrating workloads and lifecycle rules from S3 to SILO.":
-    "O SILO deriva seu comportamento e sua sintaxe do {s3Lifecycle} para manter a compatibilidade ao migrar cargas de trabalho e regras de ciclo de vida do S3 para o SILO.",
-  "SILO does not enable existing object replication by default. Objects created before replication was configured or while replication is disabled are not synchronized to the target deployment unless replication of existing objects is enabled.":
-    "O SILO não ativa a replicação de objetos existentes por padrão. Objetos criados antes da configuração da replicação, ou enquanto ela está desativada, não são sincronizados com a implantação de destino, a menos que a replicação de objetos existentes esteja ativada.",
-  "SILO Health Info": "Informações de integridade do SILO",
-  "SILO Object Lifecycle Management allows creating rules for time or date based automatic transition or expiry of objects. For object transition, SILO automatically moves the object to a configured remote storage tier.":
-    "O gerenciamento do ciclo de vida de objetos do SILO permite criar regras de transição ou expiração automática de objetos com base em tempo ou data. Na transição, o SILO move automaticamente o objeto para uma camada de armazenamento remota configurada.",
-  "SILO or other S3-compatible storage":
-    "SILO ou outro armazenamento compatível com S3",
-  "SILO PBAC is built for compatibility with AWS IAM policy syntax, structure, and behavior.":
-    "O PBAC do SILO foi criado para ser compatível com a sintaxe, a estrutura e o comportamento das políticas do AWS IAM.",
-  "SILO queries the configured Active Directory / LDAP server to verify the credentials specified by the application and optionally return a list of groups in which the user has membership. SILO supports two modes (Lookup-Bind Mode and Username-Bind Mode) for performing these queries":
-    "O SILO consulta o servidor Active Directory / LDAP configurado para verificar as credenciais informadas pela aplicação e, opcionalmente, retornar uma lista de grupos dos quais o usuário é membro. O SILO aceita dois modos para essas consultas (Lookup-Bind e Username-Bind)",
-  "SILO recommends using Lookup-Bind mode as the preferred method for verifying AD/LDAP credentials. Username-Bind mode is a legacy method retained for backwards compatibility only.":
-    "O SILO recomenda o modo Lookup-Bind como método preferencial para verificar credenciais AD/LDAP. O modo Username-Bind é um método legado, mantido apenas por compatibilidade.",
-  "SILO requires versioning to support replication.":
-    "O SILO exige versionamento para oferecer replicação.",
-  "SILO supports automatically replicating existing objects in a bucket; this setting is enabled by default. Please note that objects created before replication was configured or while replication is disabled are not synchronized to the target deployment in case this setting is not enabled.":
-    "O SILO pode replicar automaticamente os objetos existentes em um bucket; este ajuste vem ativado por padrão. Se ele não estiver ativado, objetos criados antes da configuração da replicação, ou enquanto ela estiver desativada, não serão sincronizados com a implantação de destino.",
-  "SILO supports creating object transition lifecycle management rules, where SILO can automatically move an object to a remote storage “tier”.":
-    "O SILO permite criar regras de ciclo de vida de transição de objetos, com as quais pode mover automaticamente um objeto para uma “camada” de armazenamento remota.",
-  "SILO supports enabling automatic {sseKms} and {sseS3} encryption of all objects written to a bucket using a specific External Key (EK) stored on the external KMS.":
-    "O SILO permite ativar a criptografia automática {sseKms} e {sseS3} de todos os objetos escritos em um bucket usando uma chave externa (EK) específica armazenada no KMS externo.",
-  "SILO supports enabling replication of existing objects in a bucket.":
-    "O SILO permite ativar a replicação de objetos existentes em um bucket.",
-  "SILO supports keeping multiple {versions} of an object in a single bucket.":
-    "O SILO pode manter várias {versions} de um objeto em um único bucket.",
-  "SILO supports replicating delete operations, where SILO synchronizes deleting specific object versions and new delete markers. Delete operation replication uses the same replication process as all other replication operations.":
-    "O SILO pode replicar operações de exclusão, sincronizando a exclusão de versões específicas de objetos e novos marcadores de exclusão. A replicação de exclusões usa o mesmo processo das demais operações de replicação.",
-  "SILO supports server-side and client-side replication of objects between source and destination buckets.":
-    "O SILO oferece replicação de objetos do lado do servidor e do lado do cliente entre buckets de origem e de destino.",
-  "SILO supports setting both {bucketDefault} and per-object retention rules.":
-    "O SILO permite definir regras de retenção {bucketDefault} e por objeto.",
-  "SILO supports the following Tier types:":
-    "O SILO aceita os seguintes tipos de camada:",
-  "SILO supports using an Active Directory or LDAP (AD/LDAP) service for external management of user identities. Configuring an external IDentity Provider (IDP) enables Single-Sign On (SSO) workflows, where applications authenticate against the external IDP before accessing SILO.":
-    "O SILO permite usar um serviço Active Directory ou LDAP (AD/LDAP) para o gerenciamento externo de identidades de usuários. Configurar um provedor de identidade (IDP) externo habilita fluxos de login único (SSO), em que as aplicações se autenticam no IDP externo antes de acessar o SILO.",
-  "SILO uses buckets to organize objects. A bucket is similar to a folder or directory in a filesystem, where each bucket can hold an arbitrary number of objects.":
-    "O SILO usa buckets para organizar objetos. Um bucket é semelhante a uma pasta ou diretório em um sistema de arquivos; cada bucket pode conter um número arbitrário de objetos.",
-  "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access. Each policy describes one or more actions and conditions that outline the permissions of a user or group of users.":
-    "O SILO usa controle de acesso baseado em políticas (PBAC) para definir as ações e os recursos autorizados a que um usuário autenticado tem acesso. Cada política descreve uma ou mais ações e condições que delimitam as permissões de um usuário ou grupo de usuários.",
-  "SILO VERSION": "VERSÃO DO SILO",
+  "S3 LuisML {bucketNotifications} allow administrators to send notifications to supported external services on certain object or bucket events.":
+    "As {bucketNotifications} do S3 LuisML permitem que administradores enviem notificações a serviços externos compatíveis quando ocorrem determinados eventos de objeto ou de bucket.",
+  "S3 LuisML {objectLocking} enforces Write-Once Read-Many (WORM) immutability to protect versioned objects from deletion.":
+    "O {objectLocking} do S3 LuisML impõe imutabilidade WORM (Write-Once Read-Many) para proteger objetos versionados contra exclusão.",
+  "S3 LuisML {serverSideReplication} is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket.":
+    "A {serverSideReplication} do S3 LuisML é uma configuração automática em nível de bucket que sincroniza objetos entre um bucket de origem e um de destino.",
+  "S3 LuisML bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events. S3 LuisML supports bucket and object-level S3 events similar to the Amazon S3 Event Notifications.":
+    "As notificações de bucket do S3 LuisML permitem que administradores enviem notificações a serviços externos compatíveis quando ocorrem determinados eventos de objeto ou de bucket. O S3 LuisML aceita eventos S3 em nível de bucket e de objeto, semelhantes às notificações de eventos do Amazon S3.",
+  "S3 LuisML derives its behavior and syntax from {s3Lifecycle} for compatibility in migrating workloads and lifecycle rules from S3 to S3 LuisML.":
+    "O S3 LuisML deriva seu comportamento e sua sintaxe do {s3Lifecycle} para manter a compatibilidade ao migrar cargas de trabalho e regras de ciclo de vida do S3 para o S3 LuisML.",
+  "S3 LuisML does not enable existing object replication by default. Objects created before replication was configured or while replication is disabled are not synchronized to the target deployment unless replication of existing objects is enabled.":
+    "O S3 LuisML não ativa a replicação de objetos existentes por padrão. Objetos criados antes da configuração da replicação, ou enquanto ela está desativada, não são sincronizados com a implantação de destino, a menos que a replicação de objetos existentes esteja ativada.",
+  "S3 LuisML Health Info": "Informações de integridade do S3 LuisML",
+  "S3 LuisML Object Lifecycle Management allows creating rules for time or date based automatic transition or expiry of objects. For object transition, S3 LuisML automatically moves the object to a configured remote storage tier.":
+    "O gerenciamento do ciclo de vida de objetos do S3 LuisML permite criar regras de transição ou expiração automática de objetos com base em tempo ou data. Na transição, o S3 LuisML move automaticamente o objeto para uma camada de armazenamento remota configurada.",
+  "S3 LuisML or other S3-compatible storage":
+    "S3 LuisML ou outro armazenamento compatível com S3",
+  "S3 LuisML PBAC is built for compatibility with AWS IAM policy syntax, structure, and behavior.":
+    "O PBAC do S3 LuisML foi criado para ser compatível com a sintaxe, a estrutura e o comportamento das políticas do AWS IAM.",
+  "S3 LuisML queries the configured Active Directory / LDAP server to verify the credentials specified by the application and optionally return a list of groups in which the user has membership. S3 LuisML supports two modes (Lookup-Bind Mode and Username-Bind Mode) for performing these queries":
+    "O S3 LuisML consulta o servidor Active Directory / LDAP configurado para verificar as credenciais informadas pela aplicação e, opcionalmente, retornar uma lista de grupos dos quais o usuário é membro. O S3 LuisML aceita dois modos para essas consultas (Lookup-Bind e Username-Bind)",
+  "S3 LuisML recommends using Lookup-Bind mode as the preferred method for verifying AD/LDAP credentials. Username-Bind mode is a legacy method retained for backwards compatibility only.":
+    "O S3 LuisML recomenda o modo Lookup-Bind como método preferencial para verificar credenciais AD/LDAP. O modo Username-Bind é um método legado, mantido apenas por compatibilidade.",
+  "S3 LuisML requires versioning to support replication.":
+    "O S3 LuisML exige versionamento para oferecer replicação.",
+  "S3 LuisML supports automatically replicating existing objects in a bucket; this setting is enabled by default. Please note that objects created before replication was configured or while replication is disabled are not synchronized to the target deployment in case this setting is not enabled.":
+    "O S3 LuisML pode replicar automaticamente os objetos existentes em um bucket; este ajuste vem ativado por padrão. Se ele não estiver ativado, objetos criados antes da configuração da replicação, ou enquanto ela estiver desativada, não serão sincronizados com a implantação de destino.",
+  "S3 LuisML supports creating object transition lifecycle management rules, where S3 LuisML can automatically move an object to a remote storage “tier”.":
+    "O S3 LuisML permite criar regras de ciclo de vida de transição de objetos, com as quais pode mover automaticamente um objeto para uma “camada” de armazenamento remota.",
+  "S3 LuisML supports enabling automatic {sseKms} and {sseS3} encryption of all objects written to a bucket using a specific External Key (EK) stored on the external KMS.":
+    "O S3 LuisML permite ativar a criptografia automática {sseKms} e {sseS3} de todos os objetos escritos em um bucket usando uma chave externa (EK) específica armazenada no KMS externo.",
+  "S3 LuisML supports enabling replication of existing objects in a bucket.":
+    "O S3 LuisML permite ativar a replicação de objetos existentes em um bucket.",
+  "S3 LuisML supports keeping multiple {versions} of an object in a single bucket.":
+    "O S3 LuisML pode manter várias {versions} de um objeto em um único bucket.",
+  "S3 LuisML supports replicating delete operations, where S3 LuisML synchronizes deleting specific object versions and new delete markers. Delete operation replication uses the same replication process as all other replication operations.":
+    "O S3 LuisML pode replicar operações de exclusão, sincronizando a exclusão de versões específicas de objetos e novos marcadores de exclusão. A replicação de exclusões usa o mesmo processo das demais operações de replicação.",
+  "S3 LuisML supports server-side and client-side replication of objects between source and destination buckets.":
+    "O S3 LuisML oferece replicação de objetos do lado do servidor e do lado do cliente entre buckets de origem e de destino.",
+  "S3 LuisML supports setting both {bucketDefault} and per-object retention rules.":
+    "O S3 LuisML permite definir regras de retenção {bucketDefault} e por objeto.",
+  "S3 LuisML supports the following Tier types:":
+    "O S3 LuisML aceita os seguintes tipos de camada:",
+  "S3 LuisML supports using an Active Directory or LDAP (AD/LDAP) service for external management of user identities. Configuring an external IDentity Provider (IDP) enables Single-Sign On (SSO) workflows, where applications authenticate against the external IDP before accessing S3 LuisML.":
+    "O S3 LuisML permite usar um serviço Active Directory ou LDAP (AD/LDAP) para o gerenciamento externo de identidades de usuários. Configurar um provedor de identidade (IDP) externo habilita fluxos de login único (SSO), em que as aplicações se autenticam no IDP externo antes de acessar o S3 LuisML.",
+  "S3 LuisML uses buckets to organize objects. A bucket is similar to a folder or directory in a filesystem, where each bucket can hold an arbitrary number of objects.":
+    "O S3 LuisML usa buckets para organizar objetos. Um bucket é semelhante a uma pasta ou diretório em um sistema de arquivos; cada bucket pode conter um número arbitrário de objetos.",
+  "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access. Each policy describes one or more actions and conditions that outline the permissions of a user or group of users.":
+    "O S3 LuisML usa controle de acesso baseado em políticas (PBAC) para definir as ações e os recursos autorizados a que um usuário autenticado tem acesso. Cada política descreve uma ou mais ações e condições que delimitam as permissões de um usuário ou grupo de usuários.",
+  "S3 LuisML VERSION": "VERSÃO DO S3 LuisML",
   "Site Name": "Nome do site",
   "Site:": "Site:",
   Size: "Tamanho",
@@ -1824,8 +1824,8 @@ const ptScreens: Record<string, string> = {
   "This configuration cannot be deleted using this module as this was set using OpenID environment variables.":
     "Esta configuração não pode ser excluída neste módulo porque foi definida com variáveis de ambiente OpenID.",
   "this Console": "este Console",
-  "This feature allows multiple independent SILO sites (or clusters) that are using the same external IDentity Provider (IDP) to be configured as replicas. In this situation the set of replica sites are referred to as peer sites or just sites.":
-    "Este recurso permite configurar como réplicas vários sites (ou clusters) independentes do SILO que usam o mesmo provedor de identidade (IDP) externo. Nesse caso, o conjunto de sites de réplica é chamado de sites pares ou apenas sites.",
+  "This feature allows multiple independent S3 LuisML sites (or clusters) that are using the same external IDentity Provider (IDP) to be configured as replicas. In this situation the set of replica sites are referred to as peer sites or just sites.":
+    "Este recurso permite configurar como réplicas vários sites (ou clusters) independentes do S3 LuisML que usam o mesmo provedor de identidade (IDP) externo. Nesse caso, o conjunto de sites de réplica é chamado de sites pares ou apenas sites.",
   "This feature is not available for a single-disk setup.":
     "Este recurso não está disponível em uma configuração de disco único.",
   "This feature is not available.": "Este recurso não está disponível.",
@@ -1854,8 +1854,8 @@ const ptScreens: Record<string, string> = {
   Tier: "Camada",
   "Tier Name": "Nome da camada",
   "Tier Types": "Tipos de camada",
-  "Tiers are used by the SILO Object Lifecycle Management which allows creating rules for time or date based automatic transition or expiry of objects. For object transition, SILO automatically moves the object to a configured remote storage tier.":
-    "As camadas são usadas pelo gerenciamento do ciclo de vida de objetos do SILO, que permite criar regras de transição ou expiração automática de objetos com base em tempo ou data. Na transição, o SILO move automaticamente o objeto para uma camada de armazenamento remota configurada.",
+  "Tiers are used by the S3 LuisML Object Lifecycle Management which allows creating rules for time or date based automatic transition or expiry of objects. For object transition, S3 LuisML automatically moves the object to a configured remote storage tier.":
+    "As camadas são usadas pelo gerenciamento do ciclo de vida de objetos do S3 LuisML, que permite criar regras de transição ou expiração automática de objetos com base em tempo ou data. Na transição, o S3 LuisML move automaticamente o objeto para uma camada de armazenamento remota configurada.",
   "Time duration between scanner cycles, defaults to '1m'":
     "Tempo entre os ciclos do scanner; o padrão é '1m'",
   "Time to Response NS": "Tempo de resposta em NS",
@@ -1961,7 +1961,7 @@ const ptScreens: Record<string, string> = {
   "view Policy details": "ver detalhes da política",
   "View Replication Status for a:": "Ver status da replicação de um:",
   "view User details": "ver detalhes do usuário",
-  "Visit the SILO website": "Acesse o site do SILO",
+  "Visit the S3 LuisML website": "Acesse o site do S3 LuisML",
   "Volume or Bucket Name": "Nome do volume ou bucket",
   "Volume/Bucket name cannot start with /":
     "O nome do volume/bucket não pode começar com /",
@@ -2026,12 +2026,12 @@ const ptScreens: Record<string, string> = {
     "Você precisa desativar a retenção antes de desativar o bloqueio de objetos",
   "You need to select at least one group to assign":
     "Você precisa selecionar pelo menos um grupo para atribuir",
-  "You require additional permissions in order to {name}. Please ask your SILO administrator to grant you {scopes} permission in order to {name}.":
-    "Você precisa de permissões adicionais para {name}. Peça ao seu administrador do SILO que conceda a permissão {scopes} para {name}.",
-  "You require additional permissions in order to {name}. Please ask your SILO administrator to grant you {scopes} permissions in order to {name}.":
-    "Você precisa de permissões adicionais para {name}. Peça ao seu administrador do SILO que conceda as permissões {scopes} para {name}.",
-  "You require additional permissions in order to create a new Tier. Please ask your SILO administrator to grant you {permission} permission in order to create a Tier.":
-    "Você precisa de permissões adicionais para criar uma nova camada. Peça ao seu administrador do SILO que conceda a permissão {permission} para criar uma camada.",
+  "You require additional permissions in order to {name}. Please ask your S3 LuisML administrator to grant you {scopes} permission in order to {name}.":
+    "Você precisa de permissões adicionais para {name}. Peça ao seu administrador do S3 LuisML que conceda a permissão {scopes} para {name}.",
+  "You require additional permissions in order to {name}. Please ask your S3 LuisML administrator to grant you {scopes} permissions in order to {name}.":
+    "Você precisa de permissões adicionais para {name}. Peça ao seu administrador do S3 LuisML que conceda as permissões {scopes} para {name}.",
+  "You require additional permissions in order to create a new Tier. Please ask your S3 LuisML administrator to grant you {permission} permission in order to create a Tier.":
+    "Você precisa de permissões adicionais para criar uma nova camada. Peça ao seu administrador do S3 LuisML que conceda a permissão {permission} para criar uma camada.",
   "File is empty": "O arquivo está vazio",
   "Invalid UTF-8 or binary content": "UTF-8 inválido ou conteúdo binário",
   "Loading text preview…": "Carregando pré-visualização de texto…",
@@ -2148,8 +2148,8 @@ const ptScreens: Record<string, string> = {
   "No replication sites yet": "Ainda não há sites de replicação",
   "Refresh to try loading the configured sites again.":
     "Atualize para tentar carregar os sites configurados novamente.",
-  "Connect independent SILO sites to replicate their data and identity configuration.":
-    "Conecte sites independentes do SILO para replicar seus dados e sua configuração de identidade.",
+  "Connect independent S3 LuisML sites to replicate their data and identity configuration.":
+    "Conecte sites independentes do S3 LuisML para replicar seus dados e sua configuração de identidade.",
   "Waiting for logs": "Aguardando logs",
   "Logs are not running": "Os logs não estão em execução",
   "New log entries will appear here as the server emits them.":

@@ -76,10 +76,10 @@ const SILO_BLOG_FEED_URL = "https://silo.pgsty.com/blog/index.xml";
 const SILO_BLOG_ITEM_LIMIT = 6;
 const SILO_BLOG_FALLBACK: DocItem[] = [
   {
-    title: i18nKey("SILO Blog"),
+    title: i18nKey("S3 LuisML Blog"),
     url: SILO_BLOG_URL,
     body: i18nKey(
-      "Read SILO release notes, security advisories, and project updates.",
+      "Read S3 LuisML release notes, security advisories, and project updates.",
     ),
   },
 ];
@@ -121,7 +121,7 @@ const parseSiloBlogFeed = (rss: string): DocItem[] => {
           url: url.toString(),
           body: description
             ? rssDescriptionToText(description)
-            : i18nKey("Read this update on the SILO Blog."),
+            : i18nKey("Read this update on the S3 LuisML Blog."),
         };
       } catch {
         return null;
@@ -385,7 +385,7 @@ const HelpMenu = ({
           setHelpItemsBlog(blogItems);
         }
       } catch {
-        // Keep the local SILO Blog fallback when the remote feed is unavailable.
+        // Keep the local S3 LuisML Blog fallback when the remote feed is unavailable.
       }
     };
 
@@ -437,7 +437,7 @@ const HelpMenu = ({
       <div style={{ padding: 16 }}>
         <MoreLink
           LeadingIcon={DocumentationIcon}
-          text={t("Visit SILO Documentation")}
+          text={t("Visit S3 LuisML Documentation")}
           link={localize("https://silo.pgsty.com/docs/")}
           color={"var(--foreground)"}
         />
@@ -448,7 +448,7 @@ const HelpMenu = ({
     <Box className={"helpContainer"}>
       <VideoNotice>
         {t(
-          "SILO does not yet maintain a native video catalog. These links open upstream MinIO compatibility material.",
+          "S3 LuisML does not yet maintain a native video catalog. These links open upstream MinIO compatibility material.",
         )}
       </VideoNotice>
       {headerVideo && (
@@ -496,7 +496,7 @@ const HelpMenu = ({
       <div style={{ padding: 16 }}>
         <MoreLink
           LeadingIcon={ReportIcon}
-          text={t("Visit SILO Blog")}
+          text={t("Visit S3 LuisML Blog")}
           link={localize(SILO_BLOG_URL)}
           color={"var(--foreground)"}
         />

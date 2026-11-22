@@ -20,21 +20,21 @@ import { i18nKey } from "i18n/lang";
 export const ldapHelpBoxContents = [
   {
     text: i18nKey(
-      "SILO supports using an Active Directory or LDAP (AD/LDAP) service for external management of user identities. Configuring an external IDentity Provider (IDP) enables Single-Sign On (SSO) workflows, where applications authenticate against the external IDP before accessing SILO.",
+      "S3 LuisML supports using an Active Directory or LDAP (AD/LDAP) service for external management of user identities. Configuring an external IDentity Provider (IDP) enables Single-Sign On (SSO) workflows, where applications authenticate against the external IDP before accessing S3 LuisML.",
     ),
     icon: <LoginIcon />,
     iconDescription: i18nKey("Create Configurations"),
   },
   {
     text: i18nKey(
-      "SILO queries the configured Active Directory / LDAP server to verify the credentials specified by the application and optionally return a list of groups in which the user has membership. SILO supports two modes (Lookup-Bind Mode and Username-Bind Mode) for performing these queries",
+      "S3 LuisML queries the configured Active Directory / LDAP server to verify the credentials specified by the application and optionally return a list of groups in which the user has membership. S3 LuisML supports two modes (Lookup-Bind Mode and Username-Bind Mode) for performing these queries",
     ),
     icon: null,
     iconDescription: "",
   },
   {
     text: i18nKey(
-      "SILO recommends using Lookup-Bind mode as the preferred method for verifying AD/LDAP credentials. Username-Bind mode is a legacy method retained for backwards compatibility only.",
+      "S3 LuisML recommends using Lookup-Bind mode as the preferred method for verifying AD/LDAP credentials. Username-Bind mode is a legacy method retained for backwards compatibility only.",
     ),
     icon: null,
     iconDescription: "",
@@ -44,14 +44,14 @@ export const ldapHelpBoxContents = [
 export const openIDHelpBoxContents = [
   {
     text: i18nKey(
-      "SILO supports using an OpenID Connect (OIDC) compatible IDentity Provider (IDP) such as Okta, KeyCloak, Dex, Google, or Facebook for external management of user identities.",
+      "S3 LuisML supports using an OpenID Connect (OIDC) compatible IDentity Provider (IDP) such as Okta, KeyCloak, Dex, Google, or Facebook for external management of user identities.",
     ),
     icon: <LockIcon />,
     iconDescription: i18nKey("Create Configurations"),
   },
   {
     text: i18nKey(
-      "Configuring an external IDP enables Single-Sign On workflows, where applications authenticate against the external IDP before accessing SILO.",
+      "Configuring an external IDP enables Single-Sign On workflows, where applications authenticate against the external IDP before accessing S3 LuisML.",
     ),
     icon: null,
     iconDescription: "",
@@ -99,7 +99,7 @@ export const openIDFormFields = {
     required: false,
     label: i18nKey("Claim Name"),
     tooltip: i18nKey(
-      "Claim from which SILO will read the policy or role to use",
+      "Claim from which S3 LuisML will read the policy or role to use",
     ),
     placeholder: i18nKey("Enter Claim Name"),
     type: "text",

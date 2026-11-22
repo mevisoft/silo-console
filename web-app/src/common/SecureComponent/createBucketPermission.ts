@@ -4,7 +4,7 @@
 import { matchWildcard } from "./resourceMatch";
 
 // This is an entry-point capability, before a bucket name/request exists.
-// Keep resource- and condition-scoped grants usable; SILO evaluates the actual
+// Keep resource- and condition-scoped grants usable; S3 LuisML evaluates the actual
 // request. Matching action wildcards also avoids hiding legitimate creators.
 export const hasCreateBucketPermission = (
   permissions: Record<string, string[]> | null | undefined,

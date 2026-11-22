@@ -262,7 +262,7 @@ const AddTierConfiguration = () => {
         break;
       case "minio":
         setEndpoint("");
-        setTitleSelection("SILO");
+        setTitleSelection("S3 LuisML");
     }
   }, [type]);
 

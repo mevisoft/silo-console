@@ -8,14 +8,14 @@
 // Chinese translations for helpTopics.json entries (titles, bodies, markdown headers).
 // Keys are the EXACT English source strings — do not edit or re-wrap them.
 const zhHelp: Record<string, string> = {
-  "### Users\n\nA SILO user consists of a unique access key (username) and corresponding secret key (password). Clients must authenticate their identity by specifying both a valid access key (username) and the corresponding secret key (password) of an existing SILO user.\n\nGroups provide a simplified method for managing shared permissions among users with common access patterns and workloads.\n\nUsers inherit access permissions to data and resources through the groups they belong to.\n\nSILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access. Each policy describes one or more actions and conditions that outline the permissions of a user or group of users.\n\nEach user can access only those resources and operations which are explicitly granted by the built-in role. SILO denies access to any other resource or action by default.":
-    "### 用户\n\nSILO 用户由唯一的访问密钥（用户名）与对应的私有密钥（密码）组成。客户端必须同时提供某个已有 SILO 用户的有效访问密钥（用户名）与对应的私有密钥（密码）来验证身份。\n\n对于访问模式与工作负载相近的用户，用户组提供了一种更简便的共享权限管理方式。\n\n用户通过所属的用户组继承对数据与资源的访问权限。\n\nSILO 使用基于策略的访问控制（PBAC）来定义已认证用户可以访问的操作与资源。每条策略描述一个或多个操作与条件，用以界定单个用户或一组用户的权限。\n\n每个用户只能访问内置角色明确授予的资源与操作。SILO 默认拒绝对其他任何资源或操作的访问。",
-  "### IAM policies\n\nSILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access. Each policy describes one or more actions and conditions that outline the permissions of a user or group of users.\n\nSILO PBAC is built for compatibility with AWS IAM policy syntax, structure, and behavior. The SILO documentation makes a best-effort to cover IAM-specific behavior and functionality. Consider deferring to the IAM documentation for more complete documentation on AWS IAM-specific topics.":
-    "### IAM 策略\n\nSILO 使用基于策略的访问控制（PBAC）来定义已认证用户可以访问的操作与资源。每条策略描述一个或多个操作与条件，用以界定单个用户或一组用户的权限。\n\nSILO 的 PBAC 在语法、结构与行为上均兼容 AWS IAM 策略。SILO 文档会尽力覆盖 IAM 特有的行为与功能；若需了解 AWS IAM 的专有主题，建议参阅 IAM 官方文档。",
-  "### Access keys\n\nSILO access keys are child identities of an authenticated SILO user, including externally managed identities. Each access key inherits its privileges based on the policies attached to it’s parent user or those groups in which the parent user has membership. Access Keys also support an optional inline policy which further restricts access to a subset of actions and resources available to the parent user.":
-    "### 访问密钥\n\nSILO 访问密钥是已认证 SILO 用户（含外部托管身份）的子身份。每个访问密钥依据其父用户上附加的策略、以及父用户所属用户组的策略来继承权限。访问密钥还支持一条可选的内联策略，用于将权限进一步限制为父用户可用操作与资源的子集。",
-  "### Event destinations\n\nSILO bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events. SILO supports bucket and object-level S3 events similar to the Amazon S3 Event Notifications.":
-    "### 事件目标\n\nSILO 的存储桶通知允许管理员在发生特定对象或存储桶事件时，向受支持的外部服务发送通知。SILO 支持存储桶级和对象级的 S3 事件，与 Amazon S3 事件通知类似。",
+  "### Users\n\nA S3 LuisML user consists of a unique access key (username) and corresponding secret key (password). Clients must authenticate their identity by specifying both a valid access key (username) and the corresponding secret key (password) of an existing S3 LuisML user.\n\nGroups provide a simplified method for managing shared permissions among users with common access patterns and workloads.\n\nUsers inherit access permissions to data and resources through the groups they belong to.\n\nSILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access. Each policy describes one or more actions and conditions that outline the permissions of a user or group of users.\n\nEach user can access only those resources and operations which are explicitly granted by the built-in role. S3 LuisML denies access to any other resource or action by default.":
+    "### 用户\n\nSILO 用户由唯一的访问密钥（用户名）与对应的私有密钥（密码）组成。客户端必须同时提供某个已有 S3 LuisML 用户的有效访问密钥（用户名）与对应的私有密钥（密码）来验证身份。\n\n对于访问模式与工作负载相近的用户，用户组提供了一种更简便的共享权限管理方式。\n\n用户通过所属的用户组继承对数据与资源的访问权限。\n\nSILO 使用基于策略的访问控制（PBAC）来定义已认证用户可以访问的操作与资源。每条策略描述一个或多个操作与条件，用以界定单个用户或一组用户的权限。\n\n每个用户只能访问内置角色明确授予的资源与操作。S3 LuisML 默认拒绝对其他任何资源或操作的访问。",
+  "### IAM policies\n\nSILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access. Each policy describes one or more actions and conditions that outline the permissions of a user or group of users.\n\nSILO PBAC is built for compatibility with AWS IAM policy syntax, structure, and behavior. The S3 LuisML documentation makes a best-effort to cover IAM-specific behavior and functionality. Consider deferring to the IAM documentation for more complete documentation on AWS IAM-specific topics.":
+    "### IAM 策略\n\nSILO 使用基于策略的访问控制（PBAC）来定义已认证用户可以访问的操作与资源。每条策略描述一个或多个操作与条件，用以界定单个用户或一组用户的权限。\n\nSILO 的 PBAC 在语法、结构与行为上均兼容 AWS IAM 策略。S3 LuisML 文档会尽力覆盖 IAM 特有的行为与功能；若需了解 AWS IAM 的专有主题，建议参阅 IAM 官方文档。",
+  "### Access keys\n\nSILO access keys are child identities of an authenticated S3 LuisML user, including externally managed identities. Each access key inherits its privileges based on the policies attached to it’s parent user or those groups in which the parent user has membership. Access Keys also support an optional inline policy which further restricts access to a subset of actions and resources available to the parent user.":
+    "### 访问密钥\n\nSILO 访问密钥是已认证 S3 LuisML 用户（含外部托管身份）的子身份。每个访问密钥依据其父用户上附加的策略、以及父用户所属用户组的策略来继承权限。访问密钥还支持一条可选的内联策略，用于将权限进一步限制为父用户可用操作与资源的子集。",
+  "### Event destinations\n\nSILO bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events. S3 LuisML supports bucket and object-level S3 events similar to the Amazon S3 Event Notifications.":
+    "### 事件目标\n\nSILO 的存储桶通知允许管理员在发生特定对象或存储桶事件时，向受支持的外部服务发送通知。S3 LuisML 支持存储桶级和对象级的 S3 事件，与 Amazon S3 事件通知类似。",
 
   "### Inspect examples\n\nDownload object metadata or constituent parts from the drives as a ZIP archive. Enable **Encrypt** to protect the downloaded archive; save the decryption key when it is shown.\n\n- **Object metadata:** Volume/Bucket `test-bucket`, Path `test*/xl.meta`.\n- **Object parts:** Volume/Bucket `test-bucket`, Path `test*/*/part.*`.\n- **Recursive prefix:** Volume/Bucket `test-bucket`, Path `test/**`.\n\n**Caution:** Recursive inspection can be expensive. Limit the bucket and path before starting; use recursive patterns only when necessary.":
     "### 检查示例\n\n从磁盘收集对象元数据或组成部分，下载为 ZIP 归档。启用**加密**以保护归档，并在解密密钥显示时妥善保存。\n\n- **对象元数据**：卷/存储桶 `test-bucket`，路径 `test*/xl.meta`。\n- **对象组成部分**：卷/存储桶 `test-bucket`，路径 `test*/*/part.*`。\n- **递归前缀**：卷/存储桶 `test-bucket`，路径 `test/**`。\n\n**注意**：递归检查可能开销很大。开始前请缩小存储桶和路径范围，仅在必要时使用递归模式。",
@@ -23,14 +23,14 @@ const zhHelp: Record<string, string> = {
   "Need more help?  Check out additional Troubleshooting options":
     "需要更多帮助？查看更多故障排查方案",
   "Identity and Access Management": "身份与访问管理",
-  "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access.":
-    "SILO 使用基于策略的访问控制（PBAC）来定义已认证用户可以访问的操作与资源。",
+  "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access.":
+    "S3 LuisML 使用基于策略的访问控制（PBAC）来定义已认证用户可以访问的操作与资源。",
   "Policy based access control": "基于策略的访问控制",
   "Learn how Policy-Based Access Control (PBAC)  is used to define the authorized actions and resources  to which an authenticated user has access":
     "了解如何用基于策略的访问控制（PBAC）定义已认证用户可以访问的操作与资源",
   "OpenID Connect Access Management": "OpenID Connect 访问管理",
-  "Learn more about connecting SILO to OpenID for access management.":
-    "了解如何将 SILO 接入 OpenID 以实现访问管理。",
+  "Learn more about connecting S3 LuisML to OpenID for access management.":
+    "了解如何将 S3 LuisML 接入 OpenID 以实现访问管理。",
   "MinIO Identity and Access Management: Part 1 - Overview And Modification of Built In Policies":
     "MinIO 身份与访问管理：第 1 部分 - 内置策略概览与修改",
   "This video introduces MinIO IAM policies, including an overview of the built-in policies, and how to create and remove a policy.":
@@ -50,11 +50,11 @@ const zhHelp: Record<string, string> = {
   "# Bucket \n A bucket is similar to a folder or directory in a filesystem, where each bucket can hold an arbitrary number of objects.":
     "# 存储桶 \n 存储桶类似于文件系统中的文件夹或目录，每个存储桶可以存放任意数量的对象。",
   "Bucket Versioning": "存储桶版本控制",
-  "SILO supports keeping multiple “versions” of an object in a single bucket. SILO versioning protects from unintended overwrites and deletions while providing support for “undoing” a write operation.":
-    "SILO 支持在同一个存储桶中保留一个对象的多个“版本”。SILO 版本控制可防止意外覆盖和删除，同时支持“撤销”写入操作。",
+  "S3 LuisML supports keeping multiple “versions” of an object in a single bucket. S3 LuisML versioning protects from unintended overwrites and deletions while providing support for “undoing” a write operation.":
+    "S3 LuisML 支持在同一个存储桶中保留一个对象的多个“版本”。S3 LuisML 版本控制可防止意外覆盖和删除，同时支持“撤销”写入操作。",
   Buckets: "存储桶",
-  "Learn about using Console to create and manage Buckets with SILO":
-    "了解如何使用控制台在 SILO 中创建和管理存储桶",
+  "Learn about using Console to create and manage Buckets with S3 LuisML":
+    "了解如何使用控制台在 S3 LuisML 中创建和管理存储桶",
   "Creating Buckets and Users through the MinIO Console":
     "通过 MinIO 控制台创建存储桶与用户",
   "Learn how to manage your storage buckets and objects with a hands-on introduction to the MinIO Console and SDKs.":
@@ -81,78 +81,78 @@ const zhHelp: Record<string, string> = {
   "In this video, we will focus on versioning  and lifecycle management.":
     "本视频重点介绍版本控制与生命周期管理。",
   "Policy Document Structure": "策略文档结构",
-  "SILO policy documents use the same schema as AWS IAM Policy documents. See policy templates and allowed S3 Policy actions and condition keys in our docs.":
-    "SILO 策略文档采用与 AWS IAM 策略文档相同的模式。策略模板以及支持的 S3 策略操作和条件键请参阅文档。",
+  "S3 LuisML policy documents use the same schema as AWS IAM Policy documents. See policy templates and allowed S3 Policy actions and condition keys in our docs.":
+    "S3 LuisML 策略文档采用与 AWS IAM 策略文档相同的模式。策略模板以及支持的 S3 策略操作和条件键请参阅文档。",
   "Access Keys": "访问密钥",
   "Access Keys support providing applications authentication credentials which inherit permissions from the “parent” user.":
     "访问密钥可以为应用程序提供认证凭据，这些凭据继承“父”用户的权限。",
   "Policy Variables": "策略变量",
-  "SILO supports using policy variables for automatically substituting context from the authenticated user and/or the operation into the user’s assigned policy or policies.":
-    "SILO 支持使用策略变量，把已认证用户和/或操作的上下文自动代入用户所分配的策略中。",
+  "S3 LuisML supports using policy variables for automatically substituting context from the authenticated user and/or the operation into the user’s assigned policy or policies.":
+    "S3 LuisML 支持使用策略变量，把已认证用户和/或操作的上下文自动代入用户所分配的策略中。",
   "Admin Policy Action Keys": "管理策略操作键",
-  "See actions supported in defining policies for SILO admin operations. These actions are only valid for SILO deployments and are not intended for use with other S3-compatible services.":
-    "查看定义 SILO 管理操作策略时支持的操作。这些操作仅对 SILO 部署有效，不适用于其他 S3 兼容服务。",
+  "See actions supported in defining policies for S3 LuisML admin operations. These actions are only valid for S3 LuisML deployments and are not intended for use with other S3-compatible services.":
+    "查看定义 S3 LuisML 管理操作策略时支持的操作。这些操作仅对 S3 LuisML 部署有效，不适用于其他 S3 兼容服务。",
   "Admin Policy Condition Keys": "管理策略条件键",
-  "See which conditions SILO supports for use with defining policies for admin actions.":
-    "查看 SILO 在定义管理操作策略时支持哪些条件。",
+  "See which conditions S3 LuisML supports for use with defining policies for admin actions.":
+    "查看 S3 LuisML 在定义管理操作策略时支持哪些条件。",
   "Supported S3 Policy Condition Keys": "支持的 S3 策略条件键",
-  "SILO policy documents support IAM conditional statements.":
-    "SILO 策略文档支持 IAM 条件语句。",
+  "S3 LuisML policy documents support IAM conditional statements.":
+    "S3 LuisML 策略文档支持 IAM 条件语句。",
   "Supported S3 Policy Actions": "支持的 S3 策略操作",
-  "SILO policy documents support a subset of IAM S3 Action keys.":
-    "SILO 策略文档支持 IAM S3 操作键的一个子集。",
+  "S3 LuisML policy documents support a subset of IAM S3 Action keys.":
+    "S3 LuisML 策略文档支持 IAM S3 操作键的一个子集。",
   "MinIO Identity and Access Management: Part 2 - Using IDP to Manage Users And Groups":
     "MinIO 身份与访问管理：第 2 部分 - 使用 IDP 管理用户与用户组",
   "This video discusses Users and Groups, and how policies can be applied to them to enable specific permissions.":
     "本视频讨论用户与用户组，以及如何为它们应用策略以授予特定权限。",
-  "SILO versioning protects from unintended overwrites and deletions while providing support for “undoing” a write operation.":
-    "SILO 版本控制可防止意外覆盖和删除，同时支持“撤销”写入操作。",
+  "S3 LuisML versioning protects from unintended overwrites and deletions while providing support for “undoing” a write operation.":
+    "S3 LuisML 版本控制可防止意外覆盖和删除，同时支持“撤销”写入操作。",
   "Lifecycle Management II - Versioning and Lifecycle Management":
     "生命周期管理 II - 版本控制与生命周期管理",
   "Creating a New Bucket in a Specific Region": "在指定区域中创建新存储桶",
   "A Bucket can be created in a specified region":
     "存储桶可以创建在指定的区域中",
   "What are Settings and Configurations?": "什么是设置与配置？",
-  "These configuration settings define runtime  behavior of the SILO server process,  comparable to the mc admin config command":
-    "这些配置项定义 SILO 服务进程的运行时行为，等同于 mc admin config 命令",
+  "These configuration settings define runtime  behavior of the S3 LuisML server process,  comparable to the mc admin config command":
+    "这些配置项定义 S3 LuisML 服务进程的运行时行为，等同于 mc admin config 命令",
   "MinIO Feature Overview: Active-Active Replication":
     "MinIO 功能概览：双活复制",
   "Learn about MinIO's object replication capabilities and how MinIO provides resilience to common storage disruption scenarios.":
     "了解 MinIO 的对象复制能力，以及 MinIO 如何应对常见的存储中断场景。",
   "How is failed replication handled?": "复制失败后如何处理？",
-  "SILO queues failed replication operations and retries those operations until replication succeeds.":
-    "SILO 会将失败的复制操作放入队列并持续重试，直到复制成功。",
+  "S3 LuisML queues failed replication operations and retries those operations until replication succeeds.":
+    "S3 LuisML 会将失败的复制操作放入队列并持续重试，直到复制成功。",
   "What are Replication Workers?": "什么是复制工作线程？",
-  "SILO uses a replication queuing system with multiple concurrent replication workers operating on that queue.":
-    "SILO 采用复制队列机制，由多个并发的复制工作线程处理该队列。",
-  "These configuration settings define runtime behavior of the SILO server process,  comparable to the mc admin config command":
-    "这些配置项定义 SILO 服务进程的运行时行为，等同于 mc admin config 命令",
+  "S3 LuisML uses a replication queuing system with multiple concurrent replication workers operating on that queue.":
+    "S3 LuisML 采用复制队列机制，由多个并发的复制工作线程处理该队列。",
+  "These configuration settings define runtime behavior of the S3 LuisML server process,  comparable to the mc admin config command":
+    "这些配置项定义 S3 LuisML 服务进程的运行时行为，等同于 mc admin config 命令",
   "Where can I see current Heal status?": "在哪里查看当前的修复状态？",
   "Check under Monitoring/Drives on the left hand  menu to see Drive and Bucket Healing status":
     "在左侧菜单的 监控/磁盘 中查看磁盘与存储桶的修复状态",
   "How is Erasure Coding used to Protect Data?": "纠删码如何保护数据？",
-  "SILO erasure coding is a data redundancy and  availability feature that allows SILO deployments to  automatically reconstruct objects on-the-fly despite  the loss of multiple drives or nodes in the cluster.":
-    "纠删码是一项数据冗余与可用性特性，即使集群中多块磁盘或多个节点失效，SILO 部署也能实时自动重建对象。",
+  "S3 LuisML erasure coding is a data redundancy and  availability feature that allows S3 LuisML deployments to  automatically reconstruct objects on-the-fly despite  the loss of multiple drives or nodes in the cluster.":
+    "纠删码是一项数据冗余与可用性特性，即使集群中多块磁盘或多个节点失效，S3 LuisML 部署也能实时自动重建对象。",
   "Recover After Hardware failure": "硬件故障后的恢复",
-  "Depending on the deployment topology and  selected erasure code parity, SILO can tolerate loss  of up to half the drives or nodes in the deployment  while maintaining read access to objects.":
-    "根据部署拓扑和所选的纠删码校验级别，SILO 最多可以容忍部署中一半的磁盘或节点失效，同时保持对象的读取访问。",
+  "Depending on the deployment topology and  selected erasure code parity, S3 LuisML can tolerate loss  of up to half the drives or nodes in the deployment  while maintaining read access to objects.":
+    "根据部署拓扑和所选的纠删码校验级别，S3 LuisML 最多可以容忍部署中一半的磁盘或节点失效，同时保持对象的读取访问。",
   "Site Failure Recovery": "站点故障恢复",
-  "SILO can make the loss of an entire site, while  significant, a relatively minor incident. Site recovery depends on the replication option you use for the site.":
-    "整个站点丢失虽然影响重大，但在 SILO 上可以只是一次相对轻微的事件。站点恢复方式取决于该站点采用的复制方案。",
+  "S3 LuisML can make the loss of an entire site, while  significant, a relatively minor incident. Site recovery depends on the replication option you use for the site.":
+    "整个站点丢失虽然影响重大，但在 S3 LuisML 上可以只是一次相对轻微的事件。站点恢复方式取决于该站点采用的复制方案。",
   "Node Failure Recovery": "节点故障恢复",
-  "If a SILO node suffers complete hardware failure, the node begins healing operations once it rejoins the  deployment.":
-    "如果某个 SILO 节点发生彻底的硬件故障，该节点重新加入部署后就会开始修复操作。",
-  "What is SILO Healing?": "什么是 SILO 修复？",
-  "Healing is SILO’s ability to restore data after some event causes data loss. Data loss can come from bit rot, drive loss, or node loss.":
-    "修复是 SILO 在发生数据丢失后恢复数据的能力。数据丢失可能源于位衰减、磁盘丢失或节点丢失。",
-  "Understand SILO Healing Using mc": "使用 mc 理解 SILO 修复",
+  "If a S3 LuisML node suffers complete hardware failure, the node begins healing operations once it rejoins the  deployment.":
+    "如果某个 S3 LuisML 节点发生彻底的硬件故障，该节点重新加入部署后就会开始修复操作。",
+  "What is S3 LuisML Healing?": "什么是 S3 LuisML 修复？",
+  "Healing is S3 LuisML’s ability to restore data after some event causes data loss. Data loss can come from bit rot, drive loss, or node loss.":
+    "修复是 S3 LuisML 在发生数据丢失后恢复数据的能力。数据丢失可能源于位衰减、磁盘丢失或节点丢失。",
+  "Understand S3 LuisML Healing Using mc": "使用 mc 理解 S3 LuisML 修复",
   "The mc admin heal command scans for objects that are damaged or corrupted and heals those objects.":
     "mc admin heal 命令会扫描受损或损坏的对象，并修复这些对象。",
   "What is Bit Rot?": "什么是位衰减？",
-  "Bit rot is data corruption that occurs without the user’s knowledge. SILO combats bit rot with hashing and erasure coding.":
-    "位衰减是指在用户毫不知情的情况下发生的数据损坏。SILO 通过哈希校验与纠删码来对抗位衰减。",
-  "These configuration settings define runtime behavior of the SILO server process, comparable to the mc admin config command":
-    "这些配置项定义 SILO 服务进程的运行时行为，等同于 mc admin config 命令",
+  "Bit rot is data corruption that occurs without the user’s knowledge. S3 LuisML combats bit rot with hashing and erasure coding.":
+    "位衰减是指在用户毫不知情的情况下发生的数据损坏。S3 LuisML 通过哈希校验与纠删码来对抗位衰减。",
+  "These configuration settings define runtime behavior of the S3 LuisML server process, comparable to the mc admin config command":
+    "这些配置项定义 S3 LuisML 服务进程的运行时行为，等同于 mc admin config 命令",
   "Overview of MinIO Erasure Coding": "MinIO 纠删码概览",
   "Through this MinIO video you will learn about MinIO erasure coding, including erasure sets, erasure parity, and stripe size. You will also learn about how the Reed-Solomon algorithm can be optimized for storage efficiency (yielding cost savings) or data lost protection (number of servers and drives that can fail). The video also walks through the MinIO Erasure Code calculator, considerations for cluster design and the command line syntax needed to establish an erasure code deployment. ":
     "本 MinIO 视频将介绍 MinIO 纠删码，包括纠删集、纠删校验与条带大小。你还将了解如何针对存储效率（节省成本）或数据丢失保护（可容忍故障的服务器与磁盘数量）来优化 Reed-Solomon 算法。视频还会演示 MinIO 纠删码计算器、集群设计的注意事项，以及建立纠删码部署所需的命令行语法。",
@@ -160,12 +160,12 @@ const zhHelp: Record<string, string> = {
   "Learn more about how the scanner checks Objects for transition and expiry based on lifecycle rules":
     "了解扫描器如何依据生命周期规则检查对象的转换与过期",
   "What is the Scanner?": "什么是扫描器？",
-  "One of several low-priority processes SILO runs to check lifecycle management rules, bucket or site replication status, as well as object bit rot and healing":
-    "SILO 运行的若干低优先级进程之一，用于检查生命周期管理规则、存储桶或站点复制状态，以及对象的位衰减与修复情况",
+  "One of several low-priority processes S3 LuisML runs to check lifecycle management rules, bucket or site replication status, as well as object bit rot and healing":
+    "S3 LuisML 运行的若干低优先级进程之一，用于检查生命周期管理规则、存储桶或站点复制状态，以及对象的位衰减与修复情况",
   "Lifecycle Management Object Scanner Considerations":
     "生命周期管理的对象扫描器注意事项",
-  "SILO uses a scanner process to check objects against all configured lifecycle management rules. High IO workloads or limited system resources may delay application of lifecycle management rules":
-    "SILO 通过扫描器进程，按照所有已配置的生命周期管理规则检查对象。高 IO 负载或系统资源不足可能导致生命周期管理规则延迟生效",
+  "S3 LuisML uses a scanner process to check objects against all configured lifecycle management rules. High IO workloads or limited system resources may delay application of lifecycle management rules":
+    "S3 LuisML 通过扫描器进程，按照所有已配置的生命周期管理规则检查对象。高 IO 负载或系统资源不足可能导致生命周期管理规则延迟生效",
   "Lifecycle Management Lab": "生命周期管理实验",
   "Use the MinIO client to demonstrate expiration rules, the scanner, and transitioning objects to remote tiers.":
     "使用 MinIO 客户端演示过期规则、扫描器，以及将对象转换到远端存储层。",
@@ -174,14 +174,14 @@ const zhHelp: Record<string, string> = {
     "etcd 是一个强一致的分布式键值存储，为分布式系统或机器集群需要访问的数据提供可靠的存储方式。",
   "What is the logger_webhook Environment Variable?":
     "logger_webhook 环境变量是什么？",
-  "The top-level configuration key for defining an  HTTP webhook target for publishing SILO logs.":
-    "用于定义 HTTP webhook 目标以发布 SILO 日志的顶层配置键。",
+  "The top-level configuration key for defining an  HTTP webhook target for publishing S3 LuisML logs.":
+    "用于定义 HTTP webhook 目标以发布 S3 LuisML 日志的顶层配置键。",
   "Publish Server Logs to HTTP Webhook": "将服务日志发布到 HTTP Webhook",
-  "You can configure a new HTTP webhook endpoint  to which SILO publishes SILO server logs using  either environment variables or by setting  runtime configuration settings.":
-    "你可以通过环境变量或运行时配置项，新增一个 HTTP webhook 端点，让 SILO 把服务日志发布到该端点。",
+  "You can configure a new HTTP webhook endpoint  to which S3 LuisML publishes S3 LuisML server logs using  either environment variables or by setting  runtime configuration settings.":
+    "你可以通过环境变量或运行时配置项，新增一个 HTTP webhook 端点，让 S3 LuisML 把服务日志发布到该端点。",
   "Monitoring Logs": "日志监控",
-  "SILO supports publishing server logs  and audit logs to an HTTP webhook.":
-    "SILO 支持将服务日志和审计日志发布到 HTTP webhook。",
+  "S3 LuisML supports publishing server logs  and audit logs to an HTTP webhook.":
+    "S3 LuisML 支持将服务日志和审计日志发布到 HTTP webhook。",
   "Monitoring with Prometheus": "使用 Prometheus 监控",
   "Learn about the monitoring features available  in your MinIO Console and how to export to  Prometheus and get information back so you can  view it in detail.":
     "了解 MinIO 控制台提供的监控功能，以及如何导出到 Prometheus 并取回数据以便详细查看。",
@@ -189,52 +189,52 @@ const zhHelp: Record<string, string> = {
   "Learn how to set up Prometheus and connect it  back to your MinIO cluster so that you can get  detailed history of what's going on in your MinIO  cluster at any given time.":
     "了解如何搭建 Prometheus 并将其接入 MinIO 集群，从而随时获取集群运行状况的详细历史数据。",
   "Publish Audit Logs to an HTTP webhook": "将审计日志发布到 HTTP webhook",
-  "You can configure a new HTTP webhook endpoint  to which SILO publishes audit logs using either  environment variables or by setting runtime  configuration settings":
-    "你可以通过环境变量或运行时配置项，新增一个 HTTP webhook 端点，让 SILO 把审计日志发布到该端点",
+  "You can configure a new HTTP webhook endpoint  to which S3 LuisML publishes audit logs using either  environment variables or by setting runtime  configuration settings":
+    "你可以通过环境变量或运行时配置项，新增一个 HTTP webhook 端点，让 S3 LuisML 把审计日志发布到该端点",
   "Publish Audit Logs to an External Service": "将审计日志发布到外部服务",
-  "Audit logs are granular descriptions of each operation  on the SILO deployment supporting security  standards and regulations which require  detailed tracking of operations.":
-    "审计日志详细记录 SILO 部署上的每一次操作，可满足那些要求细粒度追踪操作的安全标准与法规。",
+  "Audit logs are granular descriptions of each operation  on the S3 LuisML deployment supporting security  standards and regulations which require  detailed tracking of operations.":
+    "审计日志详细记录 S3 LuisML 部署上的每一次操作，可满足那些要求细粒度追踪操作的安全标准与法规。",
   "Publish Events to Kafka": "将事件发布到 Kafka",
-  "SILO supports publishing bucket notification events to a Kafka service endpoint.":
-    "SILO 支持将存储桶通知事件发布到 Kafka 服务端点。",
+  "S3 LuisML supports publishing bucket notification events to a Kafka service endpoint.":
+    "S3 LuisML 支持将存储桶通知事件发布到 Kafka 服务端点。",
   "Kafka Service for Bucket Notifications": "用于存储桶通知的 Kafka 服务",
   "Learn about environment variables for configuring a Kafka service as a target for Bucket Nofitications.":
     "了解将 Kafka 服务配置为存储桶通知目标所需的环境变量。",
   "Kafka Service Configuration Settings": "Kafka 服务配置项",
   "Supported Bucket Notification Targets": "支持的存储桶通知目标",
-  "Learn which notification targets are supported by SILO.":
-    "了解 SILO 支持哪些通知目标。",
+  "Learn which notification targets are supported by S3 LuisML.":
+    "了解 S3 LuisML 支持哪些通知目标。",
   "Bucket Notifications": "存储桶通知",
-  "SILO bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events.":
+  "S3 LuisML bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events.":
     "存储桶通知允许管理员在特定的对象或存储桶事件发生时，向支持的外部服务发送通知。",
   "Need more help? Check out additional Troubleshooting options":
     "需要更多帮助？查看更多故障排查方案",
   "Site Replication Prerequisite": "站点复制前置条件",
   "Check that your setup meets the requirements to deploy Site Replication":
     "确认你的环境满足部署站点复制的要求",
-  "Site replication configures multiple independent SILO deployments as a cluster of replicas called peer sites.":
-    "站点复制将多个独立的 SILO 部署配置成一组互为副本的集群，这些部署称为对等站点。",
+  "Site replication configures multiple independent S3 LuisML deployments as a cluster of replicas called peer sites.":
+    "站点复制将多个独立的 S3 LuisML 部署配置成一组互为副本的集群，这些部署称为对等站点。",
   "Site Replication Overview": "站点复制概览",
   "See what changes are and are NOT replicated between peer sites":
     "了解哪些变更会在对等站点之间复制，哪些不会",
   "Site Replication Tutorial": "站点复制教程",
-  "Learn how to set up site replication using Console and the SILO client (mc)":
-    "了解如何使用控制台和 SILO 客户端（mc）配置站点复制",
-  "Transition from SILO to Azure": "从 SILO 转换到 Azure",
-  "See the procedure to create a new object lifecycle management rule that transition objects from a SILO bucket to a remote storage tier on the Azure storage backend.":
-    "了解如何创建对象生命周期管理规则，将对象从 SILO 存储桶转换到 Azure 存储后端上的远端存储层。",
-  "Transition from SILO to GCS": "从 SILO 转换到 GCS",
-  "See the procedure to create a new object lifecycle management rule that transitions objects from a SILO bucket to a remote storage tier on the Google Cloud Storage backend.":
-    "了解如何创建对象生命周期管理规则，将对象从 SILO 存储桶转换到 Google Cloud Storage 后端上的远端存储层。",
-  "Transition from SILO to S3": "从 SILO 转换到 S3",
-  "See the procedure to create a new object lifecycle management rule that transitions objects from a SILO bucket to a remote storage tier on the Amazon Web Services S3 storage backend or an S3-compatible service.":
-    "了解如何创建对象生命周期管理规则，将对象从 SILO 存储桶转换到 Amazon Web Services S3 存储后端或 S3 兼容服务上的远端存储层。",
-  "Transition to Remote SILO Deployment": "转换到远端 SILO 部署",
-  "See the procedure to create a new object lifecycle management rule that transitions objects from a bucket on a primary SILO deployment to a bucket on a remote SILO deployment. ":
-    "了解如何创建对象生命周期管理规则，将对象从主 SILO 部署的存储桶转换到远端 SILO 部署的存储桶。",
+  "Learn how to set up site replication using Console and the S3 LuisML client (mc)":
+    "了解如何使用控制台和 S3 LuisML 客户端（mc）配置站点复制",
+  "Transition from S3 LuisML to Azure": "从 S3 LuisML 转换到 Azure",
+  "See the procedure to create a new object lifecycle management rule that transition objects from a S3 LuisML bucket to a remote storage tier on the Azure storage backend.":
+    "了解如何创建对象生命周期管理规则，将对象从 S3 LuisML 存储桶转换到 Azure 存储后端上的远端存储层。",
+  "Transition from S3 LuisML to GCS": "从 S3 LuisML 转换到 GCS",
+  "See the procedure to create a new object lifecycle management rule that transitions objects from a S3 LuisML bucket to a remote storage tier on the Google Cloud Storage backend.":
+    "了解如何创建对象生命周期管理规则，将对象从 S3 LuisML 存储桶转换到 Google Cloud Storage 后端上的远端存储层。",
+  "Transition from S3 LuisML to S3": "从 S3 LuisML 转换到 S3",
+  "See the procedure to create a new object lifecycle management rule that transitions objects from a S3 LuisML bucket to a remote storage tier on the Amazon Web Services S3 storage backend or an S3-compatible service.":
+    "了解如何创建对象生命周期管理规则，将对象从 S3 LuisML 存储桶转换到 Amazon Web Services S3 存储后端或 S3 兼容服务上的远端存储层。",
+  "Transition to Remote S3 LuisML Deployment": "转换到远端 S3 LuisML 部署",
+  "See the procedure to create a new object lifecycle management rule that transitions objects from a bucket on a primary S3 LuisML deployment to a bucket on a remote S3 LuisML deployment. ":
+    "了解如何创建对象生命周期管理规则，将对象从主 S3 LuisML 部署的存储桶转换到远端 S3 LuisML 部署的存储桶。",
   "Object Lifecycle Management": "对象生命周期管理",
-  "Use SILO Object Lifecycle Management to create rules for time or date based automatic transition or expiry of objects.":
-    "使用 SILO 对象生命周期管理创建规则，按时间或日期自动转换或过期对象。",
+  "Use S3 LuisML Object Lifecycle Management to create rules for time or date based automatic transition or expiry of objects.":
+    "使用 S3 LuisML 对象生命周期管理创建规则，按时间或日期自动转换或过期对象。",
   "MinIO Feature Overview: Object Lifecycle Management":
     "MinIO 功能概览：对象生命周期管理",
   "Learn about MinIO's object lifecycle management capabilities.":
@@ -243,17 +243,17 @@ const zhHelp: Record<string, string> = {
   "In this video we will cover expiration and transition of objects to an alternate tier of storage.":
     "本视频介绍对象的过期，以及将对象转换到另一个存储层。",
   Tiers: "存储层",
-  "See the procedure to create a new object lifecycle management rule that transitions objects from a SILO bucket to a remote storage tier on the Azure storage backend.":
-    "了解如何创建对象生命周期管理规则，将对象从 SILO 存储桶转换到 Azure 存储后端上的远端存储层。",
+  "See the procedure to create a new object lifecycle management rule that transitions objects from a S3 LuisML bucket to a remote storage tier on the Azure storage backend.":
+    "了解如何创建对象生命周期管理规则，将对象从 S3 LuisML 存储桶转换到 Azure 存储后端上的远端存储层。",
   "Console Metrics Dashboard": "控制台指标仪表盘",
-  "The SILO Console provides a point-in-time metrics dashboard by default, and also supports displaying time-series and historical data by querying a Prometheus service configured to scrape data from the SILO deployment.":
-    "SILO 控制台默认提供实时指标仪表盘，也支持查询已配置为抓取 SILO 部署数据的 Prometheus 服务，展示时序与历史数据。",
+  "The S3 LuisML Console provides a point-in-time metrics dashboard by default, and also supports displaying time-series and historical data by querying a Prometheus service configured to scrape data from the S3 LuisML deployment.":
+    "S3 LuisML 控制台默认提供实时指标仪表盘，也支持查询已配置为抓取 S3 LuisML 部署数据的 Prometheus 服务，展示时序与历史数据。",
   "Available Metrics": "可用指标",
-  "Learn about the different Prometheus metrics published by SILO server":
-    "了解 SILO 服务发布的各类 Prometheus 指标",
+  "Learn about the different Prometheus metrics published by S3 LuisML server":
+    "了解 S3 LuisML 服务发布的各类 Prometheus 指标",
   "Metrics and Alerts": "指标与告警",
-  "For historical metrics and analytics, SILO publishes cluster and node metrics using the Prometheus Data Model.":
-    "SILO 按照 Prometheus 数据模型发布集群与节点指标，用于历史指标与分析。",
+  "For historical metrics and analytics, S3 LuisML publishes cluster and node metrics using the Prometheus Data Model.":
+    "S3 LuisML 按照 Prometheus 数据模型发布集群与节点指标，用于历史指标与分析。",
   "Learn about the monitoring features available  in your MinIO Console.":
     "了解 MinIO 控制台提供的监控功能。",
   "User Management": "用户管理",
@@ -274,38 +274,38 @@ const zhHelp: Record<string, string> = {
   "The Drives section displays the healing status for a bucket.":
     "磁盘板块展示存储桶的修复状态。",
   "Erasure Coding": "纠删码",
-  "SILO Erasure Coding is a data redundancy and availability feature that allows SILO deployments to automatically reconstruct objects on-the-fly despite the loss of multiple drives or nodes in the cluster.":
-    "SILO 纠删码是一项数据冗余与可用性特性，即使集群中多块磁盘或多个节点失效，SILO 部署也能实时自动重建对象。",
+  "S3 LuisML Erasure Coding is a data redundancy and availability feature that allows S3 LuisML deployments to automatically reconstruct objects on-the-fly despite the loss of multiple drives or nodes in the cluster.":
+    "S3 LuisML 纠删码是一项数据冗余与可用性特性，即使集群中多块磁盘或多个节点失效，S3 LuisML 部署也能实时自动重建对象。",
   "Site Healing": "站点修复",
-  "Any SILO deployment in the site replication configuration can resynchronize damaged replica-eligible data from the peer with the most updated (“latest”) version of that data.":
-    "站点复制配置中的任一 SILO 部署，都可以从持有最新（“latest”）版本数据的对等站点，重新同步受损的可复制数据。",
+  "Any S3 LuisML deployment in the site replication configuration can resynchronize damaged replica-eligible data from the peer with the most updated (“latest”) version of that data.":
+    "站点复制配置中的任一 S3 LuisML 部署，都可以从持有最新（“latest”）版本数据的对等站点，重新同步受损的可复制数据。",
   Healing: "修复",
-  "SILO Automatically Heals Corrupt or Missing Data On-the-fly":
-    "SILO 实时自动修复损坏或缺失的数据",
+  "S3 LuisML Automatically Heals Corrupt or Missing Data On-the-fly":
+    "S3 LuisML 实时自动修复损坏或缺失的数据",
   "In this video, we will provide an overview of site-wide replication.":
     "本视频概览站点级复制。",
   Health: "健康",
-  "The health section provides an interface for running a health diagnostic for the SILO Deployment. The report is generated on the deployment and downloaded directly to your browser.":
-    "健康板块提供为 SILO 部署运行健康诊断的界面。诊断报告在部署端生成，并直接下载到你的浏览器。",
+  "The health section provides an interface for running a health diagnostic for the S3 LuisML Deployment. The report is generated on the deployment and downloaded directly to your browser.":
+    "健康板块提供为 S3 LuisML 部署运行健康诊断的界面。诊断报告在部署端生成，并直接下载到你的浏览器。",
   "IDP Docs": "IDP 文档",
-  "SILO supports multiple external identity managers through OpenID Connect-Compatible Active Directory / LDAP":
-    "SILO 通过 OpenID Connect 兼容的 Active Directory / LDAP 支持多种外部身份管理系统",
-  "Built-in SILO IDP": "SILO 内置 IDP",
-  "SILO includes a built-in IDentity Provider (IDP) that provides core identity management functionality.":
-    "SILO 内置身份提供方（IDP），提供核心的身份管理功能。",
+  "S3 LuisML supports multiple external identity managers through OpenID Connect-Compatible Active Directory / LDAP":
+    "S3 LuisML 通过 OpenID Connect 兼容的 Active Directory / LDAP 支持多种外部身份管理系统",
+  "Built-in S3 LuisML IDP": "S3 LuisML 内置 IDP",
+  "S3 LuisML includes a built-in IDentity Provider (IDP) that provides core identity management functionality.":
+    "S3 LuisML 内置身份提供方（IDP），提供核心的身份管理功能。",
   "Active Directory / LDAP Access Management":
     "Active Directory / LDAP 访问管理",
-  "For identities managed by the external AD/LDAP provider, SILO uses the user’s Distinguished Name and attempts to map it against an existing policy.":
-    "对于由外部 AD/LDAP 提供方管理的身份，SILO 会使用该用户的可分辨名称（DN）尝试匹配已有的策略。",
+  "For identities managed by the external AD/LDAP provider, S3 LuisML uses the user’s Distinguished Name and attempts to map it against an existing policy.":
+    "对于由外部 AD/LDAP 提供方管理的身份，S3 LuisML 会使用该用户的可分辨名称（DN）尝试匹配已有的策略。",
   "Keycloak configuration": "Keycloak 配置",
-  "You can configure SILO to use Keycloak as an external IDentity Provider (IDP) for authentication of users via the OpenID Connect (OIDC) protocol.":
-    "你可以将 SILO 配置为使用 Keycloak 作为外部身份提供方（IDP），通过 OpenID Connect（OIDC）协议认证用户。",
+  "You can configure S3 LuisML to use Keycloak as an external IDentity Provider (IDP) for authentication of users via the OpenID Connect (OIDC) protocol.":
+    "你可以将 S3 LuisML 配置为使用 Keycloak 作为外部身份提供方（IDP），通过 OpenID Connect（OIDC）协议认证用户。",
   "LDAP Configuration": "LDAP 配置",
-  "SILO supports configuring a single Active Directory / LDAP Connect for external management of user identities.":
-    "SILO 支持配置单个 Active Directory / LDAP 连接，用于外部管理用户身份。",
+  "S3 LuisML supports configuring a single Active Directory / LDAP Connect for external management of user identities.":
+    "S3 LuisML 支持配置单个 Active Directory / LDAP 连接，用于外部管理用户身份。",
   "OIDC Configuration": "OIDC 配置",
-  "SILO supports using an OpenID Connect (OIDC) compatible IDentity Provider (IDP) such as Okta, KeyCloak, Dex, Google, or Facebook for external management of user identities.":
-    "SILO 支持使用 Okta、KeyCloak、Dex、Google 或 Facebook 等 OpenID Connect（OIDC）兼容的身份提供方（IDP）来外部管理用户身份。",
+  "S3 LuisML supports using an OpenID Connect (OIDC) compatible IDentity Provider (IDP) such as Okta, KeyCloak, Dex, Google, or Facebook for external management of user identities.":
+    "S3 LuisML 支持使用 Okta、KeyCloak、Dex、Google 或 Facebook 等 OpenID Connect（OIDC）兼容的身份提供方（IDP）来外部管理用户身份。",
   "KMS overview": "KMS 概览",
   "MinIO's cryptographic expert shares why MinIO built KES, what it is used for and how it fits into the MinIO architecture.":
     "MinIO 的密码学专家分享 MinIO 为何构建 KES、KES 的用途，以及它在 MinIO 架构中的位置。",
@@ -315,11 +315,11 @@ const zhHelp: Record<string, string> = {
   "Error logs can be filtered by node and log type, as well as search for specific text in the logs.":
     "错误日志可以按节点和日志类型筛选，也可以在日志中搜索特定文本。",
   "Audit Logs": "审计日志",
-  "You can configure an HTTP webhook endpoint to which SILO publishes audit logs using either environment variables or by setting runtime configuration settings.":
-    "你可以通过环境变量或运行时配置项，配置一个 HTTP webhook 端点，让 SILO 把审计日志发布到该端点。",
+  "You can configure an HTTP webhook endpoint to which S3 LuisML publishes audit logs using either environment variables or by setting runtime configuration settings.":
+    "你可以通过环境变量或运行时配置项，配置一个 HTTP webhook 端点，让 S3 LuisML 把审计日志发布到该端点。",
   "Object Lambda": "Object Lambda",
-  "SILO’s Object Lambda enables developers to programmatically transform objects on demand.":
-    "SILO 的 Object Lambda 让开发者可以按需以编程方式转换对象。",
+  "S3 LuisML’s Object Lambda enables developers to programmatically transform objects on demand.":
+    "S3 LuisML 的 Object Lambda 让开发者可以按需以编程方式转换对象。",
   "MinIO Event Notifications - Overview": "MinIO 事件通知 - 概览",
   "Use the Event framework to see what's going on in the system using Bucket, Object, Replication and ILM events.":
     "使用事件框架，通过存储桶、对象、复制和 ILM 事件了解系统中正在发生什么。",
@@ -336,8 +336,8 @@ const zhHelp: Record<string, string> = {
   "This video dives deeper into using the MinIO Python SDK to setup and manage notifications.":
     "本视频深入介绍如何使用 MinIO Python SDK 设置和管理通知。",
   "Object Management": "对象管理",
-  "Learn about Objects and how  SILO allows you to manage them":
-    "了解对象以及 SILO 提供的对象管理方式",
+  "Learn about Objects and how  S3 LuisML allows you to manage them":
+    "了解对象以及 S3 LuisML 提供的对象管理方式",
   "Managing Objects with the Object Browser": "使用对象浏览器管理对象",
   "Learn how to use the Console Object Browser  to manage your Objects":
     "了解如何使用控制台的对象浏览器管理对象",
@@ -351,8 +351,8 @@ const zhHelp: Record<string, string> = {
   "The performance section provides an interface for running a performance test of the deployment.":
     "性能板块提供为部署运行性能测试的界面。",
   Profile: "性能剖析",
-  "The profile section provides an interface for running system profiling of the deployment. The results can provide insight into the SILO server process running on a given node.":
-    "性能剖析板块提供对部署执行系统剖析的界面。剖析结果有助于洞察指定节点上运行的 SILO 服务进程。",
+  "The profile section provides an interface for running system profiling of the deployment. The results can provide insight into the S3 LuisML server process running on a given node.":
+    "性能剖析板块提供对部署执行系统剖析的界面。剖析结果有助于洞察指定节点上运行的 S3 LuisML 服务进程。",
   Inspect: "检查",
   "The inspect section provides an interface for capturing the erasure-coded metadata associated to an object or objects.":
     "检查板块提供采集对象所关联的纠删码元数据的界面。",
@@ -368,15 +368,15 @@ const zhHelp: Record<string, string> = {
     "监视板块实时展示所选存储桶上发生的 S3 事件。",
   "Access Managemnt": "访问管理",
   "Object Locking": "对象锁定",
-  "SILO Object Locking (“Object Retention”) enforces Write-Once Read-Many (WORM) immutability to protect versioned objects from deletion.":
-    "SILO 对象锁定（又称“对象保留”）强制施加 WORM（一次写入多次读取）不可变性，保护受版本控制的对象不被删除。",
+  "S3 LuisML Object Locking (“Object Retention”) enforces Write-Once Read-Many (WORM) immutability to protect versioned objects from deletion.":
+    "S3 LuisML 对象锁定（又称“对象保留”）强制施加 WORM（一次写入多次读取）不可变性，保护受版本控制的对象不被删除。",
   Encryption: "加密",
-  "SILO Server-Side Encryption (SSE) protects objects as part of write operations, allowing clients to take advantage of server processing power to secure objects at the storage layer (encryption-at-rest).":
-    "SILO 服务端加密（SSE）在写入操作过程中保护对象，让客户端可以借助服务端算力在存储层保护对象（静态加密）。",
+  "S3 LuisML Server-Side Encryption (SSE) protects objects as part of write operations, allowing clients to take advantage of server processing power to secure objects at the storage layer (encryption-at-rest).":
+    "S3 LuisML 服务端加密（SSE）在写入操作过程中保护对象，让客户端可以借助服务端算力在存储层保护对象（静态加密）。",
   "Learn how to use Console to manage Buckets": "了解如何使用控制台管理存储桶",
   "Bucket Replication": "存储桶复制",
-  "SILO server-side bucket replication is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket.":
-    "SILO 服务端存储桶复制是一种存储桶级别的自动配置，用于在源存储桶与目标存储桶之间同步对象。",
+  "S3 LuisML server-side bucket replication is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket.":
+    "S3 LuisML 服务端存储桶复制是一种存储桶级别的自动配置，用于在源存储桶与目标存储桶之间同步对象。",
   "This video gives an overview of how to set up and use object versioning as part of a data lifecycle management strategy.":
     "本视频概览如何在数据生命周期管理策略中设置和使用对象版本控制。",
   "Versioning Lab": "版本控制实验",
@@ -402,14 +402,14 @@ const zhHelp: Record<string, string> = {
   "Configure identity providers, TLS, and session settings for the console on the server side.":
     "在服务端为控制台配置身份提供方、TLS 与会话设置。",
   "Replication Internals": "复制内部机制",
-  "Learn details of the SILO replication process.":
-    "了解 SILO 复制过程的细节。",
+  "Learn details of the S3 LuisML replication process.":
+    "了解 S3 LuisML 复制过程的细节。",
   "One-way Bucket Replication": "单向存储桶复制",
-  "Guidance on configuring one-way Bucket replication using SILO Console.":
-    "使用 SILO 控制台配置单向存储桶复制的指引。",
+  "Guidance on configuring one-way Bucket replication using S3 LuisML Console.":
+    "使用 S3 LuisML 控制台配置单向存储桶复制的指引。",
   "Two-way Bucket Replication": "双向存储桶复制",
-  "Guidance on configuring two-way (active-active) Bucket replication using SILO Console.":
-    "使用 SILO 控制台配置双向（双活）存储桶复制的指引。",
+  "Guidance on configuring two-way (active-active) Bucket replication using S3 LuisML Console.":
+    "使用 S3 LuisML 控制台配置双向（双活）存储桶复制的指引。",
 };
 
 export default zhHelp;

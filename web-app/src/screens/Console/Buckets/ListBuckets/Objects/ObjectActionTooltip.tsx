@@ -16,7 +16,7 @@ const FocusTarget = styled.span(({ theme }) => ({
   display: "inline-flex",
   maxWidth: "100%",
   "&:focus-visible": {
-    outline: `2px solid var(--silo-primary, ${get(theme, "linkColor", "#1D588C")})`,
+    outline: `2px solid var(--silo-primary, ${get(theme, "linkColor", "#EF171D")})`,
     outlineOffset: 2,
   },
   "& > :disabled": { pointerEvents: "none" },

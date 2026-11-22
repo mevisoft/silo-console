@@ -221,7 +221,7 @@ const SiteReplication = () => {
               loadFailed
                 ? t("Refresh to try loading the configured sites again.")
                 : t(
-                    "Connect independent SILO sites to replicate their data and identity configuration.",
+                    "Connect independent S3 LuisML sites to replicate their data and identity configuration.",
                   )
             }
             action={
@@ -253,7 +253,7 @@ const SiteReplication = () => {
             help={
               <Fragment>
                 {t(
-                  "This feature allows multiple independent SILO sites (or clusters) that are using the same external IDentity Provider (IDP) to be configured as replicas. In this situation the set of replica sites are referred to as peer sites or just sites.",
+                  "This feature allows multiple independent S3 LuisML sites (or clusters) that are using the same external IDentity Provider (IDP) to be configured as replicas. In this situation the set of replica sites are referred to as peer sites or just sites.",
                 )}
                 <br />
                 <br />

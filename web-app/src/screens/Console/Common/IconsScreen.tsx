@@ -70,12 +70,12 @@ const IconsScreen = () => {
         <Grid item xs={3}>
           <SiloBrand style={{ width: 180, height: 64 }} />
           <br />
-          SILO wordmark
+          S3 LuisML wordmark
         </Grid>
         <Grid item xs={3}>
           <SiloBrand variant="emblem" style={{ width: 64, height: 64 }} />
           <br />
-          SILO emblem
+          S3 LuisML emblem
         </Grid>
       </Grid>
       <h1>Loaders</h1>
@@ -1077,11 +1077,11 @@ const IconsScreen = () => {
         <Grid item xs={3} sm={2} md={1}>
           <SiloBrand
             variant="emblem"
-            alt="SILO emblem"
+            alt="S3 LuisML emblem"
             style={{ width: 24, height: 24, objectFit: "contain" }}
           />
           <br />
-          SILO Emblem
+          S3 LuisML Emblem
         </Grid>
 
         <Grid item xs={3} sm={2} md={1}>

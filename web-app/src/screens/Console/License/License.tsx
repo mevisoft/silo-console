@@ -208,16 +208,11 @@ const License = () => {
             href={localize(SILO_SITE_URL)}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={t("Visit the SILO website")}
+            aria-label={t("Visit the S3 LuisML website")}
           >
             <SiloBrand
-              variant="emblem"
-              alt="SILO emblem"
-              style={{ display: "block", width: "25%", maxWidth: 88 }}
-            />
-            <SiloBrand
               className="licenseWordmark"
-              style={{ display: "block", width: "60%", maxWidth: 200 }}
+              style={{ display: "block", width: "80%", maxWidth: 320 }}
             />
           </BrandLockup>
 
@@ -239,7 +234,7 @@ const License = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    SILO
+                    S3 LuisML
                   </a>
                 ),
                 minio: (
@@ -331,7 +326,7 @@ const License = () => {
               <p className="note">
                 {interpolate(
                   t(
-                    "Server, client and Console are all AGPLv3. SILO's documentation is CC BY 4.0 — {licensing}.",
+                    "Server, client and Console are all AGPLv3. S3 LuisML's documentation is CC BY 4.0 — {licensing}.",
                   ),
                   {
                     licensing: (
@@ -420,7 +415,9 @@ const License = () => {
             <dt>{t("Copyright")}</dt>
             <dd>
               <p className="prose">
-                {t("© 2026 Ruohang Feng / PGSTY and the SILO contributors.")}
+                {t(
+                  "© 2026 Ruohang Feng / PGSTY and the S3 LuisML contributors.",
+                )}
                 <br />
                 {t("Portions © 2015–2026 MinIO, Inc.")}
                 <br />
@@ -489,7 +486,7 @@ const License = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        SILO
+                        S3 LuisML
                       </a>
                     ),
                   },

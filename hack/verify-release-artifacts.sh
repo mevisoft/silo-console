@@ -12,7 +12,7 @@
 #       workflows call snapshot mode only:
 #       <assets-dir> holds the draft release's downloaded assets, <metadata-dir>
 #       holds dist/artifacts.json and dist/metadata.json from the GoReleaser run,
-#       and the multi-platform image is inspected in Docker Hub
+#       and the multi-platform image is inspected in GitHub Container Registry
 #       by tag. Writes release-verification.json for manual inspection.
 #
 # Every check fails closed. Requirements: goreleaser (snapshot mode), docker
@@ -34,7 +34,7 @@ if cpio --help 2>&1 | grep -q -- '--no-absolute-filenames'; then
 fi
 
 repository_url="https://github.com/pgsty/silo-console"
-release_image="docker.io/pgsty/silo-console"
+release_image="ghcr.io/mevisoft/silo-console"
 expected_binaries=6 expected_bundles=6 expected_packages=9 expected_platforms=2
 
 license_sha="$(sha LICENSE)"; notice_sha="$(sha NOTICE)"; credits_sha="$(sha CREDITS)"

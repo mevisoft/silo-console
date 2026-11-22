@@ -74,7 +74,7 @@ const AddKeyModal = ({
             helpText={t("Create Key")}
             contents={[
               t(
-                "Create a new cryptographic key in the Key Management Service server connected to SILO.",
+                "Create a new cryptographic key in the Key Management Service server connected to S3 LuisML.",
               ),
             ]}
           />

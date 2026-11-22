@@ -19,11 +19,12 @@ import compatibility where practical, and describe it as best effort.
 Do not treat a local build, tag, draft release, image, documentation preview, or
 another repository's CI result as proof that this repository has been released.
 
-Official Console images are published only to Docker Hub as
-`docker.io/pgsty/silo-console`, alongside `docker.io/pgsty/silo` and
-`docker.io/pgsty/mc`. Keep build defaults, release/promotion workflows, update
-hints and documentation on that registry. Use `DOCKERHUB_USERNAME` and
-`DOCKERHUB_TOKEN` for publishing; verify anonymous pulls before advancing `latest`.
+Official Console images are published only to GitHub Container Registry as
+`ghcr.io/mevisoft/silo-console` (user decision, replaces Docker Hub). Keep build
+defaults, release/promotion workflows, update hints and documentation on that
+registry. Publishing uses the workflow `GITHUB_TOKEN` (`packages: write`); the
+package must be public, and anonymous pulls are verified before advancing `latest`.
+The `docker.io/pgsty/silo` and `docker.io/pgsty/mc` images remain test inputs.
 
 ## Git 内容与大文件规则
 

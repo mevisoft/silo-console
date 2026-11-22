@@ -8,7 +8,7 @@
 import styled from "styled-components";
 import get from "lodash/get";
 
-// Use the shared token variables when available; the current SILO theme is
+// Use the shared token variables when available; the current S3 LuisML theme is
 // the fallback for branches that have not yet merged the token primitives.
 export const PreviewSurface = styled.div<{ $fullscreen?: boolean }>(
   ({ theme, $fullscreen }) => ({

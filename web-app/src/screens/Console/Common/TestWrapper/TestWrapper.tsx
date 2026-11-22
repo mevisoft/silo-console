@@ -129,7 +129,7 @@ const TestWrapper = ({ title, children }: ITestWrapper) => {
                 aria-hidden="true"
                 style={{ width: 24, height: 24, objectFit: "contain" }}
               />
-              <span>{t("SILO version")}</span>
+              <span>{t("S3 LuisML version")}</span>
               <strong>{version}</strong>
             </Box>
           </Fragment>

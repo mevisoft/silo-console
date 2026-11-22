@@ -32,7 +32,7 @@ export const azureServiceName = "azure";
 export const tierTypes = [
   {
     serviceName: minioServiceName,
-    targetTitle: "SILO",
+    targetTitle: "S3 LuisML",
     logo: (
       <SiloBrand
         variant="emblem"

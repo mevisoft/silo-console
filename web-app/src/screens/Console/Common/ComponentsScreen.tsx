@@ -151,7 +151,7 @@ const ComponentsScreen = () => {
       >
         <Showcase>
           <div>
-            <h1>{t("SILO primitives")}</h1>
+            <h1>{t("S3 LuisML primitives")}</h1>
             <p>
               {t(
                 "Shared building blocks for storage, identity and monitoring.",

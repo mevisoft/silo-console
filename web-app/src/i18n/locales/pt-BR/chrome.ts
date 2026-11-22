@@ -143,12 +143,12 @@ const pt: Record<string, string> = {
     "Um armazenamento de objetos de alto desempenho que roda em qualquer infraestrutura — nuvem pública, nuvem privada ou bare metal.",
   "Erasure coding, encryption, and replication power data lakes, AI/ML, and fast backup & recovery.":
     "Erasure coding, criptografia e replicação sustentam data lakes, IA/ML e backup e recuperação rápidos.",
-  "MinIO® is a registered trademark of {minioInc}; SILO incorporates {minioSource}.":
-    "MinIO® é uma marca registrada da {minioInc}; o SILO incorpora {minioSource}.",
+  "MinIO® is a registered trademark of {minioInc}; S3 LuisML incorporates {minioSource}.":
+    "MinIO® é uma marca registrada da {minioInc}; o S3 LuisML incorpora {minioSource}.",
   "MinIO source code": "o código-fonte do MinIO",
-  "SILO is maintained by {pgsty}, without MinIO affiliation, endorsement, or sponsorship.":
-    "O SILO é mantido pela {pgsty}, sem afiliação, endosso ou patrocínio da MinIO.",
-  "SILO website": "Site do SILO",
+  "S3 LuisML is maintained by {pgsty}, without MinIO affiliation, endorsement, or sponsorship.":
+    "O S3 LuisML é mantido pela {pgsty}, sem afiliação, endosso ou patrocínio da MinIO.",
+  "S3 LuisML website": "Site do S3 LuisML",
   "Object Storage Console": "Console de armazenamento de objetos",
   "Use Credentials": "Usar credenciais",
   "Use STS": "Usar STS",
@@ -213,15 +213,16 @@ const pt: Record<string, string> = {
   Navigation: "Navegação",
   Video: "Vídeo",
   Blog: "Blog",
-  "SILO Blog": "Blog do SILO",
-  "Read SILO release notes, security advisories, and project updates.":
-    "Leia notas de versão, avisos de segurança e novidades do projeto SILO.",
-  "Read this update on the SILO Blog.": "Leia esta novidade no Blog do SILO.",
-  "SILO does not yet maintain a native video catalog. These links open upstream MinIO compatibility material.":
-    "O SILO ainda não mantém um catálogo próprio de vídeos. Estes links abrem material de compatibilidade do MinIO original.",
-  "Visit SILO Documentation": "Acessar a documentação do SILO",
+  "S3 LuisML Blog": "Blog do S3 LuisML",
+  "Read S3 LuisML release notes, security advisories, and project updates.":
+    "Leia notas de versão, avisos de segurança e novidades do projeto S3 LuisML.",
+  "Read this update on the S3 LuisML Blog.":
+    "Leia esta novidade no Blog do S3 LuisML.",
+  "S3 LuisML does not yet maintain a native video catalog. These links open upstream MinIO compatibility material.":
+    "O S3 LuisML ainda não mantém um catálogo próprio de vídeos. Estes links abrem material de compatibilidade do MinIO original.",
+  "Visit S3 LuisML Documentation": "Acessar a documentação do S3 LuisML",
   "Visit MinIO Videos (upstream)": "Acessar vídeos do MinIO (original)",
-  "Visit SILO Blog": "Acessar o Blog do SILO",
+  "Visit S3 LuisML Blog": "Acessar o Blog do S3 LuisML",
   "Learn more": "Saiba mais",
   "Set by environment variable": "Definido por variável de ambiente",
   "Explore upstream videos about object storage, replication, and administration.":

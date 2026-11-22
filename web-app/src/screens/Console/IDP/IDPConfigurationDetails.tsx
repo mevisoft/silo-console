@@ -503,7 +503,7 @@ const IDPConfigurationDetails = ({
                     tooltip={
                       envOverride
                         ? t(
-                            "Configuration cannot be edited in this module as OpenID environment variables are set for this SILO instance.",
+                            "Configuration cannot be edited in this module as OpenID environment variables are set for this S3 LuisML instance.",
                           )
                         : ""
                     }
@@ -523,7 +523,7 @@ const IDPConfigurationDetails = ({
                   tooltip={
                     envOverride
                       ? t(
-                          "Configuration cannot be disabled / enabled in this module as OpenID environment variables are set for this SILO instance.",
+                          "Configuration cannot be disabled / enabled in this module as OpenID environment variables are set for this S3 LuisML instance.",
                         )
                       : ""
                   }

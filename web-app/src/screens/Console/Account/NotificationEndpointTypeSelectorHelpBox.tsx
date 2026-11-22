@@ -27,7 +27,7 @@ const NotificationEndpointTypeSelectorHelpBox = () => {
       help={
         <Box sx={{ paddingTop: "20px" }}>
           {t(
-            "SILO bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events. SILO supports bucket and object-level S3 events similar to the Amazon S3 Event Notifications.",
+            "S3 LuisML bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events. S3 LuisML supports bucket and object-level S3 events similar to the Amazon S3 Event Notifications.",
           )}
         </Box>
       }

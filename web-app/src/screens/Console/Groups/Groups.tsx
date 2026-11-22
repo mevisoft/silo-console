@@ -470,7 +470,7 @@ const Groups = () => {
               help={
                 <Fragment>
                   {t(
-                    "A group can have one attached IAM policy, where all users with membership in that group inherit that policy. Groups support more simplified management of user permissions on the SILO Tenant.",
+                    "A group can have one attached IAM policy, where all users with membership in that group inherit that policy. Groups support more simplified management of user permissions on the S3 LuisML Tenant.",
                   )}
                   <br />
                   <br />

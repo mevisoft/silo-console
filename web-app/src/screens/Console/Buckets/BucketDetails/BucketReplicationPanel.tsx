@@ -331,7 +331,7 @@ const BucketReplicationPanel = () => {
             <Fragment>
               {interpolate(
                 t(
-                  "SILO {serverSideReplication} is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket.",
+                  "S3 LuisML {serverSideReplication} is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket.",
                 ),
                 {
                   serverSideReplication: (
@@ -448,7 +448,7 @@ const BucketReplicationPanel = () => {
             help={
               <Fragment>
                 {t(
-                  "SILO supports server-side and client-side replication of objects between source and destination buckets.",
+                  "S3 LuisML supports server-side and client-side replication of objects between source and destination buckets.",
                 )}
                 <br />
                 <br />

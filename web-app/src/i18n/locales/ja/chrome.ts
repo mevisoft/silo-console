@@ -133,12 +133,12 @@ const messages: Dictionary = {
     "パブリッククラウド、プライベートクラウド、ベアメタルなど、あらゆるインフラで動作する高性能オブジェクトストレージ。",
   "Erasure coding, encryption, and replication power data lakes, AI/ML, and fast backup & recovery.":
     "イレイジャーコーディング、暗号化、レプリケーションにより、データレイク、AI/ML、高速なバックアップと復元を支えます。",
-  "MinIO® is a registered trademark of {minioInc}; SILO incorporates {minioSource}.":
-    "MinIO® は {minioInc} の登録商標です。SILO には {minioSource} が組み込まれています。",
+  "MinIO® is a registered trademark of {minioInc}; S3 LuisML incorporates {minioSource}.":
+    "MinIO® は {minioInc} の登録商標です。S3 LuisML には {minioSource} が組み込まれています。",
   "MinIO source code": "MinIO ソースコード",
-  "SILO is maintained by {pgsty}, without MinIO affiliation, endorsement, or sponsorship.":
-    "SILO は {pgsty} が保守しており、MinIO との提携、推奨、後援関係はありません。",
-  "SILO website": "SILO ウェブサイト",
+  "S3 LuisML is maintained by {pgsty}, without MinIO affiliation, endorsement, or sponsorship.":
+    "S3 LuisML は {pgsty} が保守しており、MinIO との提携、推奨、後援関係はありません。",
+  "S3 LuisML website": "S3 LuisML ウェブサイト",
   "Object Storage Console": "オブジェクトストレージコンソール",
   "Use Credentials": "認証情報を使用",
   "Use STS": "STS を使用",
@@ -202,16 +202,16 @@ const messages: Dictionary = {
   Navigation: "ナビゲーション",
   Video: "動画",
   Blog: "ブログ",
-  "SILO Blog": "SILO ブログ",
-  "Read SILO release notes, security advisories, and project updates.":
-    "SILO リリース ノート、セキュリティ アドバイザリ、プロジェクトの更新情報をお読みください。",
-  "Read this update on the SILO Blog.":
-    "この更新情報は SILO ブログでお読みください。",
-  "SILO does not yet maintain a native video catalog. These links open upstream MinIO compatibility material.":
-    "SILO 独自の動画カタログはまだありません。以下のリンクは上流 MinIO の互換資料を開きます。",
-  "Visit SILO Documentation": "SILO ドキュメントにアクセス",
+  "S3 LuisML Blog": "S3 LuisML ブログ",
+  "Read S3 LuisML release notes, security advisories, and project updates.":
+    "S3 LuisML リリース ノート、セキュリティ アドバイザリ、プロジェクトの更新情報をお読みください。",
+  "Read this update on the S3 LuisML Blog.":
+    "この更新情報は S3 LuisML ブログでお読みください。",
+  "S3 LuisML does not yet maintain a native video catalog. These links open upstream MinIO compatibility material.":
+    "S3 LuisML 独自の動画カタログはまだありません。以下のリンクは上流 MinIO の互換資料を開きます。",
+  "Visit S3 LuisML Documentation": "S3 LuisML ドキュメントにアクセス",
   "Visit MinIO Videos (upstream)": "MinIO ビデオにアクセス (アップストリーム)",
-  "Visit SILO Blog": "SILO ブログにアクセス",
+  "Visit S3 LuisML Blog": "S3 LuisML ブログにアクセス",
   "Learn more": "詳細を見る",
   "Set by environment variable": "環境変数で設定",
   "Explore upstream videos about object storage, replication, and administration.":

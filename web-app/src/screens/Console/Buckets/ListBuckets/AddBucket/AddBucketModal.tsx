@@ -338,7 +338,7 @@ const AddBucketModal = () => {
                       )}
                       {interpolate(
                         t(
-                          "SILO supports keeping multiple {versions} of an object in a single bucket.",
+                          "S3 LuisML supports keeping multiple {versions} of an object in a single bucket.",
                         ),
                         {
                           versions: (
@@ -415,7 +415,7 @@ const AddBucketModal = () => {
                           )}
                           <br />
                           {t(
-                            "SILO requires versioning to support replication.",
+                            "S3 LuisML requires versioning to support replication.",
                           )}
                           <br />
                           {t(
@@ -534,7 +534,7 @@ const AddBucketModal = () => {
                     <Fragment>
                       {interpolate(
                         t(
-                          "Setting a {quota} assigns a hard limit to a bucket beyond which SILO does not allow writes.",
+                          "Setting a {quota} assigns a hard limit to a bucket beyond which S3 LuisML does not allow writes.",
                         ),
                         {
                           quota: (
@@ -601,7 +601,7 @@ const AddBucketModal = () => {
                       <Fragment>
                         {interpolate(
                           t(
-                            "SILO supports setting both {bucketDefault} and per-object retention rules.",
+                            "S3 LuisML supports setting both {bucketDefault} and per-object retention rules.",
                           ),
                           {
                             bucketDefault: (
@@ -649,7 +649,7 @@ const AddBucketModal = () => {
                           {" "}
                           {interpolate(
                             t(
-                              "{compliance} lock protects Objects from write operations by all users, including the SILO root user.",
+                              "{compliance} lock protects Objects from write operations by all users, including the S3 LuisML root user.",
                             ),
                             {
                               compliance: (

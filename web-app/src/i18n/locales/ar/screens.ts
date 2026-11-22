@@ -16,7 +16,7 @@ const messages: Dictionary = {
   "Configure a destination, then add bucket notification rules to send S3 events to it.":
     "اضبط وجهة، ثم أضف قواعد إشعارات الحاويات لإرسال أحداث S3 إليها.",
   "Event destinations": "وجهات الأحداث",
-  "SILO version": "إصدار SILO",
+  "S3 LuisML version": "إصدار S3 LuisML",
   "Raw JSON": "JSON الخام",
   "Recursive inspections can be expensive. Limit the bucket and path before starting.":
     "قد يستهلك الفحص المتكرر موارد كبيرة. حدّد الحاوية والمسار قبل البدء.",
@@ -143,8 +143,8 @@ const messages: Dictionary = {
   "Could not update policy": "تعذر تحديث السياسة",
   "Reset policy {name} to its default definition?":
     "هل تريد إعادة السياسة {name} إلى تعريفها الافتراضي؟",
-  "The built-in policy will be restored to the SILO default definition.":
-    "ستُستعاد السياسة المضمنة إلى تعريف SILO الافتراضي.",
+  "The built-in policy will be restored to the S3 LuisML default definition.":
+    "ستُستعاد السياسة المضمنة إلى تعريف S3 LuisML الافتراضي.",
   "Loading attachment information…": "جارٍ تحميل معلومات الارتباط…",
   "This policy has changed or is no longer available. Refresh the list.":
     "تغيّرت هذه السياسة أو لم تعد متاحة. حدّث القائمة.",
@@ -191,8 +191,8 @@ const messages: Dictionary = {
     "اطلب صلاحية الوصول من المسؤول. تتحقق هذه الصفحة من إجراءات IAM التالية:",
   "Required IAM actions": "إجراءات IAM المطلوبة",
   "Encryption is not configured": "لم يتم تكوين التشفير",
-  "Configure KES or KMS on the SILO server to manage encryption keys in Console.":
-    "اضبط KES أو KMS على خادم SILO لإدارة مفاتيح التشفير في لوحة التحكم.",
+  "Configure KES or KMS on the S3 LuisML server to manage encryption keys in Console.":
+    "اضبط KES أو KMS على خادم S3 LuisML لإدارة مفاتيح التشفير في لوحة التحكم.",
   "Local identity management is unavailable": "إدارة الهوية المحلية غير متوفرة",
   "LDAP is enabled. Manage users and groups in your LDAP directory; connection settings are available on the LDAP configuration page.":
     "خدمة LDAP مفعّلة. أدِر المستخدمين والمجموعات في دليل LDAP؛ وتتوفر إعدادات الاتصال في صفحة إعداد LDAP.",
@@ -208,10 +208,10 @@ const messages: Dictionary = {
   "Check the Prometheus address, network access and authentication, then retry.":
     "تحقق من عنوان Prometheus والوصول إلى الشبكة والمصادقة، ثم أعد المحاولة.",
   "Advanced metrics need Prometheus": "المقاييس المتقدمة تحتاج إلى Prometheus",
-  "Configure Prometheus to collect SILO metrics, then set the URL for your deployment and restart the corresponding service.":
-    "قم بتكوين Prometheus لجمع SILO المقاييس، ثم قم بتعيين URL للنشر الخاص بك وأعد تشغيل الخدمة المقابلة.",
+  "Configure Prometheus to collect S3 LuisML metrics, then set the URL for your deployment and restart the corresponding service.":
+    "قم بتكوين Prometheus لجمع S3 LuisML المقاييس، ثم قم بتعيين URL للنشر الخاص بك وأعد تشغيل الخدمة المقابلة.",
   "Standalone Console": "لوحة تحكم مستقلة",
-  "Console embedded in SILO": "لوحة التحكم المضمنة في SILO",
+  "Console embedded in S3 LuisML": "لوحة التحكم المضمنة في S3 LuisML",
   "Optional standalone settings": "الإعدادات الاختيارية المستقلة",
   "Bearer token: ": "رمز Bearer: ",
   "Or basic authentication: ": "أو المصادقة الأساسية:",
@@ -237,7 +237,7 @@ const messages: Dictionary = {
   "Replace ALIAS with your configured mcli alias.":
     "استبدل ALIAS بالاسم المستعار mcli الذي تم تكوينه.",
   "Loading…": "جاري التحميل…",
-  "SILO primitives": "مكوّنات SILO الأساسية",
+  "S3 LuisML primitives": "مكوّنات S3 LuisML الأساسية",
   "Shared building blocks for storage, identity and monitoring.":
     "وحدات بناء مشتركة للتخزين والهوية والمراقبة.",
   "Healthy capacity": "سعة سليمة",
@@ -379,8 +379,8 @@ const messages: Dictionary = {
   " and ": " و ",
   "'namespace' reflects current bucket/object list and 'access' reflects a journal of object operations, defaults to 'namespace'":
     "تعكس القيمة 'namespace' قائمة الحاويات والكائنات الحالية، وتعكس القيمة 'access' سجل عمليات الكائنات، والقيمة الافتراضية هي 'namespace'",
-  "{compliance} lock protects Objects from write operations by all users, including the SILO root user.":
-    "يحمي قفل {compliance} العناصر من عمليات الكتابة التي يجريها جميع المستخدمين، بما في ذلك المستخدم الجذر في SILO.",
+  "{compliance} lock protects Objects from write operations by all users, including the S3 LuisML root user.":
+    "يحمي قفل {compliance} العناصر من عمليات الكتابة التي يجريها جميع المستخدمين، بما في ذلك المستخدم الجذر في S3 LuisML.",
   "{count} days": {
     zero: "{count} أيام",
     one: "{count} يوم",
@@ -446,20 +446,20 @@ const messages: Dictionary = {
   "* Warning: With Public access anyone will be able to upload, download and delete files from this Bucket *":
     "* تحذير: يتيح الوصول العام لأي شخص رفع الملفات وتنزيلها وحذفها من هذه الحاوية *",
   "# Associated Access Keys": "# مفاتيح الوصول المرتبطة",
-  "© 2026 Ruohang Feng / PGSTY and the SILO contributors.":
-    "© 2026 Ruohang Feng / PGSTY والمساهمون في SILO.",
+  "© 2026 Ruohang Feng / PGSTY and the S3 LuisML contributors.":
+    "© 2026 Ruohang Feng / PGSTY والمساهمون في S3 LuisML.",
   "<Day>": "<اليوم>",
   "<Month>": "<الشهر>",
   "<Year>": "<السنة>",
   "A bucket can only be deleted if it's empty.":
     "لا يمكن حذف الحاوية إلا إذا كانت فارغة.",
-  "A group can have one attached IAM policy, where all users with membership in that group inherit that policy. Groups support more simplified management of user permissions on the SILO Tenant.":
-    "يمكن ربط المجموعة بسياسة IAM واحدة، ويرث جميع أعضائها تلك السياسة. تتيح المجموعات إدارة صلاحيات المستخدمين في مستأجر SILO بصورة أبسط.",
+  "A group can have one attached IAM policy, where all users with membership in that group inherit that policy. Groups support more simplified management of user permissions on the S3 LuisML Tenant.":
+    "يمكن ربط المجموعة بسياسة IAM واحدة، ويرث جميع أعضائها تلك السياسة. تتيح المجموعات إدارة صلاحيات المستخدمين في مستأجر S3 LuisML بصورة أبسط.",
   "A network error occurred.": "حدث خطأ في الشبكة.",
   "A new {entity} has been created with the following details:":
     "تم إنشاء {entity} جديد بالتفاصيل التالية:",
-  "A SILO user consists of a unique access key (username) and corresponding secret key (password). Clients must authenticate their identity by specifying both a valid access key (username) and the corresponding secret key (password) of an existing SILO user.":
-    "يتكون مستخدم SILO من مفتاح وصول فريد، وهو اسم المستخدم، ومفتاح سري مقابل، وهو كلمة المرور. يجب على العملاء إثبات هويتهم بتقديم مفتاح وصول صالح والمفتاح السري المقابل لمستخدم SILO موجود.",
+  "A S3 LuisML user consists of a unique access key (username) and corresponding secret key (password). Clients must authenticate their identity by specifying both a valid access key (username) and the corresponding secret key (password) of an existing S3 LuisML user.":
+    "يتكون مستخدم S3 LuisML من مفتاح وصول فريد، وهو اسم المستخدم، ومفتاح سري مقابل، وهو كلمة المرور. يجب على العملاء إثبات هويتهم بتقديم مفتاح وصول صالح والمفتاح السري المقابل لمستخدم S3 LuisML موجود.",
   "A user can be a member of multiple groups.":
     "يمكن للمستخدم أن يكون عضوا في مجموعات متعددة.",
   "About Site Replication": "حول النسخ المتماثل للمواقع",
@@ -474,8 +474,8 @@ const messages: Dictionary = {
   "Access Keys deleted successfully.": "تم حذف مفاتيح الوصول بنجاح.",
   "Access Keys inherit the policies explicitly attached to the parent user, and the policies attached to each group in which the parent user has membership.":
     "ترث مفاتيح الوصول السياسات المرتبطة صراحةً بالمستخدم الأصلي، والسياسات المرتبطة بكل مجموعة ينتمي إليها.",
-  "Access Keys support programmatic access by applications. You cannot use a Access Key to log into the SILO Console.":
-    "تدعم مفاتيح الوصول الوصول البرمجي عن طريق التطبيقات. لا يمكنك استخدام مفتاح الوصول لتسجيل الدخول إلى وحدة التحكم SILO.",
+  "Access Keys support programmatic access by applications. You cannot use a Access Key to log into the S3 LuisML Console.":
+    "تدعم مفاتيح الوصول الوصول البرمجي عن طريق التطبيقات. لا يمكنك استخدام مفتاح الوصول لتسجيل الدخول إلى وحدة التحكم S3 LuisML.",
   "Access Policy": "سياسة الوصول",
   "Access Policy:": "سياسة الوصول:",
   "Access Rule added successfully": "تمت إضافة قاعدة الوصول بنجاح",
@@ -671,8 +671,8 @@ const messages: Dictionary = {
   "Change User Password": "تغيير كلمة المرور للمستخدم",
   "Changes to Bucket features such as": "تغييرات ميزات الحاوية، مثل",
   "Choose or create a new path": "اختر أو أنشئ مسارًا جديدًا",
-  "Claim from which SILO will read the policy or role to use":
-    "المطالبة التي يقرأ منها SILO السياسة أو الدور المطلوب استخدامه",
+  "Claim from which S3 LuisML will read the policy or role to use":
+    "المطالبة التي يقرأ منها S3 LuisML السياسة أو الدور المطلوب استخدامه",
   "Claim Name": "اسم المطالبة",
   "Claim Prefix": "بادئة المطالبة",
   "Claim User Info": "المطالبة بمعلومات المستخدم",
@@ -716,20 +716,20 @@ const messages: Dictionary = {
   "Config URL for identity provider configuration":
     "عنوان URL لإعدادات موفّر الهوية",
   "Config URL is required": "عنوان URL للإعدادات مطلوب",
-  "Configuration cannot be disabled / enabled in this module as LDAP environment variables are set for this SILO instance.":
-    "لا يمكن تعطيل / تمكين التكوين في هذه الوحدة حيث تم تعيين LDAP متغيرات البيئة لهذا المثيل SILO.",
-  "Configuration cannot be disabled / enabled in this module as OpenID environment variables are set for this SILO instance.":
-    "لا يمكن تعطيل / تمكين التكوين في هذه الوحدة حيث تم تعيين OpenID متغيرات البيئة لهذا المثيل SILO.",
-  "Configuration cannot be edited in this module as LDAP environment variables are set for this SILO instance.":
-    "لا يمكن تحرير التكوين في هذه الوحدة حيث تم تعيين متغيرات البيئة LDAP لهذا المثيل SILO.",
-  "Configuration cannot be edited in this module as OpenID environment variables are set for this SILO instance.":
-    "لا يمكن تحرير التكوين في هذه الوحدة حيث تم تعيين OpenID متغيرات البيئة لهذا المثيل SILO.",
+  "Configuration cannot be disabled / enabled in this module as LDAP environment variables are set for this S3 LuisML instance.":
+    "لا يمكن تعطيل / تمكين التكوين في هذه الوحدة حيث تم تعيين LDAP متغيرات البيئة لهذا المثيل S3 LuisML.",
+  "Configuration cannot be disabled / enabled in this module as OpenID environment variables are set for this S3 LuisML instance.":
+    "لا يمكن تعطيل / تمكين التكوين في هذه الوحدة حيث تم تعيين OpenID متغيرات البيئة لهذا المثيل S3 LuisML.",
+  "Configuration cannot be edited in this module as LDAP environment variables are set for this S3 LuisML instance.":
+    "لا يمكن تحرير التكوين في هذه الوحدة حيث تم تعيين متغيرات البيئة LDAP لهذا المثيل S3 LuisML.",
+  "Configuration cannot be edited in this module as OpenID environment variables are set for this S3 LuisML instance.":
+    "لا يمكن تحرير التكوين في هذه الوحدة حيث تم تعيين OpenID متغيرات البيئة لهذا المثيل S3 LuisML.",
   "Configuration saved successfully": "تم حفظ التهيئة بنجاح",
   "Configure a {remoteTier} to receive transitioned Objects":
     "اضبط {remoteTier} لاستقبال الكائنات المنقولة",
   "Configure Bucket": "إعداد الحاوية",
-  "Configuring an external IDP enables Single-Sign On workflows, where applications authenticate against the external IDP before accessing SILO.":
-    "يتيح إعداد موفّر هوية خارجي تسجيل الدخول الموحد؛ إذ تصادق التطبيقات لدى موفّر الهوية قبل الوصول إلى SILO.",
+  "Configuring an external IDP enables Single-Sign On workflows, where applications authenticate against the external IDP before accessing S3 LuisML.":
+    "يتيح إعداد موفّر هوية خارجي تسجيل الدخول الموحد؛ إذ تصادق التطبيقات لدى موفّر الهوية قبل الوصول إلى S3 LuisML.",
   "Confirm Dialogs": "مربعات حوار التأكيد",
   "connected server": "خادم متصل",
   "Connection String": "سلسلة الاتصال",
@@ -746,8 +746,8 @@ const messages: Dictionary = {
   "CPU Info": "معلومات المعالج",
   "Create {idpType} configuration": "إنشاء إعدادات {idpType}",
   "create a bucket": "إنشاء حاوية",
-  "Create a new cryptographic key in the Key Management Service server connected to SILO.":
-    "أنشئ مفتاح تشفير جديدًا في خادم خدمة إدارة المفاتيح المتصل بـ SILO.",
+  "Create a new cryptographic key in the Key Management Service server connected to S3 LuisML.":
+    "أنشئ مفتاح تشفير جديدًا في خادم خدمة إدارة المفاتيح المتصل بـ S3 LuisML.",
   "create a new path": "إنشاء مسار جديد",
   "create a Policy": "إنشاء سياسة",
   "Create access key": "إنشاء مفتاح وصول",
@@ -903,8 +903,8 @@ const messages: Dictionary = {
   "e.g. Method 2056": "مثال: Method 2056",
   "e.g. my-bucket/my-prefix/*": "مثال: my-bucket/my-prefix/*",
   "e.g. us-west-rack-2": "مثال: us-west-rack-2",
-  "Each user can access only those resources and operations which are explicitly granted by the built-in role. SILO denies access to any other resource or action by default.":
-    "يمكن لكل مستخدم الوصول فقط إلى تلك الموارد والعمليات التي يمنحها الدور المدمج بشكل صريح. SILO يرفض الوصول إلى أي مورد أو إجراء آخر بشكل افتراضي.",
+  "Each user can access only those resources and operations which are explicitly granted by the built-in role. S3 LuisML denies access to any other resource or action by default.":
+    "يمكن لكل مستخدم الوصول فقط إلى تلك الموارد والعمليات التي يمنحها الدور المدمج بشكل صريح. S3 LuisML يرفض الوصول إلى أي مورد أو إجراء آخر بشكل افتراضي.",
   Edit: "تعديل",
   "edit a Policy": "تعديل سياسة",
   "Edit Anonymous Access Rule for {target}":
@@ -1095,10 +1095,10 @@ const messages: Dictionary = {
   Filters: "الفلاتر",
   "Folder cannot have the same name as an existing file":
     "لا يمكن أن يحمل المجلد نفس اسم الملف الموجود",
-  "For each write operation to the bucket, SILO checks all configured replication rules for the bucket and applies the matching rule with highest configured priority.":
-    "عند كل عملية كتابة في الحاوية، يتحقق SILO من جميع قواعد النسخ المتماثل المُعدّة للحاوية ويطبق القاعدة المطابقة ذات الأولوية الأعلى.",
-  'For each write operation to this "source" bucket, SILO checks all configured replication rules and applies the matching rule with highest configured priority.':
-    "عند كل عملية كتابة في حاوية «المصدر» هذه، يتحقق SILO من جميع قواعد النسخ المتماثل المُعدّة ويطبق القاعدة المطابقة ذات الأولوية الأعلى.",
+  "For each write operation to the bucket, S3 LuisML checks all configured replication rules for the bucket and applies the matching rule with highest configured priority.":
+    "عند كل عملية كتابة في الحاوية، يتحقق S3 LuisML من جميع قواعد النسخ المتماثل المُعدّة للحاوية ويطبق القاعدة المطابقة ذات الأولوية الأعلى.",
+  'For each write operation to this "source" bucket, S3 LuisML checks all configured replication rules and applies the matching rule with highest configured priority.':
+    "عند كل عملية كتابة في حاوية «المصدر» هذه، يتحقق S3 LuisML من جميع قواعد النسخ المتماثل المُعدّة ويطبق القاعدة المطابقة ذات الأولوية الأعلى.",
   "For per-object retention settings, defer to the documentation for the PUT operation used by your preferred SDK.":
     "لبعض إعدادات الاحتفاظ على مستوى الكائن، راجع وثائق عملية PUT الخاصة بحزمة SDK المفضلة لديك.",
   "For SSE-S3 or SSE-KMS encryption via KMS, all sites must have access to a central KMS deployment server.":
@@ -1118,8 +1118,8 @@ const messages: Dictionary = {
   "Group Mappings": "تعيينات المجموعة",
   "Group Name": "اسم المجموعة",
   "Group Status:": "حالة المجموعة:",
-  "Groups provide a simplified method for managing shared permissions among users with common access patterns and workloads. Client’s cannot authenticate to a SILO deployment using a group as an identity.":
-    "توفر المجموعات طريقة مبسطة لإدارة الأذونات المشتركة بين المستخدمين الذين لديهم أنماط وصول وأعباء عمل مشتركة. لا يمكن للعميل المصادقة على نشر SILO باستخدام مجموعة كهوية.",
+  "Groups provide a simplified method for managing shared permissions among users with common access patterns and workloads. Client’s cannot authenticate to a S3 LuisML deployment using a group as an identity.":
+    "توفر المجموعات طريقة مبسطة لإدارة الأذونات المشتركة بين المستخدمين الذين لديهم أنماط وصول وأعباء عمل مشتركة. لا يمكن للعميل المصادقة على نشر S3 LuisML باستخدام مجموعة كهوية.",
   "Groups with this Policy associated": "المجموعات المرتبطة بهذه السياسة",
   "Guide to access policy structure": "دليل بنية سياسة الوصول",
   hard: "صارم",
@@ -1613,8 +1613,8 @@ const messages: Dictionary = {
   "Server Insecure": "الخادم غير آمن",
   "Server Location": "موقع الخادم",
   "server-side bucket replication": "النسخ المتماثل للحاوية من جانب الخادم",
-  "Server, client and Console are all AGPLv3. SILO's documentation is CC BY 4.0 — {licensing}.":
-    "الخادم والعميل ووحدة التحكم كلها AGPLv3. وثائق SILO هي CC BY 4.0 — {licensing}.",
+  "Server, client and Console are all AGPLv3. S3 LuisML's documentation is CC BY 4.0 — {licensing}.":
+    "الخادم والعميل ووحدة التحكم كلها AGPLv3. وثائق S3 LuisML هي CC BY 4.0 — {licensing}.",
   Service: "الخدمة",
   "Service Accounts": "حسابات الخدمة",
   Services: "الخدمات",
@@ -1644,8 +1644,8 @@ const messages: Dictionary = {
   "Set to 'on' to enable TLS": "اضبط على 'on' لتفعيل TLS",
   "Set to 'on' to use streaming NATS server":
     "اضبط على 'on' لاستخدام خادم بث NATS",
-  "Setting a {quota} assigns a hard limit to a bucket beyond which SILO does not allow writes.":
-    "يؤدي تعيين {quota} إلى فرض حد صارم على الحاوية لا يسمح SILO بالكتابة بعد تجاوزه.",
+  "Setting a {quota} assigns a hard limit to a bucket beyond which S3 LuisML does not allow writes.":
+    "يؤدي تعيين {quota} إلى فرض حد صارم على الحاوية لا يسمح S3 LuisML بالكتابة بعد تجاوزه.",
   "Setting an {anonymous} policy allows clients to access the Bucket or prefix contents and perform actions consistent with the specified policy without authentication.":
     "يتيح تعيين سياسة {anonymous} للعملاء الوصول إلى محتويات الحاوية أو البادئة وتنفيذ إجراءات تتوافق مع السياسة المحددة دون مصادقة.",
   Share: "مشاركة",
@@ -1661,55 +1661,56 @@ const messages: Dictionary = {
   "Show deleted objects": "عرض العناصر المحذوفة",
   "Show Rewind Data": "عرض بيانات الاسترجاع الزمني",
   "Show/Hide": "إظهار/إخفاء",
-  "SILO {bucketNotifications} allow administrators to send notifications to supported external services on certain object or bucket events.":
-    "تتيح {bucketNotifications} في SILO للمسؤولين إرسال إشعارات إلى خدمات خارجية مدعومة عند وقوع أحداث معينة تخص الكائنات أو الحاويات.",
-  "SILO {objectLocking} enforces Write-Once Read-Many (WORM) immutability to protect versioned objects from deletion.":
-    "تفرض {objectLocking} في SILO عدم القابلية للتغيير وفق نموذج الكتابة مرة واحدة والقراءة مرات متعددة (WORM)، لحماية الكائنات ذات الإصدارات من الحذف.",
-  "SILO {serverSideReplication} is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket.":
-    "تُعدّ {serverSideReplication} في SILO إعدادًا تلقائيًا على مستوى الحاوية يزامن الكائنات بين حاوية المصدر وحاوية الوجهة.",
-  "SILO bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events. SILO supports bucket and object-level S3 events similar to the Amazon S3 Event Notifications.":
-    "تتيح إشعارات الحاويات في SILO للمسؤولين إرسال إشعارات إلى خدمات خارجية مدعومة عند وقوع أحداث معينة تخص الكائنات أو الحاويات. يدعم SILO أحداث S3 على مستوى الحاويات والكائنات، على غرار إشعارات Amazon S3.",
-  "SILO derives its behavior and syntax from {s3Lifecycle} for compatibility in migrating workloads and lifecycle rules from S3 to SILO.":
-    "يستمد SILO السلوك والصياغة من {s3Lifecycle} لتسهيل ترحيل أعباء العمل وقواعد دورة الحياة من S3 إلى SILO.",
-  "SILO does not enable existing object replication by default. Objects created before replication was configured or while replication is disabled are not synchronized to the target deployment unless replication of existing objects is enabled.":
-    "لا يفعّل SILO نسخ الكائنات الموجودة افتراضيًا. فالكائنات المنشأة قبل إعداد النسخ المتماثل أو أثناء تعطيله لا تُزامن إلى النشرة المستهدفة إلا إذا فُعّل نسخ الكائنات الموجودة.",
-  "SILO Health Info": "معلومات حالة SILO",
-  "SILO Object Lifecycle Management allows creating rules for time or date based automatic transition or expiry of objects. For object transition, SILO automatically moves the object to a configured remote storage tier.":
-    "تتيح إدارة دورة حياة الكائنات في SILO إنشاء قواعد لنقل الكائنات أو إنهاء صلاحيتها تلقائيًا استنادًا إلى المدة أو التاريخ. وعند النقل، ينقل SILO الكائن تلقائيًا إلى طبقة تخزين بعيدة مُعدّة مسبقًا.",
-  "SILO or other S3-compatible storage": "SILO أو تخزين آخر متوافق مع S3",
-  "SILO PBAC is built for compatibility with AWS IAM policy syntax, structure, and behavior.":
-    "صُمم التحكم في الوصول المستند إلى السياسات في SILO للتوافق مع صياغة سياسات AWS IAM وبنيتها وسلوكها.",
-  "SILO queries the configured Active Directory / LDAP server to verify the credentials specified by the application and optionally return a list of groups in which the user has membership. SILO supports two modes (Lookup-Bind Mode and Username-Bind Mode) for performing these queries":
-    "يستعلم SILO من خادم Active Directory / LDAP المُعدّ للتحقق من بيانات الاعتماد التي يقدمها التطبيق، ويمكنه إرجاع قائمة المجموعات التي ينتمي إليها المستخدم. ويدعم وضع الربط بعد البحث ووضع الربط باسم المستخدم لتنفيذ هذه الاستعلامات.",
-  "SILO recommends using Lookup-Bind mode as the preferred method for verifying AD/LDAP credentials. Username-Bind mode is a legacy method retained for backwards compatibility only.":
-    "يوصي SILO بوضع الربط بعد البحث للتحقق من بيانات اعتماد AD/LDAP. أما وضع الربط باسم المستخدم فهو أسلوب قديم أبقي عليه للتوافق مع الإصدارات السابقة فقط.",
-  "SILO requires versioning to support replication.":
-    "يتطلب SILO تفعيل إدارة الإصدارات لدعم النسخ المتماثل.",
-  "SILO supports automatically replicating existing objects in a bucket; this setting is enabled by default. Please note that objects created before replication was configured or while replication is disabled are not synchronized to the target deployment in case this setting is not enabled.":
-    "يدعم SILO النسخ التلقائي للكائنات الموجودة في الحاوية، ويكون هذا الإعداد مفعّلًا افتراضيًا. إذا لم يُفعّل، فلن تُزامن إلى النشرة المستهدفة الكائنات المنشأة قبل إعداد النسخ المتماثل أو أثناء تعطيله.",
-  "SILO supports creating object transition lifecycle management rules, where SILO can automatically move an object to a remote storage “tier”.":
-    "يدعم SILO إنشاء قواعد لنقل الكائنات ضمن إدارة دورة الحياة، بحيث يمكنه نقل الكائن تلقائيًا إلى طبقة تخزين بعيدة.",
-  "SILO supports enabling automatic {sseKms} and {sseS3} encryption of all objects written to a bucket using a specific External Key (EK) stored on the external KMS.":
-    "يدعم SILO التشفير التلقائي باستخدام {sseKms} و{sseS3} لجميع الكائنات المكتوبة في الحاوية، باستخدام مفتاح خارجي (EK) محدد ومخزّن في خدمة KMS الخارجية.",
-  "SILO supports enabling replication of existing objects in a bucket.":
-    "يدعم SILO تفعيل نسخ الكائنات الموجودة في الحاوية.",
-  "SILO supports keeping multiple {versions} of an object in a single bucket.":
-    "يدعم SILO الاحتفاظ بعدة {versions} للكائن داخل حاوية واحدة.",
-  "SILO supports replicating delete operations, where SILO synchronizes deleting specific object versions and new delete markers. Delete operation replication uses the same replication process as all other replication operations.":
-    "يدعم SILO نسخ عمليات الحذف، بمزامنة حذف إصدارات كائنات محددة وإنشاء علامات حذف جديدة. ويستخدم ذلك آلية النسخ المتماثل نفسها المستخدمة للعمليات الأخرى.",
-  "SILO supports server-side and client-side replication of objects between source and destination buckets.":
-    "يدعم SILO النسخ المتماثل للكائنات من جانب الخادم ومن جانب العميل بين حاويات المصدر والوجهة.",
-  "SILO supports setting both {bucketDefault} and per-object retention rules.":
-    "يدعم SILO تعيين قواعد احتفاظ من نوع {bucketDefault} وقواعد خاصة بكل كائن.",
-  "SILO supports the following Tier types:":
-    "يدعم SILO أنواع طبقات التخزين التالية:",
-  "SILO supports using an Active Directory or LDAP (AD/LDAP) service for external management of user identities. Configuring an external IDentity Provider (IDP) enables Single-Sign On (SSO) workflows, where applications authenticate against the external IDP before accessing SILO.":
-    "SILO يدعم استخدام خدمة Active Directory أو LDAP (AD/LDAP) للإدارة الخارجية لهويات المستخدمين. يؤدي تكوين موفر هوية خارجي (IDP) إلى تمكين سير عمل تسجيل الدخول الموحد (SSO)، حيث تتم مصادقة التطبيقات مقابل IDP الخارجي قبل الوصول إلى SILO.",
-  "SILO uses buckets to organize objects. A bucket is similar to a folder or directory in a filesystem, where each bucket can hold an arbitrary number of objects.":
-    "يستخدم SILO الحاويات لتنظيم الكائنات. تشبه الحاوية مجلدًا أو دليلًا في نظام الملفات، ويمكن لكل حاوية الاحتفاظ بعدد غير محدد من الكائنات.",
-  "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access. Each policy describes one or more actions and conditions that outline the permissions of a user or group of users.":
-    "يستخدم SILO التحكم في الوصول المستند إلى السياسات (PBAC) لتحديد الإجراءات والموارد المتاحة للمستخدم الذي تمت مصادقته. تصف كل سياسة إجراءً واحدًا أو أكثر وشروطًا تحدد صلاحيات مستخدم أو مجموعة مستخدمين.",
-  "SILO VERSION": "إصدار SILO",
+  "S3 LuisML {bucketNotifications} allow administrators to send notifications to supported external services on certain object or bucket events.":
+    "تتيح {bucketNotifications} في S3 LuisML للمسؤولين إرسال إشعارات إلى خدمات خارجية مدعومة عند وقوع أحداث معينة تخص الكائنات أو الحاويات.",
+  "S3 LuisML {objectLocking} enforces Write-Once Read-Many (WORM) immutability to protect versioned objects from deletion.":
+    "تفرض {objectLocking} في S3 LuisML عدم القابلية للتغيير وفق نموذج الكتابة مرة واحدة والقراءة مرات متعددة (WORM)، لحماية الكائنات ذات الإصدارات من الحذف.",
+  "S3 LuisML {serverSideReplication} is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket.":
+    "تُعدّ {serverSideReplication} في S3 LuisML إعدادًا تلقائيًا على مستوى الحاوية يزامن الكائنات بين حاوية المصدر وحاوية الوجهة.",
+  "S3 LuisML bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events. S3 LuisML supports bucket and object-level S3 events similar to the Amazon S3 Event Notifications.":
+    "تتيح إشعارات الحاويات في S3 LuisML للمسؤولين إرسال إشعارات إلى خدمات خارجية مدعومة عند وقوع أحداث معينة تخص الكائنات أو الحاويات. يدعم S3 LuisML أحداث S3 على مستوى الحاويات والكائنات، على غرار إشعارات Amazon S3.",
+  "S3 LuisML derives its behavior and syntax from {s3Lifecycle} for compatibility in migrating workloads and lifecycle rules from S3 to S3 LuisML.":
+    "يستمد S3 LuisML السلوك والصياغة من {s3Lifecycle} لتسهيل ترحيل أعباء العمل وقواعد دورة الحياة من S3 إلى S3 LuisML.",
+  "S3 LuisML does not enable existing object replication by default. Objects created before replication was configured or while replication is disabled are not synchronized to the target deployment unless replication of existing objects is enabled.":
+    "لا يفعّل S3 LuisML نسخ الكائنات الموجودة افتراضيًا. فالكائنات المنشأة قبل إعداد النسخ المتماثل أو أثناء تعطيله لا تُزامن إلى النشرة المستهدفة إلا إذا فُعّل نسخ الكائنات الموجودة.",
+  "S3 LuisML Health Info": "معلومات حالة S3 LuisML",
+  "S3 LuisML Object Lifecycle Management allows creating rules for time or date based automatic transition or expiry of objects. For object transition, S3 LuisML automatically moves the object to a configured remote storage tier.":
+    "تتيح إدارة دورة حياة الكائنات في S3 LuisML إنشاء قواعد لنقل الكائنات أو إنهاء صلاحيتها تلقائيًا استنادًا إلى المدة أو التاريخ. وعند النقل، ينقل S3 LuisML الكائن تلقائيًا إلى طبقة تخزين بعيدة مُعدّة مسبقًا.",
+  "S3 LuisML or other S3-compatible storage":
+    "S3 LuisML أو تخزين آخر متوافق مع S3",
+  "S3 LuisML PBAC is built for compatibility with AWS IAM policy syntax, structure, and behavior.":
+    "صُمم التحكم في الوصول المستند إلى السياسات في S3 LuisML للتوافق مع صياغة سياسات AWS IAM وبنيتها وسلوكها.",
+  "S3 LuisML queries the configured Active Directory / LDAP server to verify the credentials specified by the application and optionally return a list of groups in which the user has membership. S3 LuisML supports two modes (Lookup-Bind Mode and Username-Bind Mode) for performing these queries":
+    "يستعلم S3 LuisML من خادم Active Directory / LDAP المُعدّ للتحقق من بيانات الاعتماد التي يقدمها التطبيق، ويمكنه إرجاع قائمة المجموعات التي ينتمي إليها المستخدم. ويدعم وضع الربط بعد البحث ووضع الربط باسم المستخدم لتنفيذ هذه الاستعلامات.",
+  "S3 LuisML recommends using Lookup-Bind mode as the preferred method for verifying AD/LDAP credentials. Username-Bind mode is a legacy method retained for backwards compatibility only.":
+    "يوصي S3 LuisML بوضع الربط بعد البحث للتحقق من بيانات اعتماد AD/LDAP. أما وضع الربط باسم المستخدم فهو أسلوب قديم أبقي عليه للتوافق مع الإصدارات السابقة فقط.",
+  "S3 LuisML requires versioning to support replication.":
+    "يتطلب S3 LuisML تفعيل إدارة الإصدارات لدعم النسخ المتماثل.",
+  "S3 LuisML supports automatically replicating existing objects in a bucket; this setting is enabled by default. Please note that objects created before replication was configured or while replication is disabled are not synchronized to the target deployment in case this setting is not enabled.":
+    "يدعم S3 LuisML النسخ التلقائي للكائنات الموجودة في الحاوية، ويكون هذا الإعداد مفعّلًا افتراضيًا. إذا لم يُفعّل، فلن تُزامن إلى النشرة المستهدفة الكائنات المنشأة قبل إعداد النسخ المتماثل أو أثناء تعطيله.",
+  "S3 LuisML supports creating object transition lifecycle management rules, where S3 LuisML can automatically move an object to a remote storage “tier”.":
+    "يدعم S3 LuisML إنشاء قواعد لنقل الكائنات ضمن إدارة دورة الحياة، بحيث يمكنه نقل الكائن تلقائيًا إلى طبقة تخزين بعيدة.",
+  "S3 LuisML supports enabling automatic {sseKms} and {sseS3} encryption of all objects written to a bucket using a specific External Key (EK) stored on the external KMS.":
+    "يدعم S3 LuisML التشفير التلقائي باستخدام {sseKms} و{sseS3} لجميع الكائنات المكتوبة في الحاوية، باستخدام مفتاح خارجي (EK) محدد ومخزّن في خدمة KMS الخارجية.",
+  "S3 LuisML supports enabling replication of existing objects in a bucket.":
+    "يدعم S3 LuisML تفعيل نسخ الكائنات الموجودة في الحاوية.",
+  "S3 LuisML supports keeping multiple {versions} of an object in a single bucket.":
+    "يدعم S3 LuisML الاحتفاظ بعدة {versions} للكائن داخل حاوية واحدة.",
+  "S3 LuisML supports replicating delete operations, where S3 LuisML synchronizes deleting specific object versions and new delete markers. Delete operation replication uses the same replication process as all other replication operations.":
+    "يدعم S3 LuisML نسخ عمليات الحذف، بمزامنة حذف إصدارات كائنات محددة وإنشاء علامات حذف جديدة. ويستخدم ذلك آلية النسخ المتماثل نفسها المستخدمة للعمليات الأخرى.",
+  "S3 LuisML supports server-side and client-side replication of objects between source and destination buckets.":
+    "يدعم S3 LuisML النسخ المتماثل للكائنات من جانب الخادم ومن جانب العميل بين حاويات المصدر والوجهة.",
+  "S3 LuisML supports setting both {bucketDefault} and per-object retention rules.":
+    "يدعم S3 LuisML تعيين قواعد احتفاظ من نوع {bucketDefault} وقواعد خاصة بكل كائن.",
+  "S3 LuisML supports the following Tier types:":
+    "يدعم S3 LuisML أنواع طبقات التخزين التالية:",
+  "S3 LuisML supports using an Active Directory or LDAP (AD/LDAP) service for external management of user identities. Configuring an external IDentity Provider (IDP) enables Single-Sign On (SSO) workflows, where applications authenticate against the external IDP before accessing S3 LuisML.":
+    "S3 LuisML يدعم استخدام خدمة Active Directory أو LDAP (AD/LDAP) للإدارة الخارجية لهويات المستخدمين. يؤدي تكوين موفر هوية خارجي (IDP) إلى تمكين سير عمل تسجيل الدخول الموحد (SSO)، حيث تتم مصادقة التطبيقات مقابل IDP الخارجي قبل الوصول إلى S3 LuisML.",
+  "S3 LuisML uses buckets to organize objects. A bucket is similar to a folder or directory in a filesystem, where each bucket can hold an arbitrary number of objects.":
+    "يستخدم S3 LuisML الحاويات لتنظيم الكائنات. تشبه الحاوية مجلدًا أو دليلًا في نظام الملفات، ويمكن لكل حاوية الاحتفاظ بعدد غير محدد من الكائنات.",
+  "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access. Each policy describes one or more actions and conditions that outline the permissions of a user or group of users.":
+    "يستخدم S3 LuisML التحكم في الوصول المستند إلى السياسات (PBAC) لتحديد الإجراءات والموارد المتاحة للمستخدم الذي تمت مصادقته. تصف كل سياسة إجراءً واحدًا أو أكثر وشروطًا تحدد صلاحيات مستخدم أو مجموعة مستخدمين.",
+  "S3 LuisML VERSION": "إصدار S3 LuisML",
   "Site Name": "اسم الموقع",
   "Site:": "الموقع:",
   Size: "الحجم",
@@ -1835,8 +1836,8 @@ const messages: Dictionary = {
   "This configuration cannot be deleted using this module as this was set using OpenID environment variables.":
     "لا يمكن حذف هذا التكوين باستخدام هذه الوحدة حيث تم تعيينه باستخدام متغيرات البيئة OpenID.",
   "this Console": "هذه الكونسول",
-  "This feature allows multiple independent SILO sites (or clusters) that are using the same external IDentity Provider (IDP) to be configured as replicas. In this situation the set of replica sites are referred to as peer sites or just sites.":
-    "تتيح هذه الميزة إعداد عدة مواقع (أو عناقيد) مستقلة من SILO تستخدم موفّر الهوية الخارجي (IDP) نفسه كنسخ متماثلة. وفي هذه الحالة يُشار إلى مجموعة مواقع النسخ المتماثلة بالمواقع النظيرة أو المواقع.",
+  "This feature allows multiple independent S3 LuisML sites (or clusters) that are using the same external IDentity Provider (IDP) to be configured as replicas. In this situation the set of replica sites are referred to as peer sites or just sites.":
+    "تتيح هذه الميزة إعداد عدة مواقع (أو عناقيد) مستقلة من S3 LuisML تستخدم موفّر الهوية الخارجي (IDP) نفسه كنسخ متماثلة. وفي هذه الحالة يُشار إلى مجموعة مواقع النسخ المتماثلة بالمواقع النظيرة أو المواقع.",
   "This feature is not available for a single-disk setup.":
     "هذه الميزة غير متوفرة لإعداد قرص واحد.",
   "This feature is not available.": "هذه الميزة غير متوفرة.",
@@ -1865,8 +1866,8 @@ const messages: Dictionary = {
   Tier: "طبقة تخزين",
   "Tier Name": "اسم طبقة التخزين",
   "Tier Types": "أنواع طبقات التخزين",
-  "Tiers are used by the SILO Object Lifecycle Management which allows creating rules for time or date based automatic transition or expiry of objects. For object transition, SILO automatically moves the object to a configured remote storage tier.":
-    "تُستخدم طبقات التخزين في إدارة دورة حياة الكائنات في SILO، التي تتيح إنشاء قواعد للنقل أو انتهاء الصلاحية تلقائيًا استنادًا إلى المدة أو التاريخ. وعند النقل، ينقل SILO الكائن إلى طبقة تخزين بعيدة مُعدّة مسبقًا.",
+  "Tiers are used by the S3 LuisML Object Lifecycle Management which allows creating rules for time or date based automatic transition or expiry of objects. For object transition, S3 LuisML automatically moves the object to a configured remote storage tier.":
+    "تُستخدم طبقات التخزين في إدارة دورة حياة الكائنات في S3 LuisML، التي تتيح إنشاء قواعد للنقل أو انتهاء الصلاحية تلقائيًا استنادًا إلى المدة أو التاريخ. وعند النقل، ينقل S3 LuisML الكائن إلى طبقة تخزين بعيدة مُعدّة مسبقًا.",
   "Time duration between scanner cycles, defaults to '1m'":
     "المدة الزمنية بين دورات الماسح، القيمة الافتراضية هي '1m'",
   "Time to Response NS": "وقت الرد NS",
@@ -1981,7 +1982,7 @@ const messages: Dictionary = {
   "view Policy details": "عرض تفاصيل السياسة",
   "View Replication Status for a:": "عرض حالة النسخ المتماثل لـ:",
   "view User details": "عرض تفاصيل المستخدم",
-  "Visit the SILO website": "قم بزيارة موقع SILO",
+  "Visit the S3 LuisML website": "قم بزيارة موقع S3 LuisML",
   "Volume or Bucket Name": "اسم وحدة التخزين أو الحاوية",
   "Volume/Bucket name cannot start with /":
     "لا يمكن أن يبدأ اسم وحدة التخزين أو الحاوية بالرمز /",
@@ -2058,12 +2059,12 @@ const messages: Dictionary = {
     "يجب عليك تعطيل الاحتفاظ قبل تعطيل قفل الكائنات",
   "You need to select at least one group to assign":
     "تحتاج إلى تحديد مجموعة واحدة على الأقل لتعيينها",
-  "You require additional permissions in order to {name}. Please ask your SILO administrator to grant you {scopes} permission in order to {name}.":
-    "أنت بحاجة إلى أذونات إضافية من أجل {name}. من فضلك اطلب من المسؤول SILO أن يمنحك الإذن {scopes} حتى تتمكن من {name}.",
-  "You require additional permissions in order to {name}. Please ask your SILO administrator to grant you {scopes} permissions in order to {name}.":
-    "أنت بحاجة إلى أذونات إضافية من أجل {name}. من فضلك اطلب من المسؤول SILO أن يمنحك أذونات {scopes} حتى تتمكن من {name}.",
-  "You require additional permissions in order to create a new Tier. Please ask your SILO administrator to grant you {permission} permission in order to create a Tier.":
-    "أنت بحاجة إلى أذونات إضافية لإنشاء طبقة جديدة. من فضلك اطلب من المسؤول SILO أن يمنحك الإذن {permission} لإنشاء طبقة.",
+  "You require additional permissions in order to {name}. Please ask your S3 LuisML administrator to grant you {scopes} permission in order to {name}.":
+    "أنت بحاجة إلى أذونات إضافية من أجل {name}. من فضلك اطلب من المسؤول S3 LuisML أن يمنحك الإذن {scopes} حتى تتمكن من {name}.",
+  "You require additional permissions in order to {name}. Please ask your S3 LuisML administrator to grant you {scopes} permissions in order to {name}.":
+    "أنت بحاجة إلى أذونات إضافية من أجل {name}. من فضلك اطلب من المسؤول S3 LuisML أن يمنحك أذونات {scopes} حتى تتمكن من {name}.",
+  "You require additional permissions in order to create a new Tier. Please ask your S3 LuisML administrator to grant you {permission} permission in order to create a Tier.":
+    "أنت بحاجة إلى أذونات إضافية لإنشاء طبقة جديدة. من فضلك اطلب من المسؤول S3 LuisML أن يمنحك الإذن {permission} لإنشاء طبقة.",
   "File is empty": "الملف فارغ",
   "Invalid UTF-8 or binary content": "محتوى UTF-8 غير صالح أو محتوى ثنائي",
   "Loading text preview…": "جارٍ تحميل معاينة النص...",
@@ -2175,8 +2176,8 @@ const messages: Dictionary = {
   "No replication sites yet": "لا توجد مواقع نسخ متماثل بعد",
   "Refresh to try loading the configured sites again.":
     "قم بالتحديث لمحاولة تحميل المواقع التي تم تكوينها مرة أخرى.",
-  "Connect independent SILO sites to replicate their data and identity configuration.":
-    "اربط مواقع SILO المستقلة لنسخ بياناتها وإعدادات هويتها.",
+  "Connect independent S3 LuisML sites to replicate their data and identity configuration.":
+    "اربط مواقع S3 LuisML المستقلة لنسخ بياناتها وإعدادات هويتها.",
   "Waiting for logs": "في انتظار السجلات",
   "Logs are not running": "السجلات لا تعمل",
   "New log entries will appear here as the server emits them.":

@@ -87,18 +87,18 @@ const AddPolicyHelpBox = () => {
           />
           <Box sx={{ paddingTop: "20px" }}>
             {t(
-              "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access. Each policy describes one or more actions and conditions that outline the permissions of a user or group of users.",
+              "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access. Each policy describes one or more actions and conditions that outline the permissions of a user or group of users.",
             )}
           </Box>
         </Box>
         <Box sx={{ paddingBottom: "20px" }}>
           {t(
-            "SILO PBAC is built for compatibility with AWS IAM policy syntax, structure, and behavior.",
+            "S3 LuisML PBAC is built for compatibility with AWS IAM policy syntax, structure, and behavior.",
           )}
         </Box>
         <Box sx={{ paddingBottom: "20px" }}>
           {t(
-            "Each user can access only those resources and operations which are explicitly granted by the built-in role. SILO denies access to any other resource or action by default.",
+            "Each user can access only those resources and operations which are explicitly granted by the built-in role. S3 LuisML denies access to any other resource or action by default.",
           )}
         </Box>
       </Box>

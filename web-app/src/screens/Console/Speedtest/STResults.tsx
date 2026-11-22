@@ -412,7 +412,8 @@ const STResults = ({ results, start }: ISTResults) => {
                         style={{ width: 28, height: 28, objectFit: "contain" }}
                       />
                     </span>{" "}
-                    {t("SILO VERSION")}&nbsp;<strong>{finalRes.version}</strong>
+                    {t("S3 LuisML VERSION")}&nbsp;
+                    <strong>{finalRes.version}</strong>
                   </Grid>
                   <Grid item xs={12} className={"tableOverflow"}>
                     <table

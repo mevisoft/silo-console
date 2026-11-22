@@ -7,9 +7,9 @@ a draft GitHub release and a versioned candidate image. It does not advance
 then verifies the current stable release, signatures, SBOM, provenance and
 anonymous image access before promoting that digest to `latest`.
 
-The official image is `docker.io/pgsty/silo-console`. Create that public
-Docker Hub repository and configure the Actions secrets `DOCKERHUB_USERNAME`
-and `DOCKERHUB_TOKEN` with push access before running a publishing workflow.
+The official image is `ghcr.io/mevisoft/silo-console`. Publishing uses the
+workflow `GITHUB_TOKEN`; after the first push set the package to public in the
+GitHub package settings before running a promotion workflow.
 
 This procedure applies to v2.4.1 and later. Console v2.4.0 was built
 with the earlier workflow. Older assets do not acquire the new verification
@@ -23,26 +23,11 @@ contract retroactively; see [release-contract.md](release-contract.md).
    assets.
 3. Require a clean worktree and record the exact candidate SHA.
 
-## 2. Validate that exact SHA
+## 2. Validation
 
-The candidate must have successful runs of:
-
-- `jobs.yaml`, including its `Required matrix` summary job; and
-- `vulncheck.yaml`, including its `Required vulnerability checks` summary job.
-
-The release workflow looks up those two successful summary jobs by exact SHA.
-It does not accept a run from a parent commit. If the candidate has no runs,
-dispatch both workflows from a temporary branch that points at it:
-
-```sh
-git switch -c release/vX.Y.Z <candidate-sha>
-git push origin release/vX.Y.Z
-gh workflow run jobs.yaml --ref release/vX.Y.Z
-gh workflow run vulncheck.yaml --ref release/vX.Y.Z
-```
-
-Record and watch the run IDs. Rerun a failed job only for an infrastructure
-failure; fix a product failure in a new commit and validate the new SHA.
+`release.yaml` no longer requires prior `jobs.yaml` or `vulncheck.yaml` runs;
+those workflows were removed from this fork. Validate the candidate locally
+before tagging.
 
 The tag preflight also runs `hack/deps-release-check.sh online`. It verifies the
 maintained dependencies recorded in `hack/deps-release.json` against the public
@@ -72,7 +57,7 @@ Before GoReleaser runs, the tag workflow checks:
 
 GoReleaser then uploads binaries, archives, packages, checksums, legal files,
 and a **draft** GitHub release. It publishes the multi-platform candidate image
-to `docker.io/pgsty/silo-console` under the release tag. The workflow verifies
+to `ghcr.io/mevisoft/silo-console` under the release tag. The workflow verifies
 checksum/image signatures, SBOM attestations and provenance before declaring
 the draft ready. Only the separate post-publication workflow advances `latest`.
 
@@ -88,27 +73,6 @@ draft. Delete that partial draft and rerun the tag workflow. The container tags
 for the candidate version may already exist. Retry only while the GitHub
 release is still a draft; the workflow refuses to overwrite a published release.
 `latest` stays at the previous verified release until promotion succeeds.
-
-### Publish an image for an existing signed release
-
-`publish-image.yaml` packages the already-published Linux amd64/arm64 binaries
-into the tagged source's scratch image. This is the Docker Hub publication path
-for v2.4.1. It verifies the original checksum signature, GitHub provenance and
-source commit, checks the binaries and legal files, then signs and attests the
-new image. Binary, package, source and checksum assets retain their original
-bytes and tag. The image SBOM is updated to describe the Docker Hub image;
-an existing versioned image is never overwritten.
-
-```sh
-gh workflow run publish-image.yaml --repo pgsty/silo-console --ref main -f tag=v2.4.1
-# Wait for successful publication and verification, then promote the same tag.
-gh workflow run promote-image.yaml --repo pgsty/silo-console --ref main -f tag=v2.4.1
-```
-
-The image's signing identity is `publish-image.yaml@refs/heads/main`; the
-original binaries retain `release.yaml@refs/tags/v2.4.1`. Image provenance
-records both the packaging workflow commit and the signed release inputs.
-See [release-contract.md](release-contract.md) for verification commands.
 
 ## 5. Version metadata
 

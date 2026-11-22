@@ -68,7 +68,7 @@ const DeleteObject = ({
   const [bypassGovernance, setBypassGovernance] = useState<boolean>(false);
 
   // A bucket default does not describe retention on individual versions.
-  // Keep bypass an explicit, permission-gated choice; SILO enforces the lock.
+  // Keep bypass an explicit, permission-gated choice; S3 LuisML enforces the lock.
   const canBypass =
     hasPermission(selectedBucket, [
       IAM_SCOPES.S3_BYPASS_GOVERNANCE_RETENTION,

@@ -21,12 +21,12 @@
   },
   "list_policies": {
     "docs": {
-      "header": "### IAM policies\n\nSILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access. Each policy describes one or more actions and conditions that outline the permissions of a user or group of users.\n\nSILO PBAC is built for compatibility with AWS IAM policy syntax, structure, and behavior. The SILO documentation makes a best-effort to cover IAM-specific behavior and functionality. Consider deferring to the IAM documentation for more complete documentation on AWS IAM-specific topics.",
+      "header": "### IAM policies\n\nSILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access. Each policy describes one or more actions and conditions that outline the permissions of a user or group of users.\n\nSILO PBAC is built for compatibility with AWS IAM policy syntax, structure, and behavior. The S3 LuisML documentation makes a best-effort to cover IAM-specific behavior and functionality. Consider deferring to the IAM documentation for more complete documentation on AWS IAM-specific topics.",
       "links": [
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "Policy based access control",
@@ -36,7 +36,7 @@
         {
           "title": "OpenID Connect Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/oidc-access-management/",
-          "body": "Learn more about connecting SILO to OpenID for access management."
+          "body": "Learn more about connecting S3 LuisML to OpenID for access management."
         },
         {
           "title": "Troubleshooting",
@@ -82,12 +82,12 @@
         {
           "title": "Bucket Versioning",
           "url": "https://silo.pgsty.com/administration/object-management/object-versioning/#minio-bucket-versioning",
-          "body": "SILO supports keeping multiple “versions” of an object in a single bucket. SILO versioning protects from unintended overwrites and deletions while providing support for “undoing” a write operation."
+          "body": "S3 LuisML supports keeping multiple “versions” of an object in a single bucket. S3 LuisML versioning protects from unintended overwrites and deletions while providing support for “undoing” a write operation."
         },
         {
           "title": "Buckets",
           "url": "https://silo.pgsty.com/administration/console/managing-objects/#buckets",
-          "body": "Learn about using Console to create and manage Buckets with SILO"
+          "body": "Learn about using Console to create and manage Buckets with S3 LuisML"
         },
         {
           "title": "Troubleshooting",
@@ -174,12 +174,12 @@
   },
   "accessKeys": {
     "docs": {
-      "header": "### Access keys\n\nSILO access keys are child identities of an authenticated SILO user, including externally managed identities. Each access key inherits its privileges based on the policies attached to it’s parent user or those groups in which the parent user has membership. Access Keys also support an optional inline policy which further restricts access to a subset of actions and resources available to the parent user.",
+      "header": "### Access keys\n\nSILO access keys are child identities of an authenticated S3 LuisML user, including externally managed identities. Each access key inherits its privileges based on the policies attached to it’s parent user or those groups in which the parent user has membership. Access Keys also support an optional inline policy which further restricts access to a subset of actions and resources available to the parent user.",
       "links": [
         {
           "title": "Policy Document Structure",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#policy-document-structure",
-          "body": "SILO policy documents use the same schema as AWS IAM Policy documents. See policy templates and allowed S3 Policy actions and condition keys in our docs."
+          "body": "S3 LuisML policy documents use the same schema as AWS IAM Policy documents. See policy templates and allowed S3 Policy actions and condition keys in our docs."
         },
         {
           "title": "Access Keys",
@@ -189,12 +189,12 @@
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "OpenID Connect Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/oidc-access-management/",
-          "body": "Learn more about connecting SILO to OpenID for access management."
+          "body": "Learn more about connecting S3 LuisML to OpenID for access management."
         },
         {
           "title": "Troubleshooting",
@@ -225,42 +225,42 @@
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "Policy Variables",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#policy-variables",
-          "body": "SILO supports using policy variables for automatically substituting context from the authenticated user and/or the operation into the user’s assigned policy or policies."
+          "body": "S3 LuisML supports using policy variables for automatically substituting context from the authenticated user and/or the operation into the user’s assigned policy or policies."
         },
         {
           "title": "Admin Policy Action Keys",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#mc-admin-policy-action-keys",
-          "body": "See actions supported in defining policies for SILO admin operations. These actions are only valid for SILO deployments and are not intended for use with other S3-compatible services."
+          "body": "See actions supported in defining policies for S3 LuisML admin operations. These actions are only valid for S3 LuisML deployments and are not intended for use with other S3-compatible services."
         },
         {
           "title": "Admin Policy Condition Keys",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#mc-admin-policy-condition-keys",
-          "body": "See which conditions SILO supports for use with defining policies for admin actions."
+          "body": "See which conditions S3 LuisML supports for use with defining policies for admin actions."
         },
         {
           "title": "Supported S3 Policy Condition Keys",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#supported-s3-policy-condition-keys",
-          "body": "SILO policy documents support IAM conditional statements."
+          "body": "S3 LuisML policy documents support IAM conditional statements."
         },
         {
           "title": "Supported S3 Policy Actions",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#supported-s3-policy-actions",
-          "body": "SILO policy documents support a subset of IAM S3 Action keys."
+          "body": "S3 LuisML policy documents support a subset of IAM S3 Action keys."
         },
         {
           "title": "Policy Document Structure",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#policy-document-structure",
-          "body": "SILO policy documents use the same schema as AWS IAM Policy documents. See policy templates and allowed S3 Policy actions and condition keys in our docs."
+          "body": "S3 LuisML policy documents use the same schema as AWS IAM Policy documents. See policy templates and allowed S3 Policy actions and condition keys in our docs."
         },
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "Troubleshooting",
@@ -301,7 +301,7 @@
         {
           "title": "Bucket Versioning",
           "url": "https://silo.pgsty.com/administration/object-management/object-versioning/#minio-bucket-versioning",
-          "body": "SILO versioning protects from unintended overwrites and deletions while providing support for “undoing” a write operation."
+          "body": "S3 LuisML versioning protects from unintended overwrites and deletions while providing support for “undoing” a write operation."
         },
         {
           "title": "Troubleshooting",
@@ -337,7 +337,7 @@
         {
           "title": "What are Settings and Configurations?",
           "url": "https://silo.pgsty.com/reference/minio-server/settings/#minio-settings",
-          "body": "These configuration settings define runtime  behavior of the SILO server process,  comparable to the mc admin config command"
+          "body": "These configuration settings define runtime  behavior of the S3 LuisML server process,  comparable to the mc admin config command"
         },
         {
           "title": "Troubleshooting",
@@ -368,7 +368,7 @@
         {
           "title": "What are Settings and Configurations?",
           "url": "https://silo.pgsty.com/reference/minio-server/settings/#minio-settings",
-          "body": "These configuration settings define runtime  behavior of the SILO server process,  comparable to the mc admin config command"
+          "body": "These configuration settings define runtime  behavior of the S3 LuisML server process,  comparable to the mc admin config command"
         },
         {
           "title": "Troubleshooting",
@@ -393,17 +393,17 @@
         {
           "title": "How is failed replication handled?",
           "url": "https://silo.pgsty.com/administration/bucket-replication/#minio-replication-process",
-          "body": "SILO queues failed replication operations and retries those operations until replication succeeds."
+          "body": "S3 LuisML queues failed replication operations and retries those operations until replication succeeds."
         },
         {
           "title": "What are Replication Workers?",
           "url": "https://silo.pgsty.com/administration/bucket-replication/#minio-replication-process",
-          "body": "SILO uses a replication queuing system with multiple concurrent replication workers operating on that queue."
+          "body": "S3 LuisML uses a replication queuing system with multiple concurrent replication workers operating on that queue."
         },
         {
           "title": "What are Settings and Configurations?",
           "url": "https://silo.pgsty.com/reference/minio-server/settings/#minio-settings",
-          "body": "These configuration settings define runtime behavior of the SILO server process,  comparable to the mc admin config command"
+          "body": "These configuration settings define runtime behavior of the S3 LuisML server process,  comparable to the mc admin config command"
         },
         {
           "title": "Troubleshooting",
@@ -433,42 +433,42 @@
         {
           "title": "How is Erasure Coding used to Protect Data?",
           "url": "https://silo.pgsty.com/operations/concepts/erasure-coding/",
-          "body": "SILO erasure coding is a data redundancy and  availability feature that allows SILO deployments to  automatically reconstruct objects on-the-fly despite  the loss of multiple drives or nodes in the cluster."
+          "body": "S3 LuisML erasure coding is a data redundancy and  availability feature that allows S3 LuisML deployments to  automatically reconstruct objects on-the-fly despite  the loss of multiple drives or nodes in the cluster."
         },
         {
           "title": "Recover After Hardware failure",
           "url": "https://silo.pgsty.com/operations/data-recovery/",
-          "body": "Depending on the deployment topology and  selected erasure code parity, SILO can tolerate loss  of up to half the drives or nodes in the deployment  while maintaining read access to objects."
+          "body": "Depending on the deployment topology and  selected erasure code parity, S3 LuisML can tolerate loss  of up to half the drives or nodes in the deployment  while maintaining read access to objects."
         },
         {
           "title": "Site Failure Recovery",
           "url": "https://silo.pgsty.com/operations/data-recovery/recover-after-site-failure/",
-          "body": "SILO can make the loss of an entire site, while  significant, a relatively minor incident. Site recovery depends on the replication option you use for the site."
+          "body": "S3 LuisML can make the loss of an entire site, while  significant, a relatively minor incident. Site recovery depends on the replication option you use for the site."
         },
         {
           "title": "Node Failure Recovery",
           "url": "https://silo.pgsty.com/operations/data-recovery/recover-after-node-failure/",
-          "body": "If a SILO node suffers complete hardware failure, the node begins healing operations once it rejoins the  deployment."
+          "body": "If a S3 LuisML node suffers complete hardware failure, the node begins healing operations once it rejoins the  deployment."
         },
         {
-          "title": "What is SILO Healing?",
+          "title": "What is S3 LuisML Healing?",
           "url": "https://silo.pgsty.com/operations/concepts/#minio-automatically-heals-corrupt-or-missing-data-on-the-fly",
-          "body": "Healing is SILO’s ability to restore data after some event causes data loss. Data loss can come from bit rot, drive loss, or node loss."
+          "body": "Healing is S3 LuisML’s ability to restore data after some event causes data loss. Data loss can come from bit rot, drive loss, or node loss."
         },
         {
-          "title": "Understand SILO Healing Using mc",
+          "title": "Understand S3 LuisML Healing Using mc",
           "url": "https://silo.pgsty.com/reference/minio-mc-admin/mc-admin-heal/#description",
           "body": "The mc admin heal command scans for objects that are damaged or corrupted and heals those objects."
         },
         {
           "title": "What is Bit Rot?",
           "url": "https://silo.pgsty.com/operations/concepts/erasure-coding/#bit-rot-protection",
-          "body": "Bit rot is data corruption that occurs without the user’s knowledge. SILO combats bit rot with hashing and erasure coding."
+          "body": "Bit rot is data corruption that occurs without the user’s knowledge. S3 LuisML combats bit rot with hashing and erasure coding."
         },
         {
           "title": "What are Settings and Configurations?",
           "url": "https://silo.pgsty.com/reference/minio-server/settings/#minio-settings",
-          "body": "These configuration settings define runtime behavior of the SILO server process, comparable to the mc admin config command"
+          "body": "These configuration settings define runtime behavior of the S3 LuisML server process, comparable to the mc admin config command"
         },
         {
           "title": "Troubleshooting",
@@ -504,17 +504,17 @@
         {
           "title": "What is the Scanner?",
           "url": "https://silo.pgsty.com/glossary/#term-scanner",
-          "body": "One of several low-priority processes SILO runs to check lifecycle management rules, bucket or site replication status, as well as object bit rot and healing"
+          "body": "One of several low-priority processes S3 LuisML runs to check lifecycle management rules, bucket or site replication status, as well as object bit rot and healing"
         },
         {
           "title": "Lifecycle Management Object Scanner Considerations",
           "url": "https://silo.pgsty.com/administration/object-management/object-lifecycle-management/#lifecycle-management-object-scanner",
-          "body": "SILO uses a scanner process to check objects against all configured lifecycle management rules. High IO workloads or limited system resources may delay application of lifecycle management rules"
+          "body": "S3 LuisML uses a scanner process to check objects against all configured lifecycle management rules. High IO workloads or limited system resources may delay application of lifecycle management rules"
         },
         {
           "title": "What are Settings and Configurations?",
           "url": "https://silo.pgsty.com/reference/minio-server/settings/#minio-settings",
-          "body": "These configuration settings define runtime  behavior of the SILO server process,  comparable to the mc admin config command"
+          "body": "These configuration settings define runtime  behavior of the S3 LuisML server process,  comparable to the mc admin config command"
         },
         {
           "title": "Troubleshooting",
@@ -560,7 +560,7 @@
         {
           "title": "What are Settings and Configurations?",
           "url": "https://silo.pgsty.com/reference/minio-server/settings/#minio-settings",
-          "body": "These configuration settings define runtime  behavior of the SILO server process,  comparable to the mc admin config command"
+          "body": "These configuration settings define runtime  behavior of the S3 LuisML server process,  comparable to the mc admin config command"
         },
         {
           "title": "Troubleshooting",
@@ -585,22 +585,22 @@
         {
           "title": "What is the logger_webhook Environment Variable?",
           "url": "https://silo.pgsty.com/reference/minio-server/settings/metrics-and-logging/#envvar.MINIO_LOGGER_WEBHOOK_ENABLE",
-          "body": "The top-level configuration key for defining an  HTTP webhook target for publishing SILO logs."
+          "body": "The top-level configuration key for defining an  HTTP webhook target for publishing S3 LuisML logs."
         },
         {
           "title": "Publish Server Logs to HTTP Webhook",
           "url": "https://silo.pgsty.com/operations/monitoring/minio-logging/#minio-logging-publish-server-logs",
-          "body": "You can configure a new HTTP webhook endpoint  to which SILO publishes SILO server logs using  either environment variables or by setting  runtime configuration settings."
+          "body": "You can configure a new HTTP webhook endpoint  to which S3 LuisML publishes S3 LuisML server logs using  either environment variables or by setting  runtime configuration settings."
         },
         {
           "title": "Monitoring Logs",
           "url": "https://silo.pgsty.com/operations/monitoring/#logging",
-          "body": "SILO supports publishing server logs  and audit logs to an HTTP webhook."
+          "body": "S3 LuisML supports publishing server logs  and audit logs to an HTTP webhook."
         },
         {
           "title": "What are Settings and Configurations?",
           "url": "https://silo.pgsty.com/reference/minio-server/settings/#minio-settings",
-          "body": "These configuration settings define runtime  behavior of the SILO server process,  comparable to the mc admin config command"
+          "body": "These configuration settings define runtime  behavior of the S3 LuisML server process,  comparable to the mc admin config command"
         },
         {
           "title": "Troubleshooting",
@@ -636,17 +636,17 @@
         {
           "title": "Publish Audit Logs to an HTTP webhook",
           "url": "https://silo.pgsty.com/reference/minio-server/settings/metrics-and-logging/#webhook-audit-logs",
-          "body": "You can configure a new HTTP webhook endpoint  to which SILO publishes audit logs using either  environment variables or by setting runtime  configuration settings"
+          "body": "You can configure a new HTTP webhook endpoint  to which S3 LuisML publishes audit logs using either  environment variables or by setting runtime  configuration settings"
         },
         {
           "title": "What are Settings and Configurations?",
           "url": "https://silo.pgsty.com/reference/minio-server/settings/#minio-settings",
-          "body": "These configuration settings define runtime  behavior of the SILO server process,  comparable to the mc admin config command"
+          "body": "These configuration settings define runtime  behavior of the S3 LuisML server process,  comparable to the mc admin config command"
         },
         {
           "title": "Publish Audit Logs to an External Service",
           "url": "https://silo.pgsty.com/operations/monitoring/minio-logging/",
-          "body": "Audit logs are granular descriptions of each operation  on the SILO deployment supporting security  standards and regulations which require  detailed tracking of operations."
+          "body": "Audit logs are granular descriptions of each operation  on the S3 LuisML deployment supporting security  standards and regulations which require  detailed tracking of operations."
         },
         {
           "title": "Troubleshooting",
@@ -671,7 +671,7 @@
         {
           "title": "Publish Events to Kafka",
           "url": "https://silo.pgsty.com/administration/monitoring/publish-events-to-kafka/",
-          "body": "SILO supports publishing bucket notification events to a Kafka service endpoint."
+          "body": "S3 LuisML supports publishing bucket notification events to a Kafka service endpoint."
         },
         {
           "title": "Kafka Service for Bucket Notifications",
@@ -686,17 +686,17 @@
         {
           "title": "Supported Bucket Notification Targets",
           "url": "https://silo.pgsty.com/administration/monitoring/bucket-notifications/#supported-notification-targets",
-          "body": "Learn which notification targets are supported by SILO."
+          "body": "Learn which notification targets are supported by S3 LuisML."
         },
         {
           "title": "Bucket Notifications",
           "url": "https://silo.pgsty.com/administration/monitoring/bucket-notifications/",
-          "body": "SILO bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events."
+          "body": "S3 LuisML bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events."
         },
         {
           "title": "What are Settings and Configurations?",
           "url": "https://silo.pgsty.com/reference/minio-server/settings/#minio-settings",
-          "body": "These configuration settings define runtime behavior of the SILO server process, comparable to the mc admin config command"
+          "body": "These configuration settings define runtime behavior of the S3 LuisML server process, comparable to the mc admin config command"
         },
         {
           "title": "Troubleshooting",
@@ -747,7 +747,7 @@
   },
   "site-replication": {
     "docs": {
-      "header": "Site replication configures multiple independent SILO deployments as a cluster of replicas called peer sites.",
+      "header": "Site replication configures multiple independent S3 LuisML deployments as a cluster of replicas called peer sites.",
       "links": [
         {
           "title": "Site Replication Overview",
@@ -757,7 +757,7 @@
         {
           "title": "Site Replication Tutorial",
           "url": "https://silo.pgsty.com/operations/replication/multi-site-replication/#tutorials",
-          "body": "Learn how to set up site replication using Console and the SILO client (mc)"
+          "body": "Learn how to set up site replication using Console and the S3 LuisML client (mc)"
         },
         {
           "title": "Site Replication Prerequisite",
@@ -822,29 +822,29 @@
       "header": null,
       "links": [
         {
-          "title": "Transition from SILO to Azure",
+          "title": "Transition from S3 LuisML to Azure",
           "url": "https://silo.pgsty.com/administration/object-management/transition-objects-to-azure/",
-          "body": "See the procedure to create a new object lifecycle management rule that transition objects from a SILO bucket to a remote storage tier on the Azure storage backend."
+          "body": "See the procedure to create a new object lifecycle management rule that transition objects from a S3 LuisML bucket to a remote storage tier on the Azure storage backend."
         },
         {
-          "title": "Transition from SILO to GCS",
+          "title": "Transition from S3 LuisML to GCS",
           "url": "https://silo.pgsty.com/administration/object-management/transition-objects-to-gcs/",
-          "body": "See the procedure to create a new object lifecycle management rule that transitions objects from a SILO bucket to a remote storage tier on the Google Cloud Storage backend."
+          "body": "See the procedure to create a new object lifecycle management rule that transitions objects from a S3 LuisML bucket to a remote storage tier on the Google Cloud Storage backend."
         },
         {
-          "title": "Transition from SILO to S3",
+          "title": "Transition from S3 LuisML to S3",
           "url": "https://silo.pgsty.com/administration/object-management/transition-objects-to-s3/",
-          "body": "See the procedure to create a new object lifecycle management rule that transitions objects from a SILO bucket to a remote storage tier on the Amazon Web Services S3 storage backend or an S3-compatible service."
+          "body": "See the procedure to create a new object lifecycle management rule that transitions objects from a S3 LuisML bucket to a remote storage tier on the Amazon Web Services S3 storage backend or an S3-compatible service."
         },
         {
-          "title": "Transition to Remote SILO Deployment",
+          "title": "Transition to Remote S3 LuisML Deployment",
           "url": "https://silo.pgsty.com/administration/object-management/transition-objects-to-minio/",
-          "body": "See the procedure to create a new object lifecycle management rule that transitions objects from a bucket on a primary SILO deployment to a bucket on a remote SILO deployment. "
+          "body": "See the procedure to create a new object lifecycle management rule that transitions objects from a bucket on a primary S3 LuisML deployment to a bucket on a remote S3 LuisML deployment. "
         },
         {
           "title": "Object Lifecycle Management",
           "url": "https://silo.pgsty.com/administration/object-management/object-lifecycle-management/#object-transition-tiering",
-          "body": "Use SILO Object Lifecycle Management to create rules for time or date based automatic transition or expiry of objects."
+          "body": "Use S3 LuisML Object Lifecycle Management to create rules for time or date based automatic transition or expiry of objects."
         },
         {
           "title": "Troubleshooting",
@@ -890,7 +890,7 @@
         {
           "title": "Object Lifecycle Management",
           "url": "https://silo.pgsty.com/administration/object-management/object-lifecycle-management/",
-          "body": "Use SILO Object Lifecycle Management to create rules for time or date based automatic transition or expiry of objects."
+          "body": "Use S3 LuisML Object Lifecycle Management to create rules for time or date based automatic transition or expiry of objects."
         },
         {
           "title": "Troubleshooting",
@@ -934,29 +934,29 @@
       "header": null,
       "links": [
         {
-          "title": "Transition from SILO to Azure",
+          "title": "Transition from S3 LuisML to Azure",
           "url": "https://silo.pgsty.com/administration/object-management/transition-objects-to-azure/",
-          "body": "See the procedure to create a new object lifecycle management rule that transitions objects from a SILO bucket to a remote storage tier on the Azure storage backend."
+          "body": "See the procedure to create a new object lifecycle management rule that transitions objects from a S3 LuisML bucket to a remote storage tier on the Azure storage backend."
         },
         {
-          "title": "Transition from SILO to GCS",
+          "title": "Transition from S3 LuisML to GCS",
           "url": "https://silo.pgsty.com/administration/object-management/transition-objects-to-gcs/",
-          "body": "See the procedure to create a new object lifecycle management rule that transitions objects from a SILO bucket to a remote storage tier on the Google Cloud Storage backend."
+          "body": "See the procedure to create a new object lifecycle management rule that transitions objects from a S3 LuisML bucket to a remote storage tier on the Google Cloud Storage backend."
         },
         {
-          "title": "Transition from SILO to S3",
+          "title": "Transition from S3 LuisML to S3",
           "url": "https://silo.pgsty.com/administration/object-management/transition-objects-to-s3/",
-          "body": "See the procedure to create a new object lifecycle management rule that transitions objects from a SILO bucket to a remote storage tier on the Amazon Web Services S3 storage backend or an S3-compatible service."
+          "body": "See the procedure to create a new object lifecycle management rule that transitions objects from a S3 LuisML bucket to a remote storage tier on the Amazon Web Services S3 storage backend or an S3-compatible service."
         },
         {
-          "title": "Transition to Remote SILO Deployment",
+          "title": "Transition to Remote S3 LuisML Deployment",
           "url": "https://silo.pgsty.com/administration/object-management/transition-objects-to-minio/#minio-lifecycle-management-transition-to-minio",
-          "body": "See the procedure to create a new object lifecycle management rule that transitions objects from a bucket on a primary SILO deployment to a bucket on a remote SILO deployment. "
+          "body": "See the procedure to create a new object lifecycle management rule that transitions objects from a bucket on a primary S3 LuisML deployment to a bucket on a remote S3 LuisML deployment. "
         },
         {
           "title": "Object Lifecycle Management",
           "url": "https://silo.pgsty.com/administration/object-management/object-lifecycle-management/#object-transition-tiering",
-          "body": "Use SILO Object Lifecycle Management to create rules for time or date based automatic transition or expiry of objects."
+          "body": "Use S3 LuisML Object Lifecycle Management to create rules for time or date based automatic transition or expiry of objects."
         },
         {
           "title": "Troubleshooting",
@@ -1028,17 +1028,17 @@
         {
           "title": "Console Metrics Dashboard",
           "url": "https://silo.pgsty.com/operations/monitoring/collect-minio-metrics-using-prometheus/",
-          "body": "The SILO Console provides a point-in-time metrics dashboard by default, and also supports displaying time-series and historical data by querying a Prometheus service configured to scrape data from the SILO deployment."
+          "body": "The S3 LuisML Console provides a point-in-time metrics dashboard by default, and also supports displaying time-series and historical data by querying a Prometheus service configured to scrape data from the S3 LuisML deployment."
         },
         {
           "title": "Available Metrics",
           "url": "https://silo.pgsty.com/operations/monitoring/metrics-and-alerts/#available-version-3-metrics",
-          "body": "Learn about the different Prometheus metrics published by SILO server"
+          "body": "Learn about the different Prometheus metrics published by S3 LuisML server"
         },
         {
           "title": "Metrics and Alerts",
           "url": "https://silo.pgsty.com/operations/monitoring/",
-          "body": "For historical metrics and analytics, SILO publishes cluster and node metrics using the Prometheus Data Model."
+          "body": "For historical metrics and analytics, S3 LuisML publishes cluster and node metrics using the Prometheus Data Model."
         },
         {
           "title": "Troubleshooting",
@@ -1074,7 +1074,7 @@
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "User Management",
@@ -1109,7 +1109,7 @@
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "Group Management",
@@ -1165,7 +1165,7 @@
   },
   "heal": {
     "docs": {
-      "header": "Healing is SILO’s ability to restore data after some event causes data loss. Data loss can come from bit rot, drive loss, or node loss.",
+      "header": "Healing is S3 LuisML’s ability to restore data after some event causes data loss. Data loss can come from bit rot, drive loss, or node loss.",
       "links": [
         {
           "title": "Drive Healing",
@@ -1175,17 +1175,17 @@
         {
           "title": "Erasure Coding",
           "url": "https://silo.pgsty.com/operations/concepts/erasure-coding/",
-          "body": "SILO Erasure Coding is a data redundancy and availability feature that allows SILO deployments to automatically reconstruct objects on-the-fly despite the loss of multiple drives or nodes in the cluster."
+          "body": "S3 LuisML Erasure Coding is a data redundancy and availability feature that allows S3 LuisML deployments to automatically reconstruct objects on-the-fly despite the loss of multiple drives or nodes in the cluster."
         },
         {
           "title": "Site Healing",
           "url": "https://silo.pgsty.com/operations/replication/multi-site-replication/#site-healing",
-          "body": "Any SILO deployment in the site replication configuration can resynchronize damaged replica-eligible data from the peer with the most updated (“latest”) version of that data."
+          "body": "Any S3 LuisML deployment in the site replication configuration can resynchronize damaged replica-eligible data from the peer with the most updated (“latest”) version of that data."
         },
         {
           "title": "Healing",
           "url": "https://silo.pgsty.com/operations/concepts/#minio-automatically-heals-corrupt-or-missing-data-on-the-fly",
-          "body": "SILO Automatically Heals Corrupt or Missing Data On-the-fly"
+          "body": "S3 LuisML Automatically Heals Corrupt or Missing Data On-the-fly"
         },
         {
           "title": "Troubleshooting",
@@ -1221,12 +1221,12 @@
         {
           "title": "Health",
           "url": "https://silo.pgsty.com/operations/monitoring/healthcheck-probe/",
-          "body": "The health section provides an interface for running a health diagnostic for the SILO Deployment. The report is generated on the deployment and downloaded directly to your browser."
+          "body": "The health section provides an interface for running a health diagnostic for the S3 LuisML Deployment. The report is generated on the deployment and downloaded directly to your browser."
         },
         {
           "title": "Healing",
           "url": "https://silo.pgsty.com/operations/concepts/#minio-automatically-heals-corrupt-or-missing-data-on-the-fly",
-          "body": "SILO Automatically Heals Corrupt or Missing Data On-the-fly"
+          "body": "S3 LuisML Automatically Heals Corrupt or Missing Data On-the-fly"
         },
         {
           "title": "Troubleshooting",
@@ -1251,12 +1251,12 @@
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "IDP Docs",
           "url": "https://silo.pgsty.com/operations/external-iam/",
-          "body": "SILO supports multiple external identity managers through OpenID Connect-Compatible Active Directory / LDAP"
+          "body": "S3 LuisML supports multiple external identity managers through OpenID Connect-Compatible Active Directory / LDAP"
         },
         {
           "title": "User Management",
@@ -1264,19 +1264,19 @@
           "body": "Each user can have one or more assigned policies that explicitly list the actions and resources to which that user has access. Users can also inherit policies from the groups in which they have membership."
         },
         {
-          "title": "Built-in SILO IDP",
+          "title": "Built-in S3 LuisML IDP",
           "url": "https://silo.pgsty.com/administration/identity-access-management/minio-identity-management/",
-          "body": "SILO includes a built-in IDentity Provider (IDP) that provides core identity management functionality."
+          "body": "S3 LuisML includes a built-in IDentity Provider (IDP) that provides core identity management functionality."
         },
         {
           "title": "OpenID Connect Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/oidc-access-management/",
-          "body": "Learn more about connecting SILO to OpenID for access management."
+          "body": "Learn more about connecting S3 LuisML to OpenID for access management."
         },
         {
           "title": "Active Directory / LDAP Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/ad-ldap-access-management/",
-          "body": "For identities managed by the external AD/LDAP provider, SILO uses the user’s Distinguished Name and attempts to map it against an existing policy."
+          "body": "For identities managed by the external AD/LDAP provider, S3 LuisML uses the user’s Distinguished Name and attempts to map it against an existing policy."
         },
         {
           "title": "Troubleshooting",
@@ -1335,19 +1335,19 @@
       "header": null,
       "links": [
         {
-          "title": "Built-in SILO IDP",
+          "title": "Built-in S3 LuisML IDP",
           "url": "https://silo.pgsty.com/administration/identity-access-management/minio-identity-management/",
-          "body": "SILO includes a built-in IDentity Provider (IDP) that provides core identity management functionality."
+          "body": "S3 LuisML includes a built-in IDentity Provider (IDP) that provides core identity management functionality."
         },
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "IDP Docs",
           "url": "https://silo.pgsty.com/operations/external-iam/",
-          "body": "SILO supports multiple external identity managers through OpenID Connect-Compatible Active Directory / LDAP"
+          "body": "S3 LuisML supports multiple external identity managers through OpenID Connect-Compatible Active Directory / LDAP"
         },
         {
           "title": "User Management",
@@ -1357,22 +1357,22 @@
         {
           "title": "OpenID Connect Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/oidc-access-management/",
-          "body": "Learn more about connecting SILO to OpenID for access management."
+          "body": "Learn more about connecting S3 LuisML to OpenID for access management."
         },
         {
           "title": "Active Directory / LDAP Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/ad-ldap-access-management/",
-          "body": "For identities managed by the external AD/LDAP provider, SILO uses the user’s Distinguished Name and attempts to map it against an existing policy."
+          "body": "For identities managed by the external AD/LDAP provider, S3 LuisML uses the user’s Distinguished Name and attempts to map it against an existing policy."
         },
         {
           "title": "Keycloak configuration",
           "url": "https://silo.pgsty.com/operations/external-iam/configure-keycloak-identity-management/",
-          "body": "You can configure SILO to use Keycloak as an external IDentity Provider (IDP) for authentication of users via the OpenID Connect (OIDC) protocol."
+          "body": "You can configure S3 LuisML to use Keycloak as an external IDentity Provider (IDP) for authentication of users via the OpenID Connect (OIDC) protocol."
         },
         {
           "title": "LDAP Configuration",
           "url": "https://silo.pgsty.com/operations/external-iam/configure-ad-ldap-external-identity-management/",
-          "body": "SILO supports configuring a single Active Directory / LDAP Connect for external management of user identities."
+          "body": "S3 LuisML supports configuring a single Active Directory / LDAP Connect for external management of user identities."
         },
         {
           "title": "Troubleshooting",
@@ -1431,19 +1431,19 @@
       "header": null,
       "links": [
         {
-          "title": "Built-in SILO IDP",
+          "title": "Built-in S3 LuisML IDP",
           "url": "https://silo.pgsty.com/administration/identity-access-management/minio-identity-management/",
-          "body": "SILO includes a built-in IDentity Provider (IDP) that provides core identity management functionality."
+          "body": "S3 LuisML includes a built-in IDentity Provider (IDP) that provides core identity management functionality."
         },
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "IDP Docs",
           "url": "https://silo.pgsty.com/operations/external-iam/",
-          "body": "SILO supports multiple external identity managers through OpenID Connect-Compatible Active Directory / LDAP"
+          "body": "S3 LuisML supports multiple external identity managers through OpenID Connect-Compatible Active Directory / LDAP"
         },
         {
           "title": "User Management",
@@ -1453,27 +1453,27 @@
         {
           "title": "Active Directory / LDAP Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/ad-ldap-access-management/",
-          "body": "For identities managed by the external AD/LDAP provider, SILO uses the user’s Distinguished Name and attempts to map it against an existing policy."
+          "body": "For identities managed by the external AD/LDAP provider, S3 LuisML uses the user’s Distinguished Name and attempts to map it against an existing policy."
         },
         {
           "title": "OpenID Connect Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/oidc-access-management/",
-          "body": "Learn more about connecting SILO to OpenID for access management."
+          "body": "Learn more about connecting S3 LuisML to OpenID for access management."
         },
         {
           "title": "LDAP Configuration",
           "url": "https://silo.pgsty.com/operations/external-iam/configure-ad-ldap-external-identity-management/",
-          "body": "SILO supports configuring a single Active Directory / LDAP Connect for external management of user identities."
+          "body": "S3 LuisML supports configuring a single Active Directory / LDAP Connect for external management of user identities."
         },
         {
           "title": "Policy Variables",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#policy-variables",
-          "body": "SILO supports using policy variables for automatically substituting context from the authenticated user and/or the operation into the user’s assigned policy or policies."
+          "body": "S3 LuisML supports using policy variables for automatically substituting context from the authenticated user and/or the operation into the user’s assigned policy or policies."
         },
         {
           "title": "OIDC Configuration",
           "url": "https://silo.pgsty.com/operations/external-iam/configure-openid-external-identity-management/",
-          "body": "SILO supports using an OpenID Connect (OIDC) compatible IDentity Provider (IDP) such as Okta, KeyCloak, Dex, Google, or Facebook for external management of user identities."
+          "body": "S3 LuisML supports using an OpenID Connect (OIDC) compatible IDentity Provider (IDP) such as Okta, KeyCloak, Dex, Google, or Facebook for external management of user identities."
         },
         {
           "title": "Troubleshooting",
@@ -1534,7 +1534,7 @@
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "Troubleshooting",
@@ -1565,7 +1565,7 @@
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "Troubleshooting",
@@ -1596,7 +1596,7 @@
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "Troubleshooting",
@@ -1627,7 +1627,7 @@
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "Troubleshooting",
@@ -1678,7 +1678,7 @@
         {
           "title": "Audit Logs",
           "url": "https://silo.pgsty.com/operations/monitoring/minio-logging/",
-          "body": "You can configure an HTTP webhook endpoint to which SILO publishes audit logs using either environment variables or by setting runtime configuration settings."
+          "body": "You can configure an HTTP webhook endpoint to which S3 LuisML publishes audit logs using either environment variables or by setting runtime configuration settings."
         },
         {
           "title": "Troubleshooting",
@@ -1723,12 +1723,12 @@
         {
           "title": "Object Lambda",
           "url": "https://silo.pgsty.com/developers/transforms-with-object-lambda/",
-          "body": "SILO’s Object Lambda enables developers to programmatically transform objects on demand."
+          "body": "S3 LuisML’s Object Lambda enables developers to programmatically transform objects on demand."
         },
         {
           "title": "Bucket Notifications",
           "url": "https://silo.pgsty.com/administration/monitoring/",
-          "body": "SILO bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events."
+          "body": "S3 LuisML bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events."
         },
         {
           "title": "Troubleshooting",
@@ -1774,12 +1774,12 @@
         {
           "title": "Object Lambda",
           "url": "https://silo.pgsty.com/developers/transforms-with-object-lambda/",
-          "body": "SILO’s Object Lambda enables developers to programmatically transform objects on demand."
+          "body": "S3 LuisML’s Object Lambda enables developers to programmatically transform objects on demand."
         },
         {
           "title": "Bucket Notifications",
           "url": "https://silo.pgsty.com/administration/monitoring/",
-          "body": "SILO bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events."
+          "body": "S3 LuisML bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events."
         },
         {
           "title": "Troubleshooting",
@@ -1825,12 +1825,12 @@
         {
           "title": "Object Lambda",
           "url": "https://silo.pgsty.com/developers/transforms-with-object-lambda/",
-          "body": "SILO’s Object Lambda enables developers to programmatically transform objects on demand."
+          "body": "S3 LuisML’s Object Lambda enables developers to programmatically transform objects on demand."
         },
         {
           "title": "Bucket Notifications",
           "url": "https://silo.pgsty.com/administration/monitoring/",
-          "body": "SILO bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events."
+          "body": "S3 LuisML bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events."
         },
         {
           "title": "Troubleshooting",
@@ -1876,7 +1876,7 @@
         {
           "title": "Object Management",
           "url": "https://silo.pgsty.com/administration/object-management/",
-          "body": "Learn about Objects and how  SILO allows you to manage them"
+          "body": "Learn about Objects and how  S3 LuisML allows you to manage them"
         },
         {
           "title": "Managing Objects with the Object Browser",
@@ -1927,27 +1927,27 @@
         {
           "title": "Supported S3 Policy Condition Keys",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#supported-s3-policy-condition-keys",
-          "body": "SILO policy documents support IAM conditional statements."
+          "body": "S3 LuisML policy documents support IAM conditional statements."
         },
         {
           "title": "Supported S3 Policy Actions",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#supported-s3-policy-actions",
-          "body": "SILO policy documents support a subset of IAM S3 Action keys."
+          "body": "S3 LuisML policy documents support a subset of IAM S3 Action keys."
         },
         {
           "title": "Policy Document Structure",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#policy-document-structure",
-          "body": "SILO policy documents use the same schema as AWS IAM Policy documents. See policy templates and allowed S3 Policy actions and condition keys in our docs."
+          "body": "S3 LuisML policy documents use the same schema as AWS IAM Policy documents. See policy templates and allowed S3 Policy actions and condition keys in our docs."
         },
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "OpenID Connect Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/oidc-access-management/",
-          "body": "Learn more about connecting SILO to OpenID for access management."
+          "body": "Learn more about connecting S3 LuisML to OpenID for access management."
         },
         {
           "title": "Troubleshooting",
@@ -1988,27 +1988,27 @@
         {
           "title": "Supported S3 Policy Condition Keys",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#supported-s3-policy-condition-keys",
-          "body": "SILO policy documents support IAM conditional statements."
+          "body": "S3 LuisML policy documents support IAM conditional statements."
         },
         {
           "title": "Supported S3 Policy Actions",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#supported-s3-policy-actions",
-          "body": "SILO policy documents support a subset of IAM S3 Action keys."
+          "body": "S3 LuisML policy documents support a subset of IAM S3 Action keys."
         },
         {
           "title": "Policy Document Structure",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#policy-document-structure",
-          "body": "SILO policy documents use the same schema as AWS IAM Policy documents. See policy templates and allowed S3 Policy actions and condition keys in our docs."
+          "body": "S3 LuisML policy documents use the same schema as AWS IAM Policy documents. See policy templates and allowed S3 Policy actions and condition keys in our docs."
         },
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "OpenID Connect Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/oidc-access-management/",
-          "body": "Learn more about connecting SILO to OpenID for access management."
+          "body": "Learn more about connecting S3 LuisML to OpenID for access management."
         },
         {
           "title": "Troubleshooting",
@@ -2049,12 +2049,12 @@
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "OpenID Connect Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/oidc-access-management/",
-          "body": "Learn more about connecting SILO to OpenID for access management."
+          "body": "Learn more about connecting S3 LuisML to OpenID for access management."
         },
         {
           "title": "Troubleshooting",
@@ -2110,7 +2110,7 @@
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "Group Management",
@@ -2120,7 +2120,7 @@
         {
           "title": "OpenID Connect Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/oidc-access-management/",
-          "body": "Learn more about connecting SILO to OpenID for access management."
+          "body": "Learn more about connecting S3 LuisML to OpenID for access management."
         },
         {
           "title": "Troubleshooting",
@@ -2181,27 +2181,27 @@
         {
           "title": "Supported S3 Policy Condition Keys",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#supported-s3-policy-condition-keys",
-          "body": "SILO policy documents support IAM conditional statements."
+          "body": "S3 LuisML policy documents support IAM conditional statements."
         },
         {
           "title": "Supported S3 Policy Actions",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#supported-s3-policy-actions",
-          "body": "SILO policy documents support a subset of IAM S3 Action keys."
+          "body": "S3 LuisML policy documents support a subset of IAM S3 Action keys."
         },
         {
           "title": "Policy Document Structure",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#policy-document-structure",
-          "body": "SILO policy documents use the same schema as AWS IAM Policy documents. See policy templates and allowed S3 Policy actions and condition keys in our docs."
+          "body": "S3 LuisML policy documents use the same schema as AWS IAM Policy documents. See policy templates and allowed S3 Policy actions and condition keys in our docs."
         },
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "OpenID Connect Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/oidc-access-management/",
-          "body": "Learn more about connecting SILO to OpenID for access management."
+          "body": "Learn more about connecting S3 LuisML to OpenID for access management."
         },
         {
           "title": "Troubleshooting",
@@ -2282,7 +2282,7 @@
         {
           "title": "Profile",
           "url": "https://silo.pgsty.com/reference/minio-mc/mc-support-profile/",
-          "body": "The profile section provides an interface for running system profiling of the deployment. The results can provide insight into the SILO server process running on a given node."
+          "body": "The profile section provides an interface for running system profiling of the deployment. The results can provide insight into the S3 LuisML server process running on a given node."
         },
         {
           "title": "Troubleshooting",
@@ -2362,7 +2362,7 @@
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "Troubleshooting",
@@ -2413,17 +2413,17 @@
         {
           "title": "Supported S3 Policy Condition Keys",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#supported-s3-policy-condition-keys",
-          "body": "SILO policy documents support IAM conditional statements."
+          "body": "S3 LuisML policy documents support IAM conditional statements."
         },
         {
           "title": "Supported S3 Policy Actions",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#supported-s3-policy-actions",
-          "body": "SILO policy documents support a subset of IAM S3 Action keys."
+          "body": "S3 LuisML policy documents support a subset of IAM S3 Action keys."
         },
         {
           "title": "Policy Document Structure",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#policy-document-structure",
-          "body": "SILO policy documents use the same schema as AWS IAM Policy documents. See policy templates and allowed S3 Policy actions and condition keys in our docs."
+          "body": "S3 LuisML policy documents use the same schema as AWS IAM Policy documents. See policy templates and allowed S3 Policy actions and condition keys in our docs."
         },
         {
           "title": "Troubleshooting",
@@ -2474,7 +2474,7 @@
   },
   "list_users": {
     "docs": {
-      "header": "### Users\n\nA SILO user consists of a unique access key (username) and corresponding secret key (password). Clients must authenticate their identity by specifying both a valid access key (username) and the corresponding secret key (password) of an existing SILO user.\n\nGroups provide a simplified method for managing shared permissions among users with common access patterns and workloads.\n\nUsers inherit access permissions to data and resources through the groups they belong to.\n\nSILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access. Each policy describes one or more actions and conditions that outline the permissions of a user or group of users.\n\nEach user can access only those resources and operations which are explicitly granted by the built-in role. SILO denies access to any other resource or action by default.",
+      "header": "### Users\n\nA S3 LuisML user consists of a unique access key (username) and corresponding secret key (password). Clients must authenticate their identity by specifying both a valid access key (username) and the corresponding secret key (password) of an existing S3 LuisML user.\n\nGroups provide a simplified method for managing shared permissions among users with common access patterns and workloads.\n\nUsers inherit access permissions to data and resources through the groups they belong to.\n\nSILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access. Each policy describes one or more actions and conditions that outline the permissions of a user or group of users.\n\nEach user can access only those resources and operations which are explicitly granted by the built-in role. S3 LuisML denies access to any other resource or action by default.",
       "links": [
         {
           "title": "Users",
@@ -2484,12 +2484,12 @@
         {
           "title": "Identity and Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "OpenID Connect Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/oidc-access-management/",
-          "body": "Learn more about connecting SILO to OpenID for access management."
+          "body": "Learn more about connecting S3 LuisML to OpenID for access management."
         },
         {
           "title": "Troubleshooting",
@@ -2575,7 +2575,7 @@
         {
           "title": "OpenID Connect Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/oidc-access-management/",
-          "body": "Learn more about connecting SILO to OpenID for access management."
+          "body": "Learn more about connecting S3 LuisML to OpenID for access management."
         },
         {
           "title": "Troubleshooting",
@@ -2631,17 +2631,17 @@
         {
           "title": "Supported S3 Policy Actions",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#supported-s3-policy-actions",
-          "body": "SILO policy documents support a subset of IAM S3 Action keys."
+          "body": "S3 LuisML policy documents support a subset of IAM S3 Action keys."
         },
         {
           "title": "Policy Document Structure",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#policy-document-structure",
-          "body": "SILO policy documents use the same schema as AWS IAM Policy documents. See policy templates and allowed S3 Policy actions and condition keys in our docs."
+          "body": "S3 LuisML policy documents use the same schema as AWS IAM Policy documents. See policy templates and allowed S3 Policy actions and condition keys in our docs."
         },
         {
           "title": "OpenID Connect Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/oidc-access-management/",
-          "body": "Learn more about connecting SILO to OpenID for access management."
+          "body": "Learn more about connecting S3 LuisML to OpenID for access management."
         },
         {
           "title": "Troubleshooting",
@@ -2671,7 +2671,7 @@
         {
           "title": "OpenID Connect Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/oidc-access-management/",
-          "body": "Learn more about connecting SILO to OpenID for access management."
+          "body": "Learn more about connecting S3 LuisML to OpenID for access management."
         },
         {
           "title": "Troubleshooting",
@@ -2742,7 +2742,7 @@
         {
           "title": "OpenID Connect Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/oidc-access-management/",
-          "body": "Learn more about connecting SILO to OpenID for access management."
+          "body": "Learn more about connecting S3 LuisML to OpenID for access management."
         }
       ]
     },
@@ -2783,7 +2783,7 @@
         {
           "title": "Policy Document Structure",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#policy-document-structure",
-          "body": "SILO policy documents use the same schema as AWS IAM Policy documents. See policy templates and allowed S3 Policy actions and condition keys in our docs."
+          "body": "S3 LuisML policy documents use the same schema as AWS IAM Policy documents. See policy templates and allowed S3 Policy actions and condition keys in our docs."
         },
         {
           "title": "Group Management",
@@ -2793,7 +2793,7 @@
         {
           "title": "OpenID Connect Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/oidc-access-management/",
-          "body": "Learn more about connecting SILO to OpenID for access management."
+          "body": "Learn more about connecting S3 LuisML to OpenID for access management."
         },
         {
           "title": "Troubleshooting",
@@ -2849,17 +2849,17 @@
         {
           "title": "Object Locking",
           "url": "https://silo.pgsty.com/administration/object-management/object-retention/",
-          "body": "SILO Object Locking (“Object Retention”) enforces Write-Once Read-Many (WORM) immutability to protect versioned objects from deletion."
+          "body": "S3 LuisML Object Locking (“Object Retention”) enforces Write-Once Read-Many (WORM) immutability to protect versioned objects from deletion."
         },
         {
           "title": "Encryption",
           "url": "https://silo.pgsty.com/administration/server-side-encryption/",
-          "body": "SILO Server-Side Encryption (SSE) protects objects as part of write operations, allowing clients to take advantage of server processing power to secure objects at the storage layer (encryption-at-rest)."
+          "body": "S3 LuisML Server-Side Encryption (SSE) protects objects as part of write operations, allowing clients to take advantage of server processing power to secure objects at the storage layer (encryption-at-rest)."
         },
         {
           "title": "Bucket Versioning",
           "url": "https://silo.pgsty.com/administration/object-management/object-versioning/#minio-bucket-versioning",
-          "body": "SILO versioning protects from unintended overwrites and deletions while providing support for “undoing” a write operation."
+          "body": "S3 LuisML versioning protects from unintended overwrites and deletions while providing support for “undoing” a write operation."
         },
         {
           "title": "Buckets",
@@ -2869,7 +2869,7 @@
         {
           "title": "Bucket Replication",
           "url": "https://silo.pgsty.com/administration/bucket-replication/#minio-bucket-replication-serverside",
-          "body": "SILO server-side bucket replication is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket."
+          "body": "S3 LuisML server-side bucket replication is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket."
         },
         {
           "title": "Troubleshooting",
@@ -2930,12 +2930,12 @@
         {
           "title": "Object Lambda",
           "url": "https://silo.pgsty.com/developers/transforms-with-object-lambda/",
-          "body": "SILO’s Object Lambda enables developers to programmatically transform objects on demand."
+          "body": "S3 LuisML’s Object Lambda enables developers to programmatically transform objects on demand."
         },
         {
           "title": "Bucket Notifications",
           "url": "https://silo.pgsty.com/administration/monitoring/bucket-notifications/",
-          "body": "SILO bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events."
+          "body": "S3 LuisML bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events."
         },
         {
           "title": "Buckets",
@@ -2991,7 +2991,7 @@
         {
           "title": "Bucket Replication",
           "url": "https://silo.pgsty.com/administration/bucket-replication/#minio-bucket-replication-serverside",
-          "body": "SILO server-side bucket replication is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket."
+          "body": "S3 LuisML server-side bucket replication is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket."
         },
         {
           "title": "Buckets",
@@ -3037,7 +3037,7 @@
         {
           "title": "Object Lifecycle Management",
           "url": "https://silo.pgsty.com/administration/object-management/object-lifecycle-management/#minio-lifecycle-management",
-          "body": "Use SILO Object Lifecycle Management to create rules for time or date based automatic transition or expiry of objects."
+          "body": "Use S3 LuisML Object Lifecycle Management to create rules for time or date based automatic transition or expiry of objects."
         },
         {
           "title": "Buckets",
@@ -3078,7 +3078,7 @@
         {
           "title": "Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/policy-based-access-control/#minio-policy",
-          "body": "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
+          "body": "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access."
         },
         {
           "title": "User Management",
@@ -3164,12 +3164,12 @@
   },
   "event_destinations": {
     "docs": {
-      "header": "### Event destinations\n\nSILO bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events. SILO supports bucket and object-level S3 events similar to the Amazon S3 Event Notifications.",
+      "header": "### Event destinations\n\nSILO bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events. S3 LuisML supports bucket and object-level S3 events similar to the Amazon S3 Event Notifications.",
       "links": [
         {
           "title": "Object Lambda",
           "url": "https://silo.pgsty.com/developers/transforms-with-object-lambda/",
-          "body": "SILO’s Object Lambda enables developers to programmatically transform objects on demand."
+          "body": "S3 LuisML’s Object Lambda enables developers to programmatically transform objects on demand."
         },
         {
           "title": "Troubleshooting",
@@ -3215,17 +3215,17 @@
         {
           "title": "Active Directory / LDAP Access Management",
           "url": "https://silo.pgsty.com/administration/identity-access-management/ad-ldap-access-management/",
-          "body": "For identities managed by the external AD/LDAP provider, SILO uses the user’s Distinguished Name and attempts to map it against an existing policy."
+          "body": "For identities managed by the external AD/LDAP provider, S3 LuisML uses the user’s Distinguished Name and attempts to map it against an existing policy."
         },
         {
           "title": "IDP Docs",
           "url": "https://silo.pgsty.com/operations/external-iam/",
-          "body": "SILO supports multiple external identity managers through OpenID Connect-Compatible Active Directory / LDAP"
+          "body": "S3 LuisML supports multiple external identity managers through OpenID Connect-Compatible Active Directory / LDAP"
         },
         {
           "title": "LDAP Configuration",
           "url": "https://silo.pgsty.com/operations/external-iam/configure-ad-ldap-external-identity-management/",
-          "body": "SILO supports configuring a single Active Directory / LDAP Connect for external management of user identities."
+          "body": "S3 LuisML supports configuring a single Active Directory / LDAP Connect for external management of user identities."
         },
         {
           "title": "Troubleshooting",
@@ -3321,12 +3321,12 @@
         {
           "title": "Bucket Replication",
           "url": "https://silo.pgsty.com/administration/bucket-replication/#minio-bucket-replication-serverside",
-          "body": "SILO server-side bucket replication is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket."
+          "body": "S3 LuisML server-side bucket replication is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket."
         },
         {
           "title": "Replication Internals",
           "url": "https://silo.pgsty.com/administration/bucket-replication/#minio-replication-process",
-          "body": "Learn details of the SILO replication process."
+          "body": "Learn details of the S3 LuisML replication process."
         },
         {
           "title": "Troubleshooting",
@@ -3367,22 +3367,22 @@
         {
           "title": "One-way Bucket Replication",
           "url": "https://silo.pgsty.com/administration/bucket-replication/enable-server-side-one-way-bucket-replication/",
-          "body": "Guidance on configuring one-way Bucket replication using SILO Console."
+          "body": "Guidance on configuring one-way Bucket replication using S3 LuisML Console."
         },
         {
           "title": "Two-way Bucket Replication",
           "url": "https://silo.pgsty.com/administration/bucket-replication/enable-server-side-two-way-bucket-replication/",
-          "body": "Guidance on configuring two-way (active-active) Bucket replication using SILO Console."
+          "body": "Guidance on configuring two-way (active-active) Bucket replication using S3 LuisML Console."
         },
         {
           "title": "Bucket Replication",
           "url": "https://silo.pgsty.com/administration/bucket-replication/#minio-bucket-replication-serverside",
-          "body": "SILO server-side bucket replication is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket."
+          "body": "S3 LuisML server-side bucket replication is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket."
         },
         {
           "title": "Replication Internals",
           "url": "https://silo.pgsty.com/administration/bucket-replication/#minio-replication-process",
-          "body": "Learn details of the SILO replication process."
+          "body": "Learn details of the S3 LuisML replication process."
         },
         {
           "title": "Troubleshooting",

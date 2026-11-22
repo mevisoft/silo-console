@@ -134,12 +134,12 @@ const zh: Record<string, string> = {
     "一个能在任意基础设施上运行的高性能对象存储 —— 公有云、私有云或裸金属。",
   "Erasure coding, encryption, and replication power data lakes, AI/ML, and fast backup & recovery.":
     "内建纠删码、加密与复制能力，为数据湖、AI / ML 以及快速备份恢复提供支撑。",
-  "MinIO® is a registered trademark of {minioInc}; SILO incorporates {minioSource}.":
-    "MinIO® 是 {minioInc} 的注册商标；SILO 包含 {minioSource}。",
+  "MinIO® is a registered trademark of {minioInc}; S3 LuisML incorporates {minioSource}.":
+    "MinIO® 是 {minioInc} 的注册商标；S3 LuisML 包含 {minioSource}。",
   "MinIO source code": "MinIO 源代码",
-  "SILO is maintained by {pgsty}, without MinIO affiliation, endorsement, or sponsorship.":
-    "SILO 由 {pgsty} 维护，与 MinIO 无任何隶属、背书或赞助关系。",
-  "SILO website": "SILO 官网",
+  "S3 LuisML is maintained by {pgsty}, without MinIO affiliation, endorsement, or sponsorship.":
+    "S3 LuisML 由 {pgsty} 维护，与 MinIO 无任何隶属、背书或赞助关系。",
+  "S3 LuisML website": "S3 LuisML 官网",
   "Object Storage Console": "对象存储控制台",
 
   // ---- Login page: form, footer, errors ----------------------------------
@@ -213,15 +213,15 @@ const zh: Record<string, string> = {
   // ---- Help menu chrome ---------------------------------------------------
   Video: "视频",
   Blog: "博客",
-  "SILO Blog": "SILO 博客",
-  "Read SILO release notes, security advisories, and project updates.":
-    "阅读 SILO 的版本发布说明、安全公告与项目动态。",
-  "Read this update on the SILO Blog.": "在 SILO 博客阅读这篇更新。",
-  "SILO does not yet maintain a native video catalog. These links open upstream MinIO compatibility material.":
-    "SILO 尚未维护自有的视频目录，以下链接指向上游 MinIO 的兼容性资料。",
-  "Visit SILO Documentation": "访问 SILO 文档",
+  "S3 LuisML Blog": "S3 LuisML 博客",
+  "Read S3 LuisML release notes, security advisories, and project updates.":
+    "阅读 S3 LuisML 的版本发布说明、安全公告与项目动态。",
+  "Read this update on the S3 LuisML Blog.": "在 S3 LuisML 博客阅读这篇更新。",
+  "S3 LuisML does not yet maintain a native video catalog. These links open upstream MinIO compatibility material.":
+    "S3 LuisML 尚未维护自有的视频目录，以下链接指向上游 MinIO 的兼容性资料。",
+  "Visit S3 LuisML Documentation": "访问 S3 LuisML 文档",
   "Visit MinIO Videos (upstream)": "访问 MinIO 视频（上游）",
-  "Visit SILO Blog": "访问 SILO 博客",
+  "Visit S3 LuisML Blog": "访问 S3 LuisML 博客",
   "Learn more": "了解更多",
   "Set by environment variable": "由环境变量设置",
   "Explore upstream videos about object storage, replication, and administration.":

@@ -135,7 +135,7 @@ const SetRetentionConfig = ({
                 <Fragment>
                   {interpolate(
                     t(
-                      "{compliance} lock protects Objects from write operations by all users, including the SILO root user.",
+                      "{compliance} lock protects Objects from write operations by all users, including the S3 LuisML root user.",
                     ),
                     {
                       compliance: (

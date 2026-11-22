@@ -526,7 +526,7 @@ const BucketSummary = () => {
                       <Fragment>
                         {interpolate(
                           t(
-                            "SILO supports enabling automatic {sseKms} and {sseS3} encryption of all objects written to a bucket using a specific External Key (EK) stored on the external KMS.",
+                            "S3 LuisML supports enabling automatic {sseKms} and {sseS3} encryption of all objects written to a bucket using a specific External Key (EK) stored on the external KMS.",
                           ),
                           {
                             sseKms: (
@@ -638,7 +638,7 @@ const BucketSummary = () => {
                     <Fragment>
                       {interpolate(
                         t(
-                          "Setting a {quota} assigns a hard limit to a bucket beyond which SILO does not allow writes.",
+                          "Setting a {quota} assigns a hard limit to a bucket beyond which S3 LuisML does not allow writes.",
                         ),
                         {
                           quota: (
@@ -763,7 +763,7 @@ const BucketSummary = () => {
                       <Fragment>
                         {interpolate(
                           t(
-                            "SILO {objectLocking} enforces Write-Once Read-Many (WORM) immutability to protect versioned objects from deletion.",
+                            "S3 LuisML {objectLocking} enforces Write-Once Read-Many (WORM) immutability to protect versioned objects from deletion.",
                           ),
                           {
                             objectLocking: (

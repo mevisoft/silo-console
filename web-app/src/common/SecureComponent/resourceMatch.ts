@@ -9,7 +9,7 @@
 // patterns with exactly two wildcards, `*` (any sequence, including empty and
 // including `/`) and `?` (exactly one byte); every other character is literal.
 // This mirrors silo-pkg's wildcard.Match and policy.Resource.Match byte for
-// byte, so the UI shows what SILO will allow. SILO stays the authority: a
+// byte, so the UI shows what S3 LuisML will allow. S3 LuisML stays the authority: a
 // wrong answer here hides or shows a button, it never grants access.
 
 const S3_RESOURCE_PREFIX = "arn:aws:s3:::";

@@ -73,11 +73,11 @@ const TierTypeSelector = () => {
               help={
                 <Fragment>
                   {t(
-                    "SILO supports creating object transition lifecycle management rules, where SILO can automatically move an object to a remote storage “tier”.",
+                    "S3 LuisML supports creating object transition lifecycle management rules, where S3 LuisML can automatically move an object to a remote storage “tier”.",
                   )}
                   <br />
                   <br />
-                  {t("SILO supports the following Tier types:")}
+                  {t("S3 LuisML supports the following Tier types:")}
                   <br />
                   <ul>
                     <li>
@@ -88,7 +88,7 @@ const TierTypeSelector = () => {
                         target="_blank"
                         rel="noopener"
                       >
-                        {t("SILO or other S3-compatible storage")}
+                        {t("S3 LuisML or other S3-compatible storage")}
                       </a>
                     </li>
                     <li>

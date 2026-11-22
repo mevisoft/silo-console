@@ -16,7 +16,7 @@ const messages: Dictionary = {
   "Configure a destination, then add bucket notification rules to send S3 events to it.":
     "Bir hedef yapılandırın, ardından bu hedefe S3 etkinlikleri göndermek için kova bildirim kuralları ekleyin.",
   "Event destinations": "Etkinlik hedefleri",
-  "SILO version": "SILO sürümü",
+  "S3 LuisML version": "S3 LuisML sürümü",
   "Raw JSON": "Ham JSON",
   "Recursive inspections can be expensive. Limit the bucket and path before starting.":
     "Özyinelemeli incelemeler yüksek kaynak tüketebilir. Başlamadan önce kovayı ve yolu sınırlayın.",
@@ -139,8 +139,8 @@ const messages: Dictionary = {
   "Could not update policy": "Politika güncellenemedi",
   "Reset policy {name} to its default definition?":
     "{name} politikası varsayılan tanımına sıfırlansın mı?",
-  "The built-in policy will be restored to the SILO default definition.":
-    "Yerleşik politika, SILO varsayılan tanımına geri yüklenecektir.",
+  "The built-in policy will be restored to the S3 LuisML default definition.":
+    "Yerleşik politika, S3 LuisML varsayılan tanımına geri yüklenecektir.",
   "Loading attachment information…": "Atama bilgileri yükleniyor…",
   "This policy has changed or is no longer available. Refresh the list.":
     "Bu politika değişti veya artık mevcut değil. Listeyi yenileyin.",
@@ -191,8 +191,8 @@ const messages: Dictionary = {
     "Yöneticinizden erişim isteyin. Bu sayfa aşağıdaki IAM eylemlerini kontrol eder:",
   "Required IAM actions": "Gerekli IAM eylemleri",
   "Encryption is not configured": "Şifreleme yapılandırılmamış",
-  "Configure KES or KMS on the SILO server to manage encryption keys in Console.":
-    "Konsolda şifreleme anahtarlarını yönetmek için SILO sunucusunda KES veya KMS'yi yapılandırın.",
+  "Configure KES or KMS on the S3 LuisML server to manage encryption keys in Console.":
+    "Konsolda şifreleme anahtarlarını yönetmek için S3 LuisML sunucusunda KES veya KMS'yi yapılandırın.",
   "Local identity management is unavailable":
     "Yerel kimlik yönetimi kullanılamıyor",
   "LDAP is enabled. Manage users and groups in your LDAP directory; connection settings are available on the LDAP configuration page.":
@@ -210,10 +210,10 @@ const messages: Dictionary = {
     "Prometheus adresini, ağ erişimini ve kimlik doğrulamasını kontrol edip yeniden deneyin.",
   "Advanced metrics need Prometheus":
     "Gelişmiş metrikler için Prometheus gerekir",
-  "Configure Prometheus to collect SILO metrics, then set the URL for your deployment and restart the corresponding service.":
-    "SILO metriklerini toplamak için Prometheus'u yapılandırın, ardından dağıtımınız için URL'yi ayarlayın ve ilgili hizmeti yeniden başlatın.",
+  "Configure Prometheus to collect S3 LuisML metrics, then set the URL for your deployment and restart the corresponding service.":
+    "S3 LuisML metriklerini toplamak için Prometheus'u yapılandırın, ardından dağıtımınız için URL'yi ayarlayın ve ilgili hizmeti yeniden başlatın.",
   "Standalone Console": "Bağımsız Konsol",
-  "Console embedded in SILO": "SILO'ya yerleşik Konsol",
+  "Console embedded in S3 LuisML": "S3 LuisML'ya yerleşik Konsol",
   "Optional standalone settings": "İsteğe bağlı bağımsız ayarlar",
   "Bearer token: ": "Hamiline ait jeton:",
   "Or basic authentication: ": "Veya temel kimlik doğrulama:",
@@ -240,7 +240,7 @@ const messages: Dictionary = {
   "Replace ALIAS with your configured mcli alias.":
     "ALIAS'ı yapılandırılmış mcli takma adınızla değiştirin.",
   "Loading…": "Yükleniyor…",
-  "SILO primitives": "SILO temel bileşenleri",
+  "S3 LuisML primitives": "S3 LuisML temel bileşenleri",
   "Shared building blocks for storage, identity and monitoring.":
     "Depolama, kimlik ve izleme için paylaşılan yapı taşları.",
   "Healthy capacity": "Sağlıklı kapasite",
@@ -387,8 +387,8 @@ const messages: Dictionary = {
   " and ": " ve ",
   "'namespace' reflects current bucket/object list and 'access' reflects a journal of object operations, defaults to 'namespace'":
     "'namespace' mevcut kova/nesne listesini, 'access' ise nesne işlemlerinin günlüğünü yansıtır; varsayılan değer 'namespace'dir",
-  "{compliance} lock protects Objects from write operations by all users, including the SILO root user.":
-    "{compliance} kilidi, nesneleri SILO kök kullanıcısı dahil tüm kullanıcıların yazma işlemlerinden korur.",
+  "{compliance} lock protects Objects from write operations by all users, including the S3 LuisML root user.":
+    "{compliance} kilidi, nesneleri S3 LuisML kök kullanıcısı dahil tüm kullanıcıların yazma işlemlerinden korur.",
   "{count} days": {
     one: "{count} gün",
     other: "{count} gün",
@@ -443,20 +443,20 @@ const messages: Dictionary = {
   "* Warning: With Public access anyone will be able to upload, download and delete files from this Bucket *":
     "* Uyarı: Herkese açık erişim sayesinde herkes bu Kovadaki dosyaları yükleyebilecek, indirebilecek ve silebilecek *",
   "# Associated Access Keys": "# İlişkili Erişim Anahtarları",
-  "© 2026 Ruohang Feng / PGSTY and the SILO contributors.":
-    "© 2026 Ruohang Feng / PGSTY ve SILO katkıda bulunanlar.",
+  "© 2026 Ruohang Feng / PGSTY and the S3 LuisML contributors.":
+    "© 2026 Ruohang Feng / PGSTY ve S3 LuisML katkıda bulunanlar.",
   "<Day>": "<Gün>",
   "<Month>": "<Ay>",
   "<Year>": "<Yıl>",
   "A bucket can only be deleted if it's empty.":
     "Bir kova yalnızca boşsa silinebilir.",
-  "A group can have one attached IAM policy, where all users with membership in that group inherit that policy. Groups support more simplified management of user permissions on the SILO Tenant.":
-    "Bir gruba, o gruba üye olan tüm kullanıcıların bu politikayı devraldığı bir IAM politikası eklenebilir. Gruplar, SILO Kiracıdaki kullanıcı izinlerinin daha basitleştirilmiş yönetimini destekler.",
+  "A group can have one attached IAM policy, where all users with membership in that group inherit that policy. Groups support more simplified management of user permissions on the S3 LuisML Tenant.":
+    "Bir gruba, o gruba üye olan tüm kullanıcıların bu politikayı devraldığı bir IAM politikası eklenebilir. Gruplar, S3 LuisML Kiracıdaki kullanıcı izinlerinin daha basitleştirilmiş yönetimini destekler.",
   "A network error occurred.": "Bir ağ hatası oluştu.",
   "A new {entity} has been created with the following details:":
     "Aşağıdaki ayrıntılarla yeni bir {entity} oluşturuldu:",
-  "A SILO user consists of a unique access key (username) and corresponding secret key (password). Clients must authenticate their identity by specifying both a valid access key (username) and the corresponding secret key (password) of an existing SILO user.":
-    "Bir SILO kullanıcısı, benzersiz bir erişim anahtarından (kullanıcı adı) ve buna karşılık gelen gizli anahtardan (şifre) oluşur. İstemciler, mevcut bir SILO kullanıcısının hem geçerli bir erişim anahtarını (kullanıcı adı) hem de karşılık gelen gizli anahtarını (şifre) belirterek kimliklerini doğrulamalıdır.",
+  "A S3 LuisML user consists of a unique access key (username) and corresponding secret key (password). Clients must authenticate their identity by specifying both a valid access key (username) and the corresponding secret key (password) of an existing S3 LuisML user.":
+    "Bir S3 LuisML kullanıcısı, benzersiz bir erişim anahtarından (kullanıcı adı) ve buna karşılık gelen gizli anahtardan (şifre) oluşur. İstemciler, mevcut bir S3 LuisML kullanıcısının hem geçerli bir erişim anahtarını (kullanıcı adı) hem de karşılık gelen gizli anahtarını (şifre) belirterek kimliklerini doğrulamalıdır.",
   "A user can be a member of multiple groups.":
     "Bir kullanıcı birden fazla gruba üye olabilir.",
   "About Site Replication": "Site Çoğaltma Hakkında",
@@ -471,8 +471,8 @@ const messages: Dictionary = {
   "Access Keys deleted successfully.": "Erişim Anahtarları başarıyla silindi.",
   "Access Keys inherit the policies explicitly attached to the parent user, and the policies attached to each group in which the parent user has membership.":
     "Erişim Anahtarları, ana kullanıcıya açıkça eklenen politikaları ve ana kullanıcının üyeliğinin olduğu her gruba eklenen politikaları devralır.",
-  "Access Keys support programmatic access by applications. You cannot use a Access Key to log into the SILO Console.":
-    "Erişim anahtarları, uygulamaların program aracılığıyla erişmesini sağlar. SILO Konsolunda oturum açmak için bu erişim anahtarları kullanılamaz.",
+  "Access Keys support programmatic access by applications. You cannot use a Access Key to log into the S3 LuisML Console.":
+    "Erişim anahtarları, uygulamaların program aracılığıyla erişmesini sağlar. S3 LuisML Konsolunda oturum açmak için bu erişim anahtarları kullanılamaz.",
   "Access Policy": "Erişim Politikası",
   "Access Policy:": "Erişim Politikası:",
   "Access Rule added successfully": "Erişim Kuralı başarıyla eklendi",
@@ -674,8 +674,8 @@ const messages: Dictionary = {
   "Changes to Bucket features such as":
     "Şu kova özelliklerindeki değişiklikler",
   "Choose or create a new path": "Yeni bir yol seçin veya oluşturun",
-  "Claim from which SILO will read the policy or role to use":
-    "SILO'nun kullanılacak politikayı veya rolü okuyacağı talep (claim)",
+  "Claim from which S3 LuisML will read the policy or role to use":
+    "S3 LuisML'nun kullanılacak politikayı veya rolü okuyacağı talep (claim)",
   "Claim Name": "Talep Adı",
   "Claim Prefix": "Talep Öneki",
   "Claim User Info": "Kullanıcı Bilgisi Claim'i",
@@ -722,20 +722,20 @@ const messages: Dictionary = {
   "Config URL for identity provider configuration":
     "Kimlik sağlayıcı yapılandırması için yapılandırma URL",
   "Config URL is required": "Yapılandırma URL gerekli",
-  "Configuration cannot be disabled / enabled in this module as LDAP environment variables are set for this SILO instance.":
-    "Bu SILO örneği için LDAP ortam değişkenleri ayarlandığından, bu modülde yapılandırma devre dışı bırakılamaz / etkinleştirilemez.",
-  "Configuration cannot be disabled / enabled in this module as OpenID environment variables are set for this SILO instance.":
-    "Bu SILO örneği için OpenID ortam değişkenleri ayarlandığından, yapılandırma bu modülde devre dışı bırakılamaz / etkinleştirilemez.",
-  "Configuration cannot be edited in this module as LDAP environment variables are set for this SILO instance.":
-    "Bu SILO örneği için LDAP ortam değişkenleri ayarlandığından konfigürasyon bu modülde düzenlenemez.",
-  "Configuration cannot be edited in this module as OpenID environment variables are set for this SILO instance.":
-    "Bu SILO örneği için OpenID ortam değişkenleri ayarlandığından konfigürasyon bu modülde düzenlenemez.",
+  "Configuration cannot be disabled / enabled in this module as LDAP environment variables are set for this S3 LuisML instance.":
+    "Bu S3 LuisML örneği için LDAP ortam değişkenleri ayarlandığından, bu modülde yapılandırma devre dışı bırakılamaz / etkinleştirilemez.",
+  "Configuration cannot be disabled / enabled in this module as OpenID environment variables are set for this S3 LuisML instance.":
+    "Bu S3 LuisML örneği için OpenID ortam değişkenleri ayarlandığından, yapılandırma bu modülde devre dışı bırakılamaz / etkinleştirilemez.",
+  "Configuration cannot be edited in this module as LDAP environment variables are set for this S3 LuisML instance.":
+    "Bu S3 LuisML örneği için LDAP ortam değişkenleri ayarlandığından konfigürasyon bu modülde düzenlenemez.",
+  "Configuration cannot be edited in this module as OpenID environment variables are set for this S3 LuisML instance.":
+    "Bu S3 LuisML örneği için OpenID ortam değişkenleri ayarlandığından konfigürasyon bu modülde düzenlenemez.",
   "Configuration saved successfully": "Yapılandırma başarıyla kaydedildi",
   "Configure a {remoteTier} to receive transitioned Objects":
     "Geçişi yapılan Nesneleri almak için bir {remoteTier} yapılandırın",
   "Configure Bucket": "Kovayı Yapılandır",
-  "Configuring an external IDP enables Single-Sign On workflows, where applications authenticate against the external IDP before accessing SILO.":
-    "Harici bir IDP yapılandırmak, uygulamaların SILO'ya erişmeden önce harici IDP'ye göre kimlik doğrulaması yaptığı Tek Oturum Açma iş akışlarını etkinleştirir.",
+  "Configuring an external IDP enables Single-Sign On workflows, where applications authenticate against the external IDP before accessing S3 LuisML.":
+    "Harici bir IDP yapılandırmak, uygulamaların S3 LuisML'ya erişmeden önce harici IDP'ye göre kimlik doğrulaması yaptığı Tek Oturum Açma iş akışlarını etkinleştirir.",
   "Confirm Dialogs": "İletişim Kutularını Onayla",
   "connected server": "bağlı sunucu",
   "Connection String": "Bağlantı Dizesi",
@@ -753,8 +753,8 @@ const messages: Dictionary = {
   "CPU Info": "CPU Bilgi",
   "Create {idpType} configuration": "{idpType} yapılandırması oluşturun",
   "create a bucket": "bir kova oluştur",
-  "Create a new cryptographic key in the Key Management Service server connected to SILO.":
-    "SILO'ya bağlı Anahtar Yönetim Hizmeti sunucusunda yeni bir şifreleme anahtarı oluşturun.",
+  "Create a new cryptographic key in the Key Management Service server connected to S3 LuisML.":
+    "S3 LuisML'ya bağlı Anahtar Yönetim Hizmeti sunucusunda yeni bir şifreleme anahtarı oluşturun.",
   "create a new path": "yeni bir yol oluştur",
   "create a Policy": "Politika oluştur",
   "Create access key": "Erişim anahtarı oluştur",
@@ -908,8 +908,8 @@ const messages: Dictionary = {
   "e.g. Method 2056": "ör. Yöntem 2056",
   "e.g. my-bucket/my-prefix/*": "ör. my-bucket/my-prefix/*",
   "e.g. us-west-rack-2": "ör. us-west-rack-2",
-  "Each user can access only those resources and operations which are explicitly granted by the built-in role. SILO denies access to any other resource or action by default.":
-    "Her kullanıcı yalnızca yerleşik rol tarafından açıkça verilen kaynaklara ve işlemlere erişebilir. SILO varsayılan olarak başka herhangi bir kaynağa veya eyleme erişimi reddeder.",
+  "Each user can access only those resources and operations which are explicitly granted by the built-in role. S3 LuisML denies access to any other resource or action by default.":
+    "Her kullanıcı yalnızca yerleşik rol tarafından açıkça verilen kaynaklara ve işlemlere erişebilir. S3 LuisML varsayılan olarak başka herhangi bir kaynağa veya eyleme erişimi reddeder.",
   Edit: "Düzenle",
   "edit a Policy": "Politikayı düzenleme",
   "Edit Anonymous Access Rule for {target}":
@@ -1102,10 +1102,10 @@ const messages: Dictionary = {
   Filters: "Filtreler",
   "Folder cannot have the same name as an existing file":
     "Klasör mevcut bir dosyayla aynı ada sahip olamaz",
-  "For each write operation to the bucket, SILO checks all configured replication rules for the bucket and applies the matching rule with highest configured priority.":
-    "Kovaya her yazma işlemi için, SILO kova için yapılandırılmış tüm çoğaltma kurallarını kontrol eder ve en yüksek yapılandırılmış önceliğe sahip eşleştirme kuralını uygular.",
-  'For each write operation to this "source" bucket, SILO checks all configured replication rules and applies the matching rule with highest configured priority.':
-    'Bu "kaynak" kovaya yapılan her yazma işlemi için, SILO tüm yapılandırılmış çoğaltma kurallarını kontrol eder ve yapılandırılmış en yüksek önceliğe sahip eşleştirme kuralını uygular.',
+  "For each write operation to the bucket, S3 LuisML checks all configured replication rules for the bucket and applies the matching rule with highest configured priority.":
+    "Kovaya her yazma işlemi için, S3 LuisML kova için yapılandırılmış tüm çoğaltma kurallarını kontrol eder ve en yüksek yapılandırılmış önceliğe sahip eşleştirme kuralını uygular.",
+  'For each write operation to this "source" bucket, S3 LuisML checks all configured replication rules and applies the matching rule with highest configured priority.':
+    'Bu "kaynak" kovaya yapılan her yazma işlemi için, S3 LuisML tüm yapılandırılmış çoğaltma kurallarını kontrol eder ve yapılandırılmış en yüksek önceliğe sahip eşleştirme kuralını uygular.',
   "For per-object retention settings, defer to the documentation for the PUT operation used by your preferred SDK.":
     "Nesne başına saklama ayarları için, tercih ettiğiniz SDK tarafından kullanılan PUT işlemine ilişkin belgelere başvurun.",
   "For SSE-S3 or SSE-KMS encryption via KMS, all sites must have access to a central KMS deployment server.":
@@ -1125,8 +1125,8 @@ const messages: Dictionary = {
   "Group Mappings": "Grup Eşlemeleri",
   "Group Name": "Grup Adı",
   "Group Status:": "Grup Durumu:",
-  "Groups provide a simplified method for managing shared permissions among users with common access patterns and workloads. Client’s cannot authenticate to a SILO deployment using a group as an identity.":
-    "Gruplar, ortak erişim kalıplarına ve iş yüklerine sahip kullanıcılar arasında paylaşılan izinleri yönetmek için basitleştirilmiş bir yöntem sağlar. Müşteri, kimlik olarak bir grubu kullanarak SILO dağıtımında kimlik doğrulaması yapamaz.",
+  "Groups provide a simplified method for managing shared permissions among users with common access patterns and workloads. Client’s cannot authenticate to a S3 LuisML deployment using a group as an identity.":
+    "Gruplar, ortak erişim kalıplarına ve iş yüklerine sahip kullanıcılar arasında paylaşılan izinleri yönetmek için basitleştirilmiş bir yöntem sağlar. Müşteri, kimlik olarak bir grubu kullanarak S3 LuisML dağıtımında kimlik doğrulaması yapamaz.",
   "Groups with this Policy associated": "Bu Politikayla ilişkili gruplar",
   "Guide to access policy structure": "Politika yapısına erişim kılavuzu",
   hard: "kesin",
@@ -1609,8 +1609,8 @@ const messages: Dictionary = {
   "Server Insecure": "Sunucu Güvenli Değil",
   "Server Location": "Sunucu Konumu",
   "server-side bucket replication": "sunucu tarafı kova çoğaltması",
-  "Server, client and Console are all AGPLv3. SILO's documentation is CC BY 4.0 — {licensing}.":
-    "Sunucu, istemci ve Konsolun tümü AGPLv3'tür. SILO'nun belgeleri CC BY 4.0 — {licensing}'dir.",
+  "Server, client and Console are all AGPLv3. S3 LuisML's documentation is CC BY 4.0 — {licensing}.":
+    "Sunucu, istemci ve Konsolun tümü AGPLv3'tür. S3 LuisML'nun belgeleri CC BY 4.0 — {licensing}'dir.",
   Service: "Servis",
   "Service Accounts": "Hizmet Hesapları",
   Services: "Hizmetler",
@@ -1641,8 +1641,8 @@ const messages: Dictionary = {
     "TLS'yi etkinleştirmek için 'on' olarak ayarlayın",
   "Set to 'on' to use streaming NATS server":
     "NATS akış sunucusunu kullanmak için 'on' olarak ayarlayın",
-  "Setting a {quota} assigns a hard limit to a bucket beyond which SILO does not allow writes.":
-    "Bir {quota} ayarlamak, bir kovaya kesin bir sınır atar ve bunun ötesinde SILO yazmalara izin vermez.",
+  "Setting a {quota} assigns a hard limit to a bucket beyond which S3 LuisML does not allow writes.":
+    "Bir {quota} ayarlamak, bir kovaya kesin bir sınır atar ve bunun ötesinde S3 LuisML yazmalara izin vermez.",
   "Setting an {anonymous} policy allows clients to access the Bucket or prefix contents and perform actions consistent with the specified policy without authentication.":
     "Bir {anonymous} politikasının ayarlanması, istemcilerin Kova veya önek içeriklerine erişmesine ve kimlik doğrulaması olmadan belirtilen politikayla tutarlı eylemler gerçekleştirmesine olanak tanır.",
   Share: "Paylaş",
@@ -1658,55 +1658,56 @@ const messages: Dictionary = {
   "Show deleted objects": "Silinen nesneleri göster",
   "Show Rewind Data": "Geri Sarma Verilerini Göster",
   "Show/Hide": "Göster/Gizle",
-  "SILO {bucketNotifications} allow administrators to send notifications to supported external services on certain object or bucket events.":
-    "SILO {bucketNotifications} yöneticilerin belirli nesne veya kova olaylarında desteklenen harici hizmetlere bildirim göndermesine olanak tanır.",
-  "SILO {objectLocking} enforces Write-Once Read-Many (WORM) immutability to protect versioned objects from deletion.":
-    "SILO {objectLocking}, sürümlendirilmiş nesneleri silinmeye karşı korumak için Bir Kez Yaz Çok Sayıda Oku (WORM) değişmezliğini uygular.",
-  "SILO {serverSideReplication} is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket.":
-    "SILO {serverSideReplication}, kaynak ve hedef kova arasındaki nesneleri senkronize eden otomatik kova düzeyinde bir yapılandırmadır.",
-  "SILO bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events. SILO supports bucket and object-level S3 events similar to the Amazon S3 Event Notifications.":
-    "SILO kova bildirimleri, yöneticilerin belirli nesne veya kova olaylarında desteklenen harici hizmetlere bildirim göndermesine olanak tanır. SILO, Amazon S3 Etkinlik Bildirimlerine benzer şekilde kova ve nesne düzeyinde S3 olaylarını destekler.",
-  "SILO derives its behavior and syntax from {s3Lifecycle} for compatibility in migrating workloads and lifecycle rules from S3 to SILO.":
-    "SILO, iş yüklerinin ve yaşam döngüsü kurallarının S3'ten SILO'ya taşınmasında uyumluluk için davranışını ve sözdizimini {s3Lifecycle}'den alır.",
-  "SILO does not enable existing object replication by default. Objects created before replication was configured or while replication is disabled are not synchronized to the target deployment unless replication of existing objects is enabled.":
-    "SILO varsayılan olarak mevcut nesne çoğaltmayı etkinleştirmez. Çoğaltma yapılandırılmadan önce veya çoğaltma devre dışı bırakıldığında oluşturulan nesneler, mevcut nesnelerin çoğaltılması etkinleştirilmediği sürece hedef dağıtımla eşitlenmez.",
-  "SILO Health Info": "SILO Sağlık Bilgileri",
-  "SILO Object Lifecycle Management allows creating rules for time or date based automatic transition or expiry of objects. For object transition, SILO automatically moves the object to a configured remote storage tier.":
-    "SILO Nesne Yaşam Döngüsü Yönetimi, nesnelerin zaman veya tarih bazlı otomatik geçişi veya sona ermesi için kurallar oluşturulmasına olanak sağlar. Nesne geçişi için SILO nesneyi otomatik olarak yapılandırılmış bir uzak depolama katmanına taşır.",
-  "SILO or other S3-compatible storage": "SILO veya diğer S3 uyumlu depolama",
-  "SILO PBAC is built for compatibility with AWS IAM policy syntax, structure, and behavior.":
-    "SILO PBAC, AWS IAM politika sözdizimi, yapısı ve davranışıyla uyumluluk için oluşturulmuştur.",
-  "SILO queries the configured Active Directory / LDAP server to verify the credentials specified by the application and optionally return a list of groups in which the user has membership. SILO supports two modes (Lookup-Bind Mode and Username-Bind Mode) for performing these queries":
-    "SILO, uygulama tarafından belirtilen kimlik bilgilerini doğrulamak için yapılandırılmış Active Directory / LDAP sunucusunu sorgular ve isteğe bağlı olarak kullanıcının üyeliğinin olduğu grupların bir listesini döndürür. SILO bu sorguları gerçekleştirmek için iki modu (Arama-Bağlama Modu ve Kullanıcı Adı-Bağlama Modu) destekler",
-  "SILO recommends using Lookup-Bind mode as the preferred method for verifying AD/LDAP credentials. Username-Bind mode is a legacy method retained for backwards compatibility only.":
-    "SILO, AD/LDAP kimlik bilgilerini doğrulamak için tercih edilen yöntem olarak Arama-Bind modunun kullanılmasını önerir. Kullanıcı Adı Bağlama modu yalnızca geriye dönük uyumluluk için tutulan eski bir yöntemdir.",
-  "SILO requires versioning to support replication.":
-    "SILO çoğaltmayı desteklemek için sürüm oluşturmayı gerektirir.",
-  "SILO supports automatically replicating existing objects in a bucket; this setting is enabled by default. Please note that objects created before replication was configured or while replication is disabled are not synchronized to the target deployment in case this setting is not enabled.":
-    "SILO bir kovadaki mevcut nesnelerin otomatik olarak çoğaltılmasını destekler; bu ayar varsayılan olarak etkindir. Çoğaltma yapılandırılmadan önce veya çoğaltma devre dışı bırakıldığında oluşturulan nesnelerin, bu ayarın etkinleştirilmemesi durumunda hedef dağıtımla senkronize edilmeyeceğini lütfen unutmayın.",
-  "SILO supports creating object transition lifecycle management rules, where SILO can automatically move an object to a remote storage “tier”.":
-    'SILO, nesne geçişi yaşam döngüsü yönetimi kurallarının oluşturulmasını destekler; burada SILO bir nesneyi otomatik olarak uzak bir depolama "katmanına" taşıyabilir.',
-  "SILO supports enabling automatic {sseKms} and {sseS3} encryption of all objects written to a bucket using a specific External Key (EK) stored on the external KMS.":
-    "SILO, harici KMS üzerinde depolanan belirli bir Harici Anahtar (EK) kullanılarak bir kovaya yazılan tüm nesnelerin otomatik {sseKms} ve {sseS3} şifrelemesinin etkinleştirilmesini destekler.",
-  "SILO supports enabling replication of existing objects in a bucket.":
-    "SILO bir kovadaki mevcut nesnelerin çoğaltılmasını etkinleştirmeyi destekler.",
-  "SILO supports keeping multiple {versions} of an object in a single bucket.":
-    "SILO bir nesnenin birden fazla {versions} kopyasını tek bir kovada tutmayı destekler.",
-  "SILO supports replicating delete operations, where SILO synchronizes deleting specific object versions and new delete markers. Delete operation replication uses the same replication process as all other replication operations.":
-    "SILO silme işlemlerini kopyalamayı destekler; burada SILO belirli nesne sürümlerinin ve yeni silme işaretlerinin silinmesini senkronize eder. Silme işlemi çoğaltması, diğer tüm çoğaltma işlemleriyle aynı çoğaltma işlemini kullanır.",
-  "SILO supports server-side and client-side replication of objects between source and destination buckets.":
-    "SILO kaynak ve hedef kovalar arasındaki nesnelerin sunucu tarafında ve istemci tarafında çoğaltılmasını destekler.",
-  "SILO supports setting both {bucketDefault} and per-object retention rules.":
-    "SILO, hem {bucketDefault} hem de nesne başına saklama kurallarının ayarlanmasını destekler.",
-  "SILO supports the following Tier types:":
-    "SILO aşağıdaki Katman türlerini destekler:",
-  "SILO supports using an Active Directory or LDAP (AD/LDAP) service for external management of user identities. Configuring an external IDentity Provider (IDP) enables Single-Sign On (SSO) workflows, where applications authenticate against the external IDP before accessing SILO.":
-    "SILO, kullanıcı kimliklerinin harici yönetimi için bir Active Directory veya LDAP (AD/LDAP) hizmetinin kullanılmasını destekler. Harici bir Kimlik Sağlayıcıyı (IDP) yapılandırmak, uygulamaların SILO'ya erişmeden önce harici IDP'ye göre kimlik doğrulaması yaptığı Tek Oturum Açma (SSO) iş akışlarını etkinleştirir.",
-  "SILO uses buckets to organize objects. A bucket is similar to a folder or directory in a filesystem, where each bucket can hold an arbitrary number of objects.":
-    "SILO nesneleri düzenlemek için kovaları kullanır. Bir kova, her bir kovanın isteğe bağlı sayıda nesneyi tutabildiği bir dosya sistemindeki bir klasöre veya dizine benzer.",
-  "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access. Each policy describes one or more actions and conditions that outline the permissions of a user or group of users.":
-    "SILO, kimliği doğrulanmış bir kullanıcının erişim sahibi olduğu yetkili eylemleri ve kaynakları tanımlamak için Politika Tabanlı Erişim Kontrolünü (PBAC) kullanır. Her politika, bir kullanıcının veya kullanıcı grubunun izinlerinin ana hatlarını çizen bir veya daha fazla eylemi ve koşulu açıklar.",
-  "SILO VERSION": "SILO SÜRÜMÜ",
+  "S3 LuisML {bucketNotifications} allow administrators to send notifications to supported external services on certain object or bucket events.":
+    "S3 LuisML {bucketNotifications} yöneticilerin belirli nesne veya kova olaylarında desteklenen harici hizmetlere bildirim göndermesine olanak tanır.",
+  "S3 LuisML {objectLocking} enforces Write-Once Read-Many (WORM) immutability to protect versioned objects from deletion.":
+    "S3 LuisML {objectLocking}, sürümlendirilmiş nesneleri silinmeye karşı korumak için Bir Kez Yaz Çok Sayıda Oku (WORM) değişmezliğini uygular.",
+  "S3 LuisML {serverSideReplication} is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket.":
+    "S3 LuisML {serverSideReplication}, kaynak ve hedef kova arasındaki nesneleri senkronize eden otomatik kova düzeyinde bir yapılandırmadır.",
+  "S3 LuisML bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events. S3 LuisML supports bucket and object-level S3 events similar to the Amazon S3 Event Notifications.":
+    "S3 LuisML kova bildirimleri, yöneticilerin belirli nesne veya kova olaylarında desteklenen harici hizmetlere bildirim göndermesine olanak tanır. S3 LuisML, Amazon S3 Etkinlik Bildirimlerine benzer şekilde kova ve nesne düzeyinde S3 olaylarını destekler.",
+  "S3 LuisML derives its behavior and syntax from {s3Lifecycle} for compatibility in migrating workloads and lifecycle rules from S3 to S3 LuisML.":
+    "S3 LuisML, iş yüklerinin ve yaşam döngüsü kurallarının S3'ten S3 LuisML'ya taşınmasında uyumluluk için davranışını ve sözdizimini {s3Lifecycle}'den alır.",
+  "S3 LuisML does not enable existing object replication by default. Objects created before replication was configured or while replication is disabled are not synchronized to the target deployment unless replication of existing objects is enabled.":
+    "S3 LuisML varsayılan olarak mevcut nesne çoğaltmayı etkinleştirmez. Çoğaltma yapılandırılmadan önce veya çoğaltma devre dışı bırakıldığında oluşturulan nesneler, mevcut nesnelerin çoğaltılması etkinleştirilmediği sürece hedef dağıtımla eşitlenmez.",
+  "S3 LuisML Health Info": "S3 LuisML Sağlık Bilgileri",
+  "S3 LuisML Object Lifecycle Management allows creating rules for time or date based automatic transition or expiry of objects. For object transition, S3 LuisML automatically moves the object to a configured remote storage tier.":
+    "S3 LuisML Nesne Yaşam Döngüsü Yönetimi, nesnelerin zaman veya tarih bazlı otomatik geçişi veya sona ermesi için kurallar oluşturulmasına olanak sağlar. Nesne geçişi için S3 LuisML nesneyi otomatik olarak yapılandırılmış bir uzak depolama katmanına taşır.",
+  "S3 LuisML or other S3-compatible storage":
+    "S3 LuisML veya diğer S3 uyumlu depolama",
+  "S3 LuisML PBAC is built for compatibility with AWS IAM policy syntax, structure, and behavior.":
+    "S3 LuisML PBAC, AWS IAM politika sözdizimi, yapısı ve davranışıyla uyumluluk için oluşturulmuştur.",
+  "S3 LuisML queries the configured Active Directory / LDAP server to verify the credentials specified by the application and optionally return a list of groups in which the user has membership. S3 LuisML supports two modes (Lookup-Bind Mode and Username-Bind Mode) for performing these queries":
+    "S3 LuisML, uygulama tarafından belirtilen kimlik bilgilerini doğrulamak için yapılandırılmış Active Directory / LDAP sunucusunu sorgular ve isteğe bağlı olarak kullanıcının üyeliğinin olduğu grupların bir listesini döndürür. S3 LuisML bu sorguları gerçekleştirmek için iki modu (Arama-Bağlama Modu ve Kullanıcı Adı-Bağlama Modu) destekler",
+  "S3 LuisML recommends using Lookup-Bind mode as the preferred method for verifying AD/LDAP credentials. Username-Bind mode is a legacy method retained for backwards compatibility only.":
+    "S3 LuisML, AD/LDAP kimlik bilgilerini doğrulamak için tercih edilen yöntem olarak Arama-Bind modunun kullanılmasını önerir. Kullanıcı Adı Bağlama modu yalnızca geriye dönük uyumluluk için tutulan eski bir yöntemdir.",
+  "S3 LuisML requires versioning to support replication.":
+    "S3 LuisML çoğaltmayı desteklemek için sürüm oluşturmayı gerektirir.",
+  "S3 LuisML supports automatically replicating existing objects in a bucket; this setting is enabled by default. Please note that objects created before replication was configured or while replication is disabled are not synchronized to the target deployment in case this setting is not enabled.":
+    "S3 LuisML bir kovadaki mevcut nesnelerin otomatik olarak çoğaltılmasını destekler; bu ayar varsayılan olarak etkindir. Çoğaltma yapılandırılmadan önce veya çoğaltma devre dışı bırakıldığında oluşturulan nesnelerin, bu ayarın etkinleştirilmemesi durumunda hedef dağıtımla senkronize edilmeyeceğini lütfen unutmayın.",
+  "S3 LuisML supports creating object transition lifecycle management rules, where S3 LuisML can automatically move an object to a remote storage “tier”.":
+    'S3 LuisML, nesne geçişi yaşam döngüsü yönetimi kurallarının oluşturulmasını destekler; burada S3 LuisML bir nesneyi otomatik olarak uzak bir depolama "katmanına" taşıyabilir.',
+  "S3 LuisML supports enabling automatic {sseKms} and {sseS3} encryption of all objects written to a bucket using a specific External Key (EK) stored on the external KMS.":
+    "S3 LuisML, harici KMS üzerinde depolanan belirli bir Harici Anahtar (EK) kullanılarak bir kovaya yazılan tüm nesnelerin otomatik {sseKms} ve {sseS3} şifrelemesinin etkinleştirilmesini destekler.",
+  "S3 LuisML supports enabling replication of existing objects in a bucket.":
+    "S3 LuisML bir kovadaki mevcut nesnelerin çoğaltılmasını etkinleştirmeyi destekler.",
+  "S3 LuisML supports keeping multiple {versions} of an object in a single bucket.":
+    "S3 LuisML bir nesnenin birden fazla {versions} kopyasını tek bir kovada tutmayı destekler.",
+  "S3 LuisML supports replicating delete operations, where S3 LuisML synchronizes deleting specific object versions and new delete markers. Delete operation replication uses the same replication process as all other replication operations.":
+    "S3 LuisML silme işlemlerini kopyalamayı destekler; burada S3 LuisML belirli nesne sürümlerinin ve yeni silme işaretlerinin silinmesini senkronize eder. Silme işlemi çoğaltması, diğer tüm çoğaltma işlemleriyle aynı çoğaltma işlemini kullanır.",
+  "S3 LuisML supports server-side and client-side replication of objects between source and destination buckets.":
+    "S3 LuisML kaynak ve hedef kovalar arasındaki nesnelerin sunucu tarafında ve istemci tarafında çoğaltılmasını destekler.",
+  "S3 LuisML supports setting both {bucketDefault} and per-object retention rules.":
+    "S3 LuisML, hem {bucketDefault} hem de nesne başına saklama kurallarının ayarlanmasını destekler.",
+  "S3 LuisML supports the following Tier types:":
+    "S3 LuisML aşağıdaki Katman türlerini destekler:",
+  "S3 LuisML supports using an Active Directory or LDAP (AD/LDAP) service for external management of user identities. Configuring an external IDentity Provider (IDP) enables Single-Sign On (SSO) workflows, where applications authenticate against the external IDP before accessing S3 LuisML.":
+    "S3 LuisML, kullanıcı kimliklerinin harici yönetimi için bir Active Directory veya LDAP (AD/LDAP) hizmetinin kullanılmasını destekler. Harici bir Kimlik Sağlayıcıyı (IDP) yapılandırmak, uygulamaların S3 LuisML'ya erişmeden önce harici IDP'ye göre kimlik doğrulaması yaptığı Tek Oturum Açma (SSO) iş akışlarını etkinleştirir.",
+  "S3 LuisML uses buckets to organize objects. A bucket is similar to a folder or directory in a filesystem, where each bucket can hold an arbitrary number of objects.":
+    "S3 LuisML nesneleri düzenlemek için kovaları kullanır. Bir kova, her bir kovanın isteğe bağlı sayıda nesneyi tutabildiği bir dosya sistemindeki bir klasöre veya dizine benzer.",
+  "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access. Each policy describes one or more actions and conditions that outline the permissions of a user or group of users.":
+    "S3 LuisML, kimliği doğrulanmış bir kullanıcının erişim sahibi olduğu yetkili eylemleri ve kaynakları tanımlamak için Politika Tabanlı Erişim Kontrolünü (PBAC) kullanır. Her politika, bir kullanıcının veya kullanıcı grubunun izinlerinin ana hatlarını çizen bir veya daha fazla eylemi ve koşulu açıklar.",
+  "S3 LuisML VERSION": "S3 LuisML SÜRÜMÜ",
   "Site Name": "Site Adı",
   "Site:": "Sitesi:",
   Size: "Boyut",
@@ -1835,8 +1836,8 @@ const messages: Dictionary = {
   "This configuration cannot be deleted using this module as this was set using OpenID environment variables.":
     "Bu yapılandırma, OpenID ortam değişkenleri kullanılarak ayarlandığından bu modül kullanılarak silinemez.",
   "this Console": "bu Konsol",
-  "This feature allows multiple independent SILO sites (or clusters) that are using the same external IDentity Provider (IDP) to be configured as replicas. In this situation the set of replica sites are referred to as peer sites or just sites.":
-    "Bu özellik, aynı harici Kimlik Sağlayıcıyı (IDP) kullanan birden fazla bağımsız SILO sitenin (veya kümenin) kopya olarak yapılandırılmasına olanak tanır. Bu durumda, kopya siteler kümesine eş siteler veya yalnızca siteler adı verilir.",
+  "This feature allows multiple independent S3 LuisML sites (or clusters) that are using the same external IDentity Provider (IDP) to be configured as replicas. In this situation the set of replica sites are referred to as peer sites or just sites.":
+    "Bu özellik, aynı harici Kimlik Sağlayıcıyı (IDP) kullanan birden fazla bağımsız S3 LuisML sitenin (veya kümenin) kopya olarak yapılandırılmasına olanak tanır. Bu durumda, kopya siteler kümesine eş siteler veya yalnızca siteler adı verilir.",
   "This feature is not available for a single-disk setup.":
     "Bu özellik tek diskli kurulumda mevcut değildir.",
   "This feature is not available.": "Bu özellik mevcut değil.",
@@ -1865,8 +1866,8 @@ const messages: Dictionary = {
   Tier: "Katman",
   "Tier Name": "Katman Adı",
   "Tier Types": "Katman Türleri",
-  "Tiers are used by the SILO Object Lifecycle Management which allows creating rules for time or date based automatic transition or expiry of objects. For object transition, SILO automatically moves the object to a configured remote storage tier.":
-    "Katmanlar, nesnelerin zaman veya tarih bazlı otomatik geçişi veya sona ermesi için kurallar oluşturmaya izin veren SILO Nesne Yaşam Döngüsü Yönetimi tarafından kullanılır. Nesne geçişi için SILO nesneyi otomatik olarak yapılandırılmış bir uzak depolama katmanına taşır.",
+  "Tiers are used by the S3 LuisML Object Lifecycle Management which allows creating rules for time or date based automatic transition or expiry of objects. For object transition, S3 LuisML automatically moves the object to a configured remote storage tier.":
+    "Katmanlar, nesnelerin zaman veya tarih bazlı otomatik geçişi veya sona ermesi için kurallar oluşturmaya izin veren S3 LuisML Nesne Yaşam Döngüsü Yönetimi tarafından kullanılır. Nesne geçişi için S3 LuisML nesneyi otomatik olarak yapılandırılmış bir uzak depolama katmanına taşır.",
   "Time duration between scanner cycles, defaults to '1m'":
     "Tarayıcı döngüleri arasındaki süre, varsayılan olarak '1m'dir",
   "Time to Response NS": "Yanıt Zamanı NS",
@@ -1976,7 +1977,7 @@ const messages: Dictionary = {
   "View Replication Status for a:":
     "Aşağıdakiler için Çoğaltma Durumunu Görüntüle:",
   "view User details": "Kullanıcı ayrıntılarını görüntüle",
-  "Visit the SILO website": "SILO web sitesini ziyaret edin",
+  "Visit the S3 LuisML website": "S3 LuisML web sitesini ziyaret edin",
   "Volume or Bucket Name": "Birim veya Kova Adı",
   "Volume/Bucket name cannot start with /": "Birim/kova adı / ile başlayamaz",
   Warning: "Uyarı",
@@ -2047,12 +2048,12 @@ const messages: Dictionary = {
     "Nesne Kilitlemenin devre dışı bırakılabilmesi için Saklama özelliğini devre dışı bırakmalısınız",
   "You need to select at least one group to assign":
     "Atamak için en az bir grup seçmelisiniz",
-  "You require additional permissions in order to {name}. Please ask your SILO administrator to grant you {scopes} permission in order to {name}.":
-    "{name} için ek izinlere ihtiyacınız var. Lütfen SILO yöneticinizden {name} için size {scopes} izni vermesini isteyin.",
-  "You require additional permissions in order to {name}. Please ask your SILO administrator to grant you {scopes} permissions in order to {name}.":
-    "{name} için ek izinlere ihtiyacınız var. Lütfen SILO yöneticinizden {name} için size {scopes} izinleri vermesini isteyin.",
-  "You require additional permissions in order to create a new Tier. Please ask your SILO administrator to grant you {permission} permission in order to create a Tier.":
-    "Yeni bir Katman oluşturmak için ek izinlere ihtiyacınız var. Lütfen SILO yöneticinizden bir Katman oluşturmak için size {permission} izni vermesini isteyin.",
+  "You require additional permissions in order to {name}. Please ask your S3 LuisML administrator to grant you {scopes} permission in order to {name}.":
+    "{name} için ek izinlere ihtiyacınız var. Lütfen S3 LuisML yöneticinizden {name} için size {scopes} izni vermesini isteyin.",
+  "You require additional permissions in order to {name}. Please ask your S3 LuisML administrator to grant you {scopes} permissions in order to {name}.":
+    "{name} için ek izinlere ihtiyacınız var. Lütfen S3 LuisML yöneticinizden {name} için size {scopes} izinleri vermesini isteyin.",
+  "You require additional permissions in order to create a new Tier. Please ask your S3 LuisML administrator to grant you {permission} permission in order to create a Tier.":
+    "Yeni bir Katman oluşturmak için ek izinlere ihtiyacınız var. Lütfen S3 LuisML yöneticinizden bir Katman oluşturmak için size {permission} izni vermesini isteyin.",
   "File is empty": "Dosya boş",
   "Invalid UTF-8 or binary content": "Geçersiz UTF-8 veya ikili içerik",
   "Loading text preview…": "Metin önizlemesi yükleniyor…",
@@ -2164,8 +2165,8 @@ const messages: Dictionary = {
   "No replication sites yet": "Henüz çoğaltma sitesi yok",
   "Refresh to try loading the configured sites again.":
     "Yapılandırılmış siteleri tekrar yüklemeyi denemek için yenileyin.",
-  "Connect independent SILO sites to replicate their data and identity configuration.":
-    "Verilerini ve kimlik yapılandırmalarını kopyalamak için bağımsız SILO siteleri bağlayın.",
+  "Connect independent S3 LuisML sites to replicate their data and identity configuration.":
+    "Verilerini ve kimlik yapılandırmalarını kopyalamak için bağımsız S3 LuisML siteleri bağlayın.",
   "Waiting for logs": "Günlükler bekleniyor",
   "Logs are not running": "Günlükler çalışmıyor",
   "New log entries will appear here as the server emits them.":

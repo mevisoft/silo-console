@@ -28,13 +28,12 @@ import { RedirectRule } from "api/consoleApi";
 import { redirectRules } from "./login.utils";
 import { setHelpName } from "../../systemSlice";
 import LoginLayout from "./LoginLayout";
-import { useLocalizedLink, useT } from "i18n";
+import { useT } from "i18n";
 
 const Login = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
   const t = useT();
-  const localize = useLocalizedLink();
 
   const loginStrategy = useSelector(
     (state: AppState) => state.login.loginStrategy,
@@ -119,8 +118,6 @@ const Login = () => {
       );
   }
 
-  const docsURL = "https://silo.pgsty.com/docs/";
-
   useEffect(() => {
     dispatch(setHelpName("login"));
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -129,53 +126,7 @@ const Login = () => {
   return (
     <Fragment>
       <MainError />
-      <LoginLayout
-        footer={
-          <Box
-            sx={{
-              display: "flex",
-              flexWrap: "wrap",
-              alignItems: "center",
-              justifyContent: "center",
-              rowGap: 8,
-              "& .separator": {
-                marginInlineStart: 4,
-                marginInlineEnd: 4,
-              },
-            }}
-          >
-            <a
-              href={localize("https://silo.pgsty.com")}
-              target="_blank"
-              rel="noopener"
-            >
-              SILO
-            </a>
-            <span className={"separator"}>|</span>
-            <a href={localize(docsURL)} target="_blank" rel="noopener">
-              {t("DOCS")}
-            </a>
-            <span className={"separator"}>|</span>
-            <a
-              href="https://github.com/pgsty/silo-console"
-              target="_blank"
-              rel="noopener"
-            >
-              GitHub
-            </a>
-            <span className={"separator"}>|</span>
-            <a
-              href={localize("https://silo.pgsty.com/download/")}
-              target="_blank"
-              rel="noopener"
-            >
-              {t("Download")}
-            </a>
-          </Box>
-        }
-      >
-        {loginComponent}
-      </LoginLayout>
+      <LoginLayout>{loginComponent}</LoginLayout>
     </Fragment>
   );
 };

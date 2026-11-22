@@ -370,9 +370,9 @@ export interface ListGroupsResponse {
 }
 
 export interface Policy {
-  /** Whether the policy name is one of the SILO built-in policies */
+  /** Whether the policy name is one of the S3 LuisML built-in policies */
   builtin?: boolean | null;
-  /** Whether this is a built-in policy whose stored document differs semantically from the SILO default */
+  /** Whether this is a built-in policy whose stored document differs semantically from the S3 LuisML default */
   modified?: boolean | null;
   /**
    * Number of distinct users directly assigned to this policy; absent when unknown
@@ -729,7 +729,7 @@ export interface SessionResponse {
   customStyles?: string;
   allowResources?: PermissionResource[];
   envConstants?: EnvironmentConstants;
-  /** The account this session was opened for: the access key entered at credential or STS login. Empty for sessions opened through an external identity provider. The UI uses it to recognize the current user; SILO enforces every self-referential restriction itself. */
+  /** The account this session was opened for: the access key entered at credential or STS login. Empty for sessions opened through an external identity provider. The UI uses it to recognize the current user; S3 LuisML enforces every self-referential restriction itself. */
   accountAccessKey?: string;
 }
 
@@ -4137,7 +4137,7 @@ export class Api<
      *
      * @tags Configuration
      * @name ExportConfig
-     * @summary Export the current config from SILO server
+     * @summary Export the current config from S3 LuisML server
      * @request GET:/configs/export
      * @secure
      */
@@ -4155,7 +4155,7 @@ export class Api<
      *
      * @tags Configuration
      * @name ImportCreate
-     * @summary Uploads a file to import SILO server config.
+     * @summary Uploads a file to import S3 LuisML server config.
      * @request POST:/configs/import
      * @secure
      */

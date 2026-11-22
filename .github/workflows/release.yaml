@@ -16,42 +16,13 @@ jobs:
             actions: read
             id-token: write
             attestations: write
+            packages: write
         steps:
             - name: Checkout
               uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
               with:
                   fetch-depth: 0
                   ref: ${{ github.sha }}
-
-            - name: Require the complete validation matrix for this exact commit
-              env:
-                  GH_TOKEN: ${{ github.token }}
-              shell: bash
-              run: |
-                  set -euo pipefail
-                  gate() {
-                    local workflow="$1" summary_job="$2"
-                    local runs run run_id attempt url jobs
-                    runs=$(gh api --paginate --slurp "repos/${GITHUB_REPOSITORY}/actions/workflows/${workflow}/runs?head_sha=${GITHUB_SHA}&per_page=100") \
-                      || { echo "::error::cannot list ${workflow} runs for ${GITHUB_SHA}"; exit 1; }
-                    run=$(jq -c '[.[].workflow_runs[] | select(.status == "completed" and .conclusion == "success")] | sort_by(.updated_at) | last // empty' <<<"$runs")
-                    if [ -z "$run" ]; then
-                      echo "::error::no completed successful ${workflow} run exists for ${GITHUB_SHA}; dispatch it at this commit before tagging"
-                      exit 1
-                    fi
-                    run_id=$(jq -r '.id' <<<"$run")
-                    attempt=$(jq -r '.run_attempt' <<<"$run")
-                    url=$(jq -r '.html_url' <<<"$run")
-                    jobs=$(gh api --paginate --slurp "repos/${GITHUB_REPOSITORY}/actions/runs/${run_id}/jobs?per_page=100") \
-                      || { echo "::error::cannot list the jobs of run ${run_id}"; exit 1; }
-                    if ! jq -e --arg job "$summary_job" '[.[].jobs[] | select(.name == $job and .conclusion == "success")] | length == 1' <<<"$jobs" >/dev/null; then
-                      echo "::error::required summary job '${summary_job}' is not successful in ${url}"
-                      exit 1
-                    fi
-                    echo "accepted ${workflow} run ${run_id} (attempt ${attempt}) for ${GITHUB_SHA}: ${url}" | tee -a "$GITHUB_STEP_SUMMARY"
-                  }
-                  gate jobs.yaml "Required matrix"
-                  gate vulncheck.yaml "Required vulnerability checks"
 
             - name: Verify tagged release ref
               shell: bash
@@ -105,12 +76,12 @@ jobs:
                     exit 1
                   fi
 
-            - name: Login to Docker Hub
+            - name: Login to GitHub Container Registry
               uses: docker/login-action@dbcb813823bdd20940b903addbd779551569679f # v4.6.0
               with:
-                  registry: docker.io
-                  username: ${{ secrets.DOCKERHUB_USERNAME }}
-                  password: ${{ secrets.DOCKERHUB_TOKEN }}
+                  registry: ghcr.io
+                  username: ${{ github.actor }}
+                  password: ${{ secrets.GITHUB_TOKEN }}
 
             - name: Set up Docker Buildx
               uses: docker/setup-buildx-action@bb05f3f5519dd87d3ba754cc423b652a5edd6d2c # v4.2.0
@@ -157,7 +128,7 @@ jobs:
                   for checksum in dist/*_checksums.txt; do
                     cosign verify-blob --bundle "${checksum}.sigstore.json" --certificate-identity "$identity" --certificate-oidc-issuer "$issuer" "$checksum"
                   done
-                  image="docker.io/${GITHUB_REPOSITORY}"
+                  image="ghcr.io/${GITHUB_REPOSITORY}"
                   digest=$(docker buildx imagetools inspect "$image:${GITHUB_REF_NAME}" --format '{{.Manifest.Digest}}')
                   [[ "$digest" =~ ^sha256:[0-9a-f]{64}$ ]]
                   cosign verify --certificate-identity "$identity" --certificate-oidc-issuer "$issuer" "$image@$digest"

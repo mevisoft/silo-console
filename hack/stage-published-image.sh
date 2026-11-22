@@ -5,7 +5,7 @@ set -euo pipefail
 tag="${1:?usage: stage-published-image.sh <tag> <empty-context-dir>}"
 context="${2:?usage: stage-published-image.sh <tag> <empty-context-dir>}"
 [[ "$tag" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]
-repository="pgsty/silo-console"
+repository="mevisoft/silo-console"
 root="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$root"
 commit="$(git rev-parse "refs/tags/$tag^{commit}")"

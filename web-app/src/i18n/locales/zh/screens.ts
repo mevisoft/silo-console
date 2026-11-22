@@ -24,7 +24,7 @@ const zhScreens: Record<string, string> = {
     "配置事件目标后，添加存储桶通知规则以向其发送 S3 事件。",
   "Event destinations": "事件目标",
 
-  "SILO version": "SILO 版本",
+  "S3 LuisML version": "S3 LuisML 版本",
   "Raw JSON": "原始 JSON",
   "Recursive inspections can be expensive. Limit the bucket and path before starting.":
     "递归检查可能开销很大。开始前请缩小存储桶和路径范围。",
@@ -146,8 +146,8 @@ const zhScreens: Record<string, string> = {
   "Could not update policy": "无法更新策略",
   "Reset policy {name} to its default definition?":
     "要将策略 {name} 重置为默认定义吗？",
-  "The built-in policy will be restored to the SILO default definition.":
-    "此内置策略将恢复为 SILO 默认定义。",
+  "The built-in policy will be restored to the S3 LuisML default definition.":
+    "此内置策略将恢复为 S3 LuisML 默认定义。",
   "Loading attachment information…": "正在加载关联信息…",
   "This policy has changed or is no longer available. Refresh the list.":
     "此策略已变更或不再可用，请刷新列表。",
@@ -192,8 +192,8 @@ const zhScreens: Record<string, string> = {
     "请向管理员申请访问权限。此页面检查以下 IAM 操作：",
   "Required IAM actions": "所需 IAM 操作",
   "Encryption is not configured": "尚未配置加密",
-  "Configure KES or KMS on the SILO server to manage encryption keys in Console.":
-    "请在 SILO 服务器上配置 KES 或 KMS，以便在控制台中管理加密密钥。",
+  "Configure KES or KMS on the S3 LuisML server to manage encryption keys in Console.":
+    "请在 S3 LuisML 服务器上配置 KES 或 KMS，以便在控制台中管理加密密钥。",
   "Local identity management is unavailable": "本地身份管理不可用",
   "LDAP is enabled. Manage users and groups in your LDAP directory; connection settings are available on the LDAP configuration page.":
     "LDAP 已启用。请在 LDAP 目录中管理用户和组；连接设置位于 LDAP 配置页面。",
@@ -208,17 +208,17 @@ const zhScreens: Record<string, string> = {
   "Check the Prometheus address, network access and authentication, then retry.":
     "请检查 Prometheus 地址、网络连接和身份验证，然后重试。",
   "Advanced metrics need Prometheus": "高级指标需要 Prometheus",
-  "Configure Prometheus to collect SILO metrics, then set the URL for your deployment and restart the corresponding service.":
-    "请配置 Prometheus 采集 SILO 指标，然后根据部署方式设置 URL 并重启相应服务。",
+  "Configure Prometheus to collect S3 LuisML metrics, then set the URL for your deployment and restart the corresponding service.":
+    "请配置 Prometheus 采集 S3 LuisML 指标，然后根据部署方式设置 URL 并重启相应服务。",
   "Standalone Console": "独立部署的控制台",
-  "Console embedded in SILO": "SILO 内嵌控制台",
+  "Console embedded in S3 LuisML": "S3 LuisML 内嵌控制台",
   "Optional standalone settings": "独立部署的可选设置",
   "Bearer token: ": "Bearer 令牌：",
   "Or basic authentication: ": "或使用基本身份验证：",
   "Embedded settings: ": "内嵌部署的可选设置：",
   Icons: "图标",
   "Create bucket": "创建存储桶",
-  // Shared SILO primitives and their development showcase.
+  // Shared S3 LuisML primitives and their development showcase.
   "Edit {label}": "编辑 {label}",
   "Calculating…": "统计中…",
   "The server has not finished computing usage yet.":
@@ -238,7 +238,7 @@ const zhScreens: Record<string, string> = {
   "Replace ALIAS with your configured mcli alias.":
     "请将 ALIAS 替换为已配置的 mcli 别名。",
   "Loading…": "加载中…",
-  "SILO primitives": "SILO 基础组件",
+  "S3 LuisML primitives": "S3 LuisML 基础组件",
   "Shared building blocks for storage, identity and monitoring.":
     "存储、身份和监控页面共用的基础组件。",
   "Healthy capacity": "容量充足",
@@ -371,8 +371,8 @@ const zhScreens: Record<string, string> = {
   " and ": " 和 ",
   "'namespace' reflects current bucket/object list and 'access' reflects a journal of object operations, defaults to 'namespace'":
     "'namespace' 反映当前的存储桶/对象列表，'access' 反映对象操作的流水记录，默认为 'namespace'",
-  "{compliance} lock protects Objects from write operations by all users, including the SILO root user.":
-    "{compliance} 锁保护对象不被任何用户写入，包括 SILO root 用户。",
+  "{compliance} lock protects Objects from write operations by all users, including the S3 LuisML root user.":
+    "{compliance} 锁保护对象不被任何用户写入，包括 S3 LuisML root 用户。",
   "{count} days": "{count} 天",
   "{count} Entities Found": "找到 {count} 个实体",
   "{count} Entity Found": "找到 {count} 个实体",
@@ -416,19 +416,19 @@ const zhScreens: Record<string, string> = {
   "* Warning: With Public access anyone will be able to upload, download and delete files from this Bucket *":
     "* 警告：设为公开访问后，任何人都可以在该存储桶上传、下载与删除文件 *",
   "# Associated Access Keys": "关联访问密钥数",
-  "© 2026 Ruohang Feng / PGSTY and the SILO contributors.":
-    "© 2026 冯若航 / PGSTY 及 SILO 贡献者。",
+  "© 2026 Ruohang Feng / PGSTY and the S3 LuisML contributors.":
+    "© 2026 冯若航 / PGSTY 及 S3 LuisML 贡献者。",
   "<Day>": "<日>",
   "<Month>": "<月>",
   "<Year>": "<年>",
   "A bucket can only be deleted if it's empty.": "只有空的存储桶才能被删除。",
-  "A group can have one attached IAM policy, where all users with membership in that group inherit that policy. Groups support more simplified management of user permissions on the SILO Tenant.":
-    "一个用户组可以附加一条 IAM 策略，组内所有成员都会继承该策略。用户组让 SILO 租户上的用户权限管理更为简便。",
+  "A group can have one attached IAM policy, where all users with membership in that group inherit that policy. Groups support more simplified management of user permissions on the S3 LuisML Tenant.":
+    "一个用户组可以附加一条 IAM 策略，组内所有成员都会继承该策略。用户组让 S3 LuisML 租户上的用户权限管理更为简便。",
   "A network error occurred.": "发生网络错误。",
   "A new {entity} has been created with the following details:":
     "已创建新的{entity}，详情如下：",
-  "A SILO user consists of a unique access key (username) and corresponding secret key (password). Clients must authenticate their identity by specifying both a valid access key (username) and the corresponding secret key (password) of an existing SILO user.":
-    "SILO 用户由唯一的访问密钥（用户名）与对应的私有密钥（密码）组成。客户端必须同时提供某个已有 SILO 用户的有效访问密钥（用户名）与对应的私有密钥（密码）来验证身份。",
+  "A S3 LuisML user consists of a unique access key (username) and corresponding secret key (password). Clients must authenticate their identity by specifying both a valid access key (username) and the corresponding secret key (password) of an existing S3 LuisML user.":
+    "S3 LuisML 用户由唯一的访问密钥（用户名）与对应的私有密钥（密码）组成。客户端必须同时提供某个已有 S3 LuisML 用户的有效访问密钥（用户名）与对应的私有密钥（密码）来验证身份。",
   "A user can be a member of multiple groups.":
     "一个用户可以同时属于多个用户组。",
   "About Site Replication": "关于站点复制",
@@ -443,8 +443,8 @@ const zhScreens: Record<string, string> = {
   "Access Keys deleted successfully.": "访问密钥删除成功。",
   "Access Keys inherit the policies explicitly attached to the parent user, and the policies attached to each group in which the parent user has membership.":
     "访问密钥会继承父用户上显式附加的策略，以及父用户所属各用户组上附加的策略。",
-  "Access Keys support programmatic access by applications. You cannot use a Access Key to log into the SILO Console.":
-    "访问密钥用于应用程序的编程式访问，不能用于登录 SILO 控制台。",
+  "Access Keys support programmatic access by applications. You cannot use a Access Key to log into the S3 LuisML Console.":
+    "访问密钥用于应用程序的编程式访问，不能用于登录 S3 LuisML 控制台。",
   "Access Policy": "访问策略",
   "Access Policy:": "访问策略：",
   "Access Rule added successfully": "访问规则添加成功",
@@ -635,8 +635,8 @@ const zhScreens: Record<string, string> = {
   "Change User Password": "修改用户密码",
   "Changes to Bucket features such as": "存储桶特性的变更，例如",
   "Choose or create a new path": "选择或创建新路径",
-  "Claim from which SILO will read the policy or role to use":
-    "SILO 从中读取所用策略或角色的 Claim",
+  "Claim from which S3 LuisML will read the policy or role to use":
+    "S3 LuisML 从中读取所用策略或角色的 Claim",
   "Claim Name": "Claim 名称",
   "Claim Prefix": "Claim 前缀",
   "Claim User Info": "Claim 用户信息",
@@ -679,20 +679,20 @@ const zhScreens: Record<string, string> = {
   "Config URL": "配置 URL",
   "Config URL for identity provider configuration": "身份提供方的配置 URL",
   "Config URL is required": "Config URL 为必填项",
-  "Configuration cannot be disabled / enabled in this module as LDAP environment variables are set for this SILO instance.":
-    "该 SILO 实例已设置 LDAP 环境变量，无法在此模块中启用或禁用配置。",
-  "Configuration cannot be disabled / enabled in this module as OpenID environment variables are set for this SILO instance.":
-    "该 SILO 实例已设置 OpenID 环境变量，无法在此模块中启用或禁用配置。",
-  "Configuration cannot be edited in this module as LDAP environment variables are set for this SILO instance.":
-    "该 SILO 实例已设置 LDAP 环境变量，无法在此模块中编辑配置。",
-  "Configuration cannot be edited in this module as OpenID environment variables are set for this SILO instance.":
-    "该 SILO 实例已设置 OpenID 环境变量，无法在此模块中编辑配置。",
+  "Configuration cannot be disabled / enabled in this module as LDAP environment variables are set for this S3 LuisML instance.":
+    "该 S3 LuisML 实例已设置 LDAP 环境变量，无法在此模块中启用或禁用配置。",
+  "Configuration cannot be disabled / enabled in this module as OpenID environment variables are set for this S3 LuisML instance.":
+    "该 S3 LuisML 实例已设置 OpenID 环境变量，无法在此模块中启用或禁用配置。",
+  "Configuration cannot be edited in this module as LDAP environment variables are set for this S3 LuisML instance.":
+    "该 S3 LuisML 实例已设置 LDAP 环境变量，无法在此模块中编辑配置。",
+  "Configuration cannot be edited in this module as OpenID environment variables are set for this S3 LuisML instance.":
+    "该 S3 LuisML 实例已设置 OpenID 环境变量，无法在此模块中编辑配置。",
   "Configuration saved successfully": "配置保存成功",
   "Configure a {remoteTier} to receive transitioned Objects":
     "配置一个{remoteTier}以接收转换的对象",
   "Configure Bucket": "配置存储桶",
-  "Configuring an external IDP enables Single-Sign On workflows, where applications authenticate against the external IDP before accessing SILO.":
-    "配置外部 IDP 后即可启用单点登录流程：应用在访问 SILO 之前先向外部 IDP 完成认证。",
+  "Configuring an external IDP enables Single-Sign On workflows, where applications authenticate against the external IDP before accessing S3 LuisML.":
+    "配置外部 IDP 后即可启用单点登录流程：应用在访问 S3 LuisML 之前先向外部 IDP 完成认证。",
   "Confirm Dialogs": "确认对话框",
   "connected server": "所连接的服务器",
   "Connection String": "连接字符串",
@@ -709,8 +709,8 @@ const zhScreens: Record<string, string> = {
   "CPU Info": "CPU 信息",
   "Create {idpType} configuration": "创建 {idpType} 配置",
   "create a bucket": "创建存储桶",
-  "Create a new cryptographic key in the Key Management Service server connected to SILO.":
-    "在与 SILO 相连的密钥管理服务（KMS）服务器中创建一个新的加密密钥。",
+  "Create a new cryptographic key in the Key Management Service server connected to S3 LuisML.":
+    "在与 S3 LuisML 相连的密钥管理服务（KMS）服务器中创建一个新的加密密钥。",
   "create a new path": "创建新路径",
   "create a Policy": "创建策略",
   "Create access key": "创建访问密钥",
@@ -858,8 +858,8 @@ const zhScreens: Record<string, string> = {
   "e.g. Method 2056": "例如：Method 2056",
   "e.g. my-bucket/my-prefix/*": "例如：my-bucket/my-prefix/*",
   "e.g. us-west-rack-2": "例如：us-west-rack-2",
-  "Each user can access only those resources and operations which are explicitly granted by the built-in role. SILO denies access to any other resource or action by default.":
-    "每个用户只能访问内置角色明确授予的资源与操作。SILO 默认拒绝对其他任何资源或操作的访问。",
+  "Each user can access only those resources and operations which are explicitly granted by the built-in role. S3 LuisML denies access to any other resource or action by default.":
+    "每个用户只能访问内置角色明确授予的资源与操作。S3 LuisML 默认拒绝对其他任何资源或操作的访问。",
   Edit: "编辑",
   "edit a Policy": "编辑策略",
   "Edit Anonymous Access Rule for {target}": "编辑 {target} 的匿名访问规则",
@@ -1049,10 +1049,10 @@ const zhScreens: Record<string, string> = {
   Filters: "过滤条件",
   "Folder cannot have the same name as an existing file":
     "文件夹不能与已有文件同名",
-  "For each write operation to the bucket, SILO checks all configured replication rules for the bucket and applies the matching rule with highest configured priority.":
-    "对该存储桶的每次写入操作，SILO 都会检查其上配置的所有复制规则，并应用其中优先级最高的匹配规则。",
-  'For each write operation to this "source" bucket, SILO checks all configured replication rules and applies the matching rule with highest configured priority.':
-    "对该「源」存储桶的每次写入操作，SILO 都会检查所有已配置的复制规则，并应用其中优先级最高的匹配规则。",
+  "For each write operation to the bucket, S3 LuisML checks all configured replication rules for the bucket and applies the matching rule with highest configured priority.":
+    "对该存储桶的每次写入操作，S3 LuisML 都会检查其上配置的所有复制规则，并应用其中优先级最高的匹配规则。",
+  'For each write operation to this "source" bucket, S3 LuisML checks all configured replication rules and applies the matching rule with highest configured priority.':
+    "对该「源」存储桶的每次写入操作，S3 LuisML 都会检查所有已配置的复制规则，并应用其中优先级最高的匹配规则。",
   "For per-object retention settings, defer to the documentation for the PUT operation used by your preferred SDK.":
     "逐对象的保留设置，请参阅你所用 SDK 中 PUT 操作的文档。",
   "For SSE-S3 or SSE-KMS encryption via KMS, all sites must have access to a central KMS deployment server.":
@@ -1072,8 +1072,8 @@ const zhScreens: Record<string, string> = {
   "Group Mappings": "用户组映射",
   "Group Name": "用户组名称",
   "Group Status:": "用户组状态：",
-  "Groups provide a simplified method for managing shared permissions among users with common access patterns and workloads. Client’s cannot authenticate to a SILO deployment using a group as an identity.":
-    "对于访问模式与工作负载相近的用户，用户组提供了一种更简便的共享权限管理方式。客户端不能以用户组作为身份来认证 SILO 部署。",
+  "Groups provide a simplified method for managing shared permissions among users with common access patterns and workloads. Client’s cannot authenticate to a S3 LuisML deployment using a group as an identity.":
+    "对于访问模式与工作负载相近的用户，用户组提供了一种更简便的共享权限管理方式。客户端不能以用户组作为身份来认证 S3 LuisML 部署。",
   "Groups with this Policy associated": "关联此策略的用户组",
   "Guide to access policy structure": "访问策略结构指南",
   hard: "硬性",
@@ -1529,8 +1529,8 @@ const zhScreens: Record<string, string> = {
   "Server Insecure": "跳过服务器证书校验",
   "Server Location": "服务器位置",
   "server-side bucket replication": "服务端存储桶复制",
-  "Server, client and Console are all AGPLv3. SILO's documentation is CC BY 4.0 — {licensing}.":
-    "服务器、客户端与控制台均采用 AGPLv3。SILO 文档采用 CC BY 4.0 —— {licensing}。",
+  "Server, client and Console are all AGPLv3. S3 LuisML's documentation is CC BY 4.0 — {licensing}.":
+    "服务器、客户端与控制台均采用 AGPLv3。S3 LuisML 文档采用 CC BY 4.0 —— {licensing}。",
   Service: "服务",
   "Service Accounts": "服务账号",
   Services: "服务",
@@ -1557,8 +1557,8 @@ const zhScreens: Record<string, string> = {
   "Set to 'on' to enable TLS": "设为 'on' 以启用 TLS",
   "Set to 'on' to use streaming NATS server":
     "设为 'on' 以使用 NATS Streaming 服务端",
-  "Setting a {quota} assigns a hard limit to a bucket beyond which SILO does not allow writes.":
-    "设置{quota}会为存储桶指定一个硬性上限，超出后 SILO 将不再允许写入。",
+  "Setting a {quota} assigns a hard limit to a bucket beyond which S3 LuisML does not allow writes.":
+    "设置{quota}会为存储桶指定一个硬性上限，超出后 S3 LuisML 将不再允许写入。",
   "Setting an {anonymous} policy allows clients to access the Bucket or prefix contents and perform actions consistent with the specified policy without authentication.":
     "设置{anonymous}策略后，客户端无需认证即可访问该存储桶或前缀下的内容，并执行与所指定策略相符的操作。",
   Share: "分享",
@@ -1574,54 +1574,55 @@ const zhScreens: Record<string, string> = {
   "Show deleted objects": "显示已删除对象",
   "Show Rewind Data": "显示回溯数据",
   "Show/Hide": "显示/隐藏",
-  "SILO {bucketNotifications} allow administrators to send notifications to supported external services on certain object or bucket events.":
-    "SILO {bucketNotifications} 允许管理员在特定的对象或存储桶事件发生时，向受支持的外部服务发送通知。",
-  "SILO {objectLocking} enforces Write-Once Read-Many (WORM) immutability to protect versioned objects from deletion.":
-    "SILO {objectLocking} 强制实施一次写入多次读取（WORM）的不可变性，保护已启用版本控制的对象不被删除。",
-  "SILO {serverSideReplication} is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket.":
-    "SILO {serverSideReplication} 是一项自动的存储桶级配置，用于在源存储桶与目标存储桶之间同步对象。",
-  "SILO bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events. SILO supports bucket and object-level S3 events similar to the Amazon S3 Event Notifications.":
-    "SILO 的存储桶通知允许管理员在发生特定对象或存储桶事件时，向受支持的外部服务发送通知。SILO 支持存储桶级和对象级的 S3 事件，与 Amazon S3 事件通知类似。",
-  "SILO derives its behavior and syntax from {s3Lifecycle} for compatibility in migrating workloads and lifecycle rules from S3 to SILO.":
-    "SILO 的行为与语法沿袭自 {s3Lifecycle}，以便在把工作负载与生命周期规则从 S3 迁移到 SILO 时保持兼容。",
-  "SILO does not enable existing object replication by default. Objects created before replication was configured or while replication is disabled are not synchronized to the target deployment unless replication of existing objects is enabled.":
-    "SILO 默认不启用存量对象复制。除非启用了存量对象复制，否则在配置复制之前创建的对象、以及复制被禁用期间创建的对象，都不会同步到目标部署。",
-  "SILO Health Info": "SILO 健康信息",
-  "SILO Object Lifecycle Management allows creating rules for time or date based automatic transition or expiry of objects. For object transition, SILO automatically moves the object to a configured remote storage tier.":
-    "SILO 对象生命周期管理支持创建基于时间或日期的规则，自动转换或过期对象。对于对象转换，SILO 会自动将对象移动到已配置的远程存储层。",
-  "SILO or other S3-compatible storage": "SILO 或其他 S3 兼容存储",
-  "SILO PBAC is built for compatibility with AWS IAM policy syntax, structure, and behavior.":
-    "SILO 的 PBAC 在语法、结构与行为上均兼容 AWS IAM 策略。",
-  "SILO queries the configured Active Directory / LDAP server to verify the credentials specified by the application and optionally return a list of groups in which the user has membership. SILO supports two modes (Lookup-Bind Mode and Username-Bind Mode) for performing these queries":
-    "SILO 会查询已配置的 Active Directory / LDAP 服务器，校验应用提供的凭证，并可选地返回该用户所属的用户组列表。SILO 支持两种查询模式：Lookup-Bind 模式与 Username-Bind 模式",
-  "SILO recommends using Lookup-Bind mode as the preferred method for verifying AD/LDAP credentials. Username-Bind mode is a legacy method retained for backwards compatibility only.":
-    "SILO 推荐优先使用 Lookup-Bind 模式校验 AD/LDAP 凭证；Username-Bind 模式属于遗留方式，仅为向后兼容而保留。",
-  "SILO requires versioning to support replication.":
-    "SILO 需要版本控制才能支持复制。",
-  "SILO supports automatically replicating existing objects in a bucket; this setting is enabled by default. Please note that objects created before replication was configured or while replication is disabled are not synchronized to the target deployment in case this setting is not enabled.":
-    "SILO 支持自动复制存储桶中的存量对象，该设置默认开启。请注意，若未启用该设置，在配置复制之前创建的对象、以及复制被禁用期间创建的对象，都不会同步到目标部署。",
-  "SILO supports creating object transition lifecycle management rules, where SILO can automatically move an object to a remote storage “tier”.":
-    "SILO 支持创建对象转换的生命周期管理规则，SILO 可以据此自动把对象迁移到远程存储“层”。",
-  "SILO supports enabling automatic {sseKms} and {sseS3} encryption of all objects written to a bucket using a specific External Key (EK) stored on the external KMS.":
-    "SILO 支持为写入存储桶的所有对象自动启用 {sseKms} 与 {sseS3} 加密，使用存放在外部 KMS 上的指定外部密钥（EK）。",
-  "SILO supports enabling replication of existing objects in a bucket.":
-    "SILO 支持为存储桶中的存量对象启用复制。",
-  "SILO supports keeping multiple {versions} of an object in a single bucket.":
-    "SILO 支持在同一个存储桶中保留一个对象的多个{versions}。",
-  "SILO supports replicating delete operations, where SILO synchronizes deleting specific object versions and new delete markers. Delete operation replication uses the same replication process as all other replication operations.":
-    "SILO 支持复制删除操作，即同步删除特定的对象版本以及新产生的删除标记。删除操作的复制与其他所有复制操作走相同的复制流程。",
-  "SILO supports server-side and client-side replication of objects between source and destination buckets.":
-    "SILO 支持在源存储桶与目标存储桶之间进行服务端与客户端的对象复制。",
-  "SILO supports setting both {bucketDefault} and per-object retention rules.":
-    "SILO 同时支持设置{bucketDefault}保留规则和逐对象的保留规则。",
-  "SILO supports the following Tier types:": "SILO 支持以下存储层类型：",
-  "SILO supports using an Active Directory or LDAP (AD/LDAP) service for external management of user identities. Configuring an external IDentity Provider (IDP) enables Single-Sign On (SSO) workflows, where applications authenticate against the external IDP before accessing SILO.":
-    "SILO 支持使用 Active Directory 或 LDAP（AD/LDAP）服务对用户身份进行外部管理。配置外部身份提供方（IDP）后即可启用单点登录（SSO）流程：应用在访问 SILO 之前先向外部 IDP 完成认证。",
-  "SILO uses buckets to organize objects. A bucket is similar to a folder or directory in a filesystem, where each bucket can hold an arbitrary number of objects.":
-    "SILO 使用存储桶来组织对象。存储桶类似于文件系统中的文件夹或目录，每个存储桶可以存放任意数量的对象。",
-  "SILO uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access. Each policy describes one or more actions and conditions that outline the permissions of a user or group of users.":
-    "SILO 使用基于策略的访问控制（PBAC）来定义已认证用户可以访问的操作与资源。每条策略描述一个或多个操作与条件，用以界定单个用户或一组用户的权限。",
-  "SILO VERSION": "SILO 版本",
+  "S3 LuisML {bucketNotifications} allow administrators to send notifications to supported external services on certain object or bucket events.":
+    "S3 LuisML {bucketNotifications} 允许管理员在特定的对象或存储桶事件发生时，向受支持的外部服务发送通知。",
+  "S3 LuisML {objectLocking} enforces Write-Once Read-Many (WORM) immutability to protect versioned objects from deletion.":
+    "S3 LuisML {objectLocking} 强制实施一次写入多次读取（WORM）的不可变性，保护已启用版本控制的对象不被删除。",
+  "S3 LuisML {serverSideReplication} is an automatic bucket-level configuration that synchronizes objects between a source and destination bucket.":
+    "S3 LuisML {serverSideReplication} 是一项自动的存储桶级配置，用于在源存储桶与目标存储桶之间同步对象。",
+  "S3 LuisML bucket notifications allow administrators to send notifications to supported external services on certain object or bucket events. S3 LuisML supports bucket and object-level S3 events similar to the Amazon S3 Event Notifications.":
+    "S3 LuisML 的存储桶通知允许管理员在发生特定对象或存储桶事件时，向受支持的外部服务发送通知。S3 LuisML 支持存储桶级和对象级的 S3 事件，与 Amazon S3 事件通知类似。",
+  "S3 LuisML derives its behavior and syntax from {s3Lifecycle} for compatibility in migrating workloads and lifecycle rules from S3 to S3 LuisML.":
+    "S3 LuisML 的行为与语法沿袭自 {s3Lifecycle}，以便在把工作负载与生命周期规则从 S3 迁移到 S3 LuisML 时保持兼容。",
+  "S3 LuisML does not enable existing object replication by default. Objects created before replication was configured or while replication is disabled are not synchronized to the target deployment unless replication of existing objects is enabled.":
+    "S3 LuisML 默认不启用存量对象复制。除非启用了存量对象复制，否则在配置复制之前创建的对象、以及复制被禁用期间创建的对象，都不会同步到目标部署。",
+  "S3 LuisML Health Info": "S3 LuisML 健康信息",
+  "S3 LuisML Object Lifecycle Management allows creating rules for time or date based automatic transition or expiry of objects. For object transition, S3 LuisML automatically moves the object to a configured remote storage tier.":
+    "S3 LuisML 对象生命周期管理支持创建基于时间或日期的规则，自动转换或过期对象。对于对象转换，S3 LuisML 会自动将对象移动到已配置的远程存储层。",
+  "S3 LuisML or other S3-compatible storage": "S3 LuisML 或其他 S3 兼容存储",
+  "S3 LuisML PBAC is built for compatibility with AWS IAM policy syntax, structure, and behavior.":
+    "S3 LuisML 的 PBAC 在语法、结构与行为上均兼容 AWS IAM 策略。",
+  "S3 LuisML queries the configured Active Directory / LDAP server to verify the credentials specified by the application and optionally return a list of groups in which the user has membership. S3 LuisML supports two modes (Lookup-Bind Mode and Username-Bind Mode) for performing these queries":
+    "S3 LuisML 会查询已配置的 Active Directory / LDAP 服务器，校验应用提供的凭证，并可选地返回该用户所属的用户组列表。S3 LuisML 支持两种查询模式：Lookup-Bind 模式与 Username-Bind 模式",
+  "S3 LuisML recommends using Lookup-Bind mode as the preferred method for verifying AD/LDAP credentials. Username-Bind mode is a legacy method retained for backwards compatibility only.":
+    "S3 LuisML 推荐优先使用 Lookup-Bind 模式校验 AD/LDAP 凭证；Username-Bind 模式属于遗留方式，仅为向后兼容而保留。",
+  "S3 LuisML requires versioning to support replication.":
+    "S3 LuisML 需要版本控制才能支持复制。",
+  "S3 LuisML supports automatically replicating existing objects in a bucket; this setting is enabled by default. Please note that objects created before replication was configured or while replication is disabled are not synchronized to the target deployment in case this setting is not enabled.":
+    "S3 LuisML 支持自动复制存储桶中的存量对象，该设置默认开启。请注意，若未启用该设置，在配置复制之前创建的对象、以及复制被禁用期间创建的对象，都不会同步到目标部署。",
+  "S3 LuisML supports creating object transition lifecycle management rules, where S3 LuisML can automatically move an object to a remote storage “tier”.":
+    "S3 LuisML 支持创建对象转换的生命周期管理规则，S3 LuisML 可以据此自动把对象迁移到远程存储“层”。",
+  "S3 LuisML supports enabling automatic {sseKms} and {sseS3} encryption of all objects written to a bucket using a specific External Key (EK) stored on the external KMS.":
+    "S3 LuisML 支持为写入存储桶的所有对象自动启用 {sseKms} 与 {sseS3} 加密，使用存放在外部 KMS 上的指定外部密钥（EK）。",
+  "S3 LuisML supports enabling replication of existing objects in a bucket.":
+    "S3 LuisML 支持为存储桶中的存量对象启用复制。",
+  "S3 LuisML supports keeping multiple {versions} of an object in a single bucket.":
+    "S3 LuisML 支持在同一个存储桶中保留一个对象的多个{versions}。",
+  "S3 LuisML supports replicating delete operations, where S3 LuisML synchronizes deleting specific object versions and new delete markers. Delete operation replication uses the same replication process as all other replication operations.":
+    "S3 LuisML 支持复制删除操作，即同步删除特定的对象版本以及新产生的删除标记。删除操作的复制与其他所有复制操作走相同的复制流程。",
+  "S3 LuisML supports server-side and client-side replication of objects between source and destination buckets.":
+    "S3 LuisML 支持在源存储桶与目标存储桶之间进行服务端与客户端的对象复制。",
+  "S3 LuisML supports setting both {bucketDefault} and per-object retention rules.":
+    "S3 LuisML 同时支持设置{bucketDefault}保留规则和逐对象的保留规则。",
+  "S3 LuisML supports the following Tier types:":
+    "S3 LuisML 支持以下存储层类型：",
+  "S3 LuisML supports using an Active Directory or LDAP (AD/LDAP) service for external management of user identities. Configuring an external IDentity Provider (IDP) enables Single-Sign On (SSO) workflows, where applications authenticate against the external IDP before accessing S3 LuisML.":
+    "S3 LuisML 支持使用 Active Directory 或 LDAP（AD/LDAP）服务对用户身份进行外部管理。配置外部身份提供方（IDP）后即可启用单点登录（SSO）流程：应用在访问 S3 LuisML 之前先向外部 IDP 完成认证。",
+  "S3 LuisML uses buckets to organize objects. A bucket is similar to a folder or directory in a filesystem, where each bucket can hold an arbitrary number of objects.":
+    "S3 LuisML 使用存储桶来组织对象。存储桶类似于文件系统中的文件夹或目录，每个存储桶可以存放任意数量的对象。",
+  "S3 LuisML uses Policy-Based Access Control (PBAC) to define the authorized actions and resources to which an authenticated user has access. Each policy describes one or more actions and conditions that outline the permissions of a user or group of users.":
+    "S3 LuisML 使用基于策略的访问控制（PBAC）来定义已认证用户可以访问的操作与资源。每条策略描述一个或多个操作与条件，用以界定单个用户或一组用户的权限。",
+  "S3 LuisML VERSION": "S3 LuisML 版本",
   "Site Name": "站点名称",
   "Site:": "站点：",
   Size: "大小",
@@ -1741,8 +1742,8 @@ const zhScreens: Record<string, string> = {
   "This configuration cannot be deleted using this module as this was set using OpenID environment variables.":
     "该配置由 OpenID 环境变量设置，无法在此模块中删除。",
   "this Console": "当前控制台",
-  "This feature allows multiple independent SILO sites (or clusters) that are using the same external IDentity Provider (IDP) to be configured as replicas. In this situation the set of replica sites are referred to as peer sites or just sites.":
-    "该功能可以把多个使用同一外部身份提供方（IDP）的独立 SILO 站点（或集群）配置为互为副本。此时，这组副本站点被称为对等站点，或简称站点。",
+  "This feature allows multiple independent S3 LuisML sites (or clusters) that are using the same external IDentity Provider (IDP) to be configured as replicas. In this situation the set of replica sites are referred to as peer sites or just sites.":
+    "该功能可以把多个使用同一外部身份提供方（IDP）的独立 S3 LuisML 站点（或集群）配置为互为副本。此时，这组副本站点被称为对等站点，或简称站点。",
   "This feature is not available for a single-disk setup.":
     "单盘部署不支持此功能。",
   "This feature is not available.": "此功能不可用。",
@@ -1771,8 +1772,8 @@ const zhScreens: Record<string, string> = {
   Tier: "存储层",
   "Tier Name": "存储层名称",
   "Tier Types": "存储层类型",
-  "Tiers are used by the SILO Object Lifecycle Management which allows creating rules for time or date based automatic transition or expiry of objects. For object transition, SILO automatically moves the object to a configured remote storage tier.":
-    "存储层由 SILO 对象生命周期管理使用，可以创建基于时间或日期的规则，自动转换或过期对象。对于对象转换，SILO 会自动把对象迁移到已配置的远程存储层。",
+  "Tiers are used by the S3 LuisML Object Lifecycle Management which allows creating rules for time or date based automatic transition or expiry of objects. For object transition, S3 LuisML automatically moves the object to a configured remote storage tier.":
+    "存储层由 S3 LuisML 对象生命周期管理使用，可以创建基于时间或日期的规则，自动转换或过期对象。对于对象转换，S3 LuisML 会自动把对象迁移到已配置的远程存储层。",
   "Time duration between scanner cycles, defaults to '1m'":
     "扫描器两轮扫描之间的时间间隔，默认为 '1m'",
   "Time to Response NS": "响应耗时（纳秒）",
@@ -1869,7 +1870,7 @@ const zhScreens: Record<string, string> = {
   "view Policy details": "查看策略详情",
   "View Replication Status for a:": "查看以下对象的复制状态：",
   "view User details": "查看用户详情",
-  "Visit the SILO website": "访问 SILO 官网",
+  "Visit the S3 LuisML website": "访问 S3 LuisML 官网",
   "Volume or Bucket Name": "卷或存储桶名称",
   "Volume/Bucket name cannot start with /": "卷 / 存储桶名称不能以 / 开头",
   Warning: "警告",
@@ -1929,12 +1930,12 @@ const zhScreens: Record<string, string> = {
     "必须先关闭保留，才能关闭对象锁定",
   "You need to select at least one group to assign":
     "请至少选择一个要分配的用户组",
-  "You require additional permissions in order to {name}. Please ask your SILO administrator to grant you {scopes} permission in order to {name}.":
-    "你需要额外的权限才能{name}。请联系 SILO 管理员为你授予 {scopes} 权限，以便{name}。",
-  "You require additional permissions in order to {name}. Please ask your SILO administrator to grant you {scopes} permissions in order to {name}.":
-    "你需要额外的权限才能{name}。请联系 SILO 管理员为你授予 {scopes} 权限，以便{name}。",
-  "You require additional permissions in order to create a new Tier. Please ask your SILO administrator to grant you {permission} permission in order to create a Tier.":
-    "你需要额外权限才能创建新的存储层。请联系 SILO 管理员为你授予 {permission} 权限。",
+  "You require additional permissions in order to {name}. Please ask your S3 LuisML administrator to grant you {scopes} permission in order to {name}.":
+    "你需要额外的权限才能{name}。请联系 S3 LuisML 管理员为你授予 {scopes} 权限，以便{name}。",
+  "You require additional permissions in order to {name}. Please ask your S3 LuisML administrator to grant you {scopes} permissions in order to {name}.":
+    "你需要额外的权限才能{name}。请联系 S3 LuisML 管理员为你授予 {scopes} 权限，以便{name}。",
+  "You require additional permissions in order to create a new Tier. Please ask your S3 LuisML administrator to grant you {permission} permission in order to create a Tier.":
+    "你需要额外权限才能创建新的存储层。请联系 S3 LuisML 管理员为你授予 {permission} 权限。",
   "File is empty": "文件为空",
   "Invalid UTF-8 or binary content": "UTF-8 无效或包含二进制内容",
   "Loading text preview…": "正在加载文本预览……",
@@ -2046,8 +2047,8 @@ const zhScreens: Record<string, string> = {
   "No replication sites yet": "暂无复制站点",
   "Refresh to try loading the configured sites again.":
     "请刷新以重新加载已配置的站点。",
-  "Connect independent SILO sites to replicate their data and identity configuration.":
-    "连接独立的 SILO 站点，复制其数据和身份配置。",
+  "Connect independent S3 LuisML sites to replicate their data and identity configuration.":
+    "连接独立的 S3 LuisML 站点，复制其数据和身份配置。",
   "Waiting for logs": "等待日志",
   "Logs are not running": "尚未开始收集日志",
   "New log entries will appear here as the server emits them.":

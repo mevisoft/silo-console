@@ -137,12 +137,12 @@ const messages: Dictionary = {
     "Almacenamiento de objetos de alto rendimiento para cualquier infraestructura: nube pública, nube privada o servidores físicos.",
   "Erasure coding, encryption, and replication power data lakes, AI/ML, and fast backup & recovery.":
     "La codificación de borrado, el cifrado y la replicación permiten crear lagos de datos, aplicaciones de IA/ML y copias de seguridad y recuperaciones rápidas.",
-  "MinIO® is a registered trademark of {minioInc}; SILO incorporates {minioSource}.":
-    "MinIO® es una marca registrada de {minioInc}; SILO incorpora {minioSource}.",
+  "MinIO® is a registered trademark of {minioInc}; S3 LuisML incorporates {minioSource}.":
+    "MinIO® es una marca registrada de {minioInc}; S3 LuisML incorpora {minioSource}.",
   "MinIO source code": "el código fuente de MinIO",
-  "SILO is maintained by {pgsty}, without MinIO affiliation, endorsement, or sponsorship.":
-    "SILO es mantenido por {pgsty}, sin afiliación, respaldo ni patrocinio de MinIO.",
-  "SILO website": "Sitio web de SILO",
+  "S3 LuisML is maintained by {pgsty}, without MinIO affiliation, endorsement, or sponsorship.":
+    "S3 LuisML es mantenido por {pgsty}, sin afiliación, respaldo ni patrocinio de MinIO.",
+  "S3 LuisML website": "Sitio web de S3 LuisML",
   "Object Storage Console": "Consola de almacenamiento de objetos",
   "Use Credentials": "Usar credenciales",
   "Use STS": "Usar STS",
@@ -207,16 +207,16 @@ const messages: Dictionary = {
   Navigation: "Navegación",
   Video: "Vídeo",
   Blog: "Blog",
-  "SILO Blog": "Blog de SILO",
-  "Read SILO release notes, security advisories, and project updates.":
-    "Lea las notas de la versión SILO, avisos de seguridad y actualizaciones del proyecto.",
-  "Read this update on the SILO Blog.":
-    "Lea esta actualización en el Blog SILO.",
-  "SILO does not yet maintain a native video catalog. These links open upstream MinIO compatibility material.":
-    "SILO aún no mantiene un catálogo propio de vídeos. Estos enlaces abren material de compatibilidad del proyecto MinIO original.",
-  "Visit SILO Documentation": "Visitar documentación de SILO",
+  "S3 LuisML Blog": "Blog de S3 LuisML",
+  "Read S3 LuisML release notes, security advisories, and project updates.":
+    "Lea las notas de la versión S3 LuisML, avisos de seguridad y actualizaciones del proyecto.",
+  "Read this update on the S3 LuisML Blog.":
+    "Lea esta actualización en el Blog S3 LuisML.",
+  "S3 LuisML does not yet maintain a native video catalog. These links open upstream MinIO compatibility material.":
+    "S3 LuisML aún no mantiene un catálogo propio de vídeos. Estos enlaces abren material de compatibilidad del proyecto MinIO original.",
+  "Visit S3 LuisML Documentation": "Visitar documentación de S3 LuisML",
   "Visit MinIO Videos (upstream)": "Ver vídeos de MinIO (original)",
-  "Visit SILO Blog": "Visitar el blog de SILO",
+  "Visit S3 LuisML Blog": "Visitar el blog de S3 LuisML",
   "Learn more": "Más información",
   "Set by environment variable": "Establecido por variable de entorno",
   "Explore upstream videos about object storage, replication, and administration.":

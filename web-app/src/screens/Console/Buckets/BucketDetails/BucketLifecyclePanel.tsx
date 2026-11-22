@@ -342,7 +342,7 @@ const BucketLifecyclePanel = () => {
             <Fragment>
               {interpolate(
                 t(
-                  "SILO derives its behavior and syntax from {s3Lifecycle} for compatibility in migrating workloads and lifecycle rules from S3 to SILO.",
+                  "S3 LuisML derives its behavior and syntax from {s3Lifecycle} for compatibility in migrating workloads and lifecycle rules from S3 to S3 LuisML.",
                 ),
                 {
                   s3Lifecycle: (
@@ -419,7 +419,7 @@ const BucketLifecyclePanel = () => {
               help={
                 <Fragment>
                   {t(
-                    "SILO Object Lifecycle Management allows creating rules for time or date based automatic transition or expiry of objects. For object transition, SILO automatically moves the object to a configured remote storage tier.",
+                    "S3 LuisML Object Lifecycle Management allows creating rules for time or date based automatic transition or expiry of objects. For object transition, S3 LuisML automatically moves the object to a configured remote storage tier.",
                   )}
                   <br />
                   <br />

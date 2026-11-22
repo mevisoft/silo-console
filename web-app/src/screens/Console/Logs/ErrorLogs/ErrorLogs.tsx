@@ -231,7 +231,7 @@ const ErrorLogs = () => {
                 { value: "all", label: t("All Log Types") },
                 {
                   value: "minio",
-                  label: "SILO",
+                  label: "S3 LuisML",
                 },
                 { value: "application", label: t("Application") },
               ]}

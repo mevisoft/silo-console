@@ -329,7 +329,7 @@ const ListTiersConfiguration = () => {
                 onClick={addTier}
                 disabled={!hasSetTier}
                 disabledReason={t(
-                  "You require additional permissions in order to create a new Tier. Please ask your SILO administrator to grant you {permission} permission in order to create a Tier.",
+                  "You require additional permissions in order to create a new Tier. Please ask your S3 LuisML administrator to grant you {permission} permission in order to create a Tier.",
                 ).replace("{permission}", () => IAM_SCOPES.ADMIN_SET_TIER)}
               />
             </Grid>
@@ -516,7 +516,7 @@ const ListTiersConfiguration = () => {
                 help={
                   <Fragment>
                     {t(
-                      "Tiers are used by the SILO Object Lifecycle Management which allows creating rules for time or date based automatic transition or expiry of objects. For object transition, SILO automatically moves the object to a configured remote storage tier.",
+                      "Tiers are used by the S3 LuisML Object Lifecycle Management which allows creating rules for time or date based automatic transition or expiry of objects. For object transition, S3 LuisML automatically moves the object to a configured remote storage tier.",
                     )}
                     <br />
                     <br />

@@ -74,7 +74,7 @@ const StyleHandler = ({ children }: IStyleHandler) => {
     thm = generateOverrideTheme(colorVariants);
   }
 
-  // Deep-merge the SILO look over whichever base theme mds resolved.
+  // Deep-merge the S3 LuisML look over whichever base theme mds resolved.
   // Server-provided override styles keep full precedence when present.
   const applySiloTheme = (outerTheme: object) =>
     merge(

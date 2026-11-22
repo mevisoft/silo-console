@@ -1,6 +1,6 @@
 # UI translation glossary
 
-Keep SILO, MinIO, PGSTY, S3, IAM, API, ARN, JSON, URLs, command flags and protocol identifiers unchanged. The exact exempt UI keys live in `untranslatable.ts`. Prefer these storage meanings over general-purpose dictionary meanings. English keys are case-sensitive; review full sentences for grammar and context.
+Keep S3 LuisML, MinIO, PGSTY, S3, IAM, API, ARN, JSON, URLs, command flags and protocol identifiers unchanged. The exact exempt UI keys live in `untranslatable.ts`. Prefer these storage meanings over general-purpose dictionary meanings. English keys are case-sensitive; review full sentences for grammar and context.
 
 Keep labels concise enough for their existing controls and metric cards. **Uptime** means elapsed running time, not activity or an availability percentage; **EC** can abbreviate erasure coding in compact health labels; **Non-current Expiration Days** refers to older object versions. Use short, accurate wording and verify the actual narrow layout; do not restore long translations merely to spell out every term.
 

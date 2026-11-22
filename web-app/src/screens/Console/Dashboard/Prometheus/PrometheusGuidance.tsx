@@ -107,7 +107,7 @@ const PrometheusGuidance = ({
     <FeatureUnavailable
       title={i18nKey("Advanced metrics need Prometheus")}
       description={i18nKey(
-        "Configure Prometheus to collect SILO metrics, then set the URL for your deployment and restart the corresponding service.",
+        "Configure Prometheus to collect S3 LuisML metrics, then set the URL for your deployment and restart the corresponding service.",
       )}
       docsUrl={docsUrl}
       framed
@@ -137,12 +137,12 @@ const PrometheusGuidance = ({
           </ConfigSnippet>
         </div>
         <div>
-          <strong>{t("Console embedded in SILO")}</strong>
+          <strong>{t("Console embedded in S3 LuisML")}</strong>
           <ConfigSnippet>
             <code>{"MINIO_PROMETHEUS_URL=http://prometheus:9090"}</code>
           </ConfigSnippet>
         </div>
-        {/* Exact names: api/consts.go, api/config.go. SILO forwards embedded
+        {/* Exact names: api/consts.go, api/config.go. S3 LuisML forwards embedded
             settings in cmd/common-main.go using internal/config/constants.go. */}
         <div>
           <strong>{t("Optional standalone settings")}</strong>

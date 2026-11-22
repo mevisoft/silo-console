@@ -59,7 +59,7 @@ SILO Server 20261109 已内嵌 Console v2.7.0（`4e91ae506e70`）；历史版本
 
 从 [GitHub Releases](https://github.com/pgsty/silo-console/releases) 下载二进制、归档、Linux 软件包或源码。发布制品附带 SHA-256、SBOM 和签名来源证明，验证规则见[发布契约](docs/release-contract.md)。官方下载入口也见[网站下载页](https://silo.pgsty.com/zh/download/#console)。
 
-官方容器仅使用 `docker.io/pgsty/silo-console`；部署时固定已公开验收的版本或镜像摘要，不以滚动标签代替版本记录。
+官方容器仅使用 `ghcr.io/mevisoft/silo-console`；部署时固定已公开验收的版本或镜像摘要，不以滚动标签代替版本记录。
 
 本地使用下载的 Linux amd64 独立二进制连接运行中的 SILO：
 
