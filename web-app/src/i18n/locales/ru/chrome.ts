@@ -124,8 +124,7 @@ const messages: Dictionary = {
     "Не удалось загрузить текущие групповые политики. Снова откройте диалоговое окно, чтобы повторить попытку.",
   "This mcli version has no flag for Comments; the command omits that field.":
     "В этой версии mcli нет флага для комментариев; команда опускает это поле.",
-  "Open-Source S3/MinIO-Compatible Object Storage":
-    "Объектное хранилище с открытым исходным кодом, совместимое с S3/MinIO",
+  "S3-Compatible Object Storage": "Объектное хранилище, совместимое с S3",
   "Keep the {s3}": "Сохраните {s3}",
   "S3 Interface": "интерфейс S3",
   "Own the {store}": "Управляйте своим {store}",

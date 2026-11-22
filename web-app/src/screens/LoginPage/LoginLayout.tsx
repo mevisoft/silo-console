@@ -315,9 +315,7 @@ const LoginLayout = ({ children, footer }: LoginLayoutProps) => {
       <BrandPanel>
         <WaveMeshCanvas />
         <BrandContent>
-          <div className="eyebrow">
-            {t("Open-Source S3/MinIO-Compatible Object Storage")}
-          </div>
+          <div className="eyebrow">{t("S3-Compatible Object Storage")}</div>
           <HeroHeading>
             <span className="heroLine" ref={firstLine}>
               {interpolate(t("Keep the {s3}"), {

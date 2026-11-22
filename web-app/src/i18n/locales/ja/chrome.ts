@@ -121,8 +121,7 @@ const messages: Dictionary = {
     "現在のグループポリシーを読み込めませんでした。ダイアログを開き直して再試行してください。",
   "This mcli version has no flag for Comments; the command omits that field.":
     "この mcli バージョンにはコメント用のフラグがありません。コマンドはそのフィールドを省略します。",
-  "Open-Source S3/MinIO-Compatible Object Storage":
-    "S3/MinIO 互換のオープンソースオブジェクトストレージ",
+  "S3-Compatible Object Storage": "S3 互換オブジェクトストレージ",
   "Keep the {s3}": "{s3}はそのままに",
   "S3 Interface": "S3 インターフェイス",
   "Own the {store}": "{store}を自分の手に",

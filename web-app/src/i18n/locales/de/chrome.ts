@@ -128,8 +128,7 @@ const messages: Dictionary = {
     "Die aktuellen Gruppenrichtlinien konnten nicht geladen werden. Öffnen Sie das Dialogfeld erneut, um es erneut zu versuchen.",
   "This mcli version has no flag for Comments; the command omits that field.":
     "Diese mcli-Version hat kein Flag für Kommentare; der Befehl lässt dieses Feld weg.",
-  "Open-Source S3/MinIO-Compatible Object Storage":
-    "Open-Source-Objektspeicher, kompatibel mit S3/MinIO",
+  "S3-Compatible Object Storage": "S3-kompatibler Objektspeicher",
   "Keep the {s3}": "Behalten Sie die {s3}",
   "S3 Interface": "S3-Schnittstelle",
   "Own the {store}": "Kontrollieren Sie Ihren {store}",

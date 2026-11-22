@@ -131,8 +131,7 @@ const pt: Record<string, string> = {
     "Não foi possível carregar as políticas atuais do grupo. Reabra a caixa de diálogo para tentar novamente.",
   "This mcli version has no flag for Comments; the command omits that field.":
     "Esta versão do mcli não tem opção para Comentários; o comando omite esse campo.",
-  "Open-Source S3/MinIO-Compatible Object Storage":
-    "Armazenamento de objetos open source compatível com S3/MinIO",
+  "S3-Compatible Object Storage": "Armazenamento de objetos compatível com S3",
   "Keep the {s3}": "Mantenha a {s3}",
   "S3 Interface": "interface S3",
   "Own the {store}": "Tenha seu {store}",

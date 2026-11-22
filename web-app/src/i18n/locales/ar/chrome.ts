@@ -121,8 +121,7 @@ const messages: Dictionary = {
     "تعذر تحميل سياسات المجموعة الحالية. أعد فتح مربع الحوار لإعادة المحاولة.",
   "This mcli version has no flag for Comments; the command omits that field.":
     "لا يدعم إصدار mcli هذا خيار التعليقات؛ لذا يغفل الأمر هذا الحقل.",
-  "Open-Source S3/MinIO-Compatible Object Storage":
-    "تخزين كائنات مفتوح المصدر ومتوافق مع S3/MinIO",
+  "S3-Compatible Object Storage": "تخزين كائنات متوافق مع S3",
   "Keep the {s3}": "احتفظ بـ {s3}",
   "S3 Interface": "واجهة S3",
   "Own the {store}": "تحكّم في {store}",

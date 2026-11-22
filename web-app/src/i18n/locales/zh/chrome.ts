@@ -122,8 +122,7 @@ const zh: Record<string, string> = {
   "This mcli version has no flag for Comments; the command omits that field.":
     "此版本 mcli 没有备注选项，命令中不包含该字段。",
   // ---- Login page: brand panel -------------------------------------------
-  "Open-Source S3/MinIO-Compatible Object Storage":
-    "开源的 S3/MinIO 兼容对象存储",
+  "S3-Compatible Object Storage": "S3 兼容对象存储",
   "Keep the {s3}": "保留 {s3}",
   "S3 Interface": "S3 接口",
   "Own the {store}": "掌控 {store}",

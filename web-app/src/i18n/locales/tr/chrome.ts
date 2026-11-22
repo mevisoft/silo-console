@@ -122,8 +122,7 @@ const messages: Dictionary = {
     "Mevcut grup politikaları yüklenemedi. Yeniden denemek için iletişim kutusunu yeniden açın.",
   "This mcli version has no flag for Comments; the command omits that field.":
     "Bu mcli sürümü Yorumlar alanı için bir seçenek sunmadığından, komut bu alanı içermez.",
-  "Open-Source S3/MinIO-Compatible Object Storage":
-    "Açık Kaynak S3/MinIO-Uyumlu Nesne Depolama",
+  "S3-Compatible Object Storage": "S3 Uyumlu Nesne Depolama",
   "Keep the {s3}": "{s3}'nü koruyun",
   "S3 Interface": "S3 Arayüzü",
   "Own the {store}": "{store}'na sahip olun",
