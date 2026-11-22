@@ -23,21 +23,24 @@ before:
     - python3 hack/normalize-package-inputs.py
 
 builds:
+  # Only the linux/amd64 and linux/arm64 binaries feed the container image.
+  # Other platforms are disabled to keep releases fast; restore them to publish
+  # darwin, windows and linux/arm binaries again.
   - goos:
       - linux
-      - darwin
-      - windows
+      # - darwin
+      # - windows
     goarch:
       - amd64
       - arm64
-      - arm
-    ignore:
-      - goos: darwin
-        goarch: arm
-      - goos: windows
-        goarch: arm64
-      - goos: windows
-        goarch: arm
+      # - arm
+    # ignore:
+    #   - goos: darwin
+    #     goarch: arm
+    #   - goos: windows
+    #     goarch: arm64
+    #   - goos: windows
+    #     goarch: arm
     env:
       - CGO_ENABLED=0
     mod_timestamp: "{{ .CommitTimestamp }}"
@@ -54,20 +57,20 @@ archives:
   - id: binaries
     name_template: "{{ .ProjectName }}-{{ .Os }}-{{ .Arch }}"
     formats: ["binary"]
-  # Bundles carry the same executable together with the legal material as files.
-  - id: bundles
-    name_template: "{{ .ProjectName }}-{{ .Os }}-{{ .Arch }}"
-    formats: ["tar.gz"]
-    format_overrides:
-      - goos: windows
-        formats: ["zip"]
-    files:
-      - src: LICENSE
-        info: { owner: root, group: root, mode: 0644, mtime: "{{ .CommitDate }}" }
-      - src: NOTICE
-        info: { owner: root, group: root, mode: 0644, mtime: "{{ .CommitDate }}" }
-      - src: CREDITS
-        info: { owner: root, group: root, mode: 0644, mtime: "{{ .CommitDate }}" }
+#   # Bundles carry the same executable together with the legal material as files.
+#   - id: bundles
+#     name_template: "{{ .ProjectName }}-{{ .Os }}-{{ .Arch }}"
+#     formats: ["tar.gz"]
+#     format_overrides:
+#       - goos: windows
+#         formats: ["zip"]
+#     files:
+#       - src: LICENSE
+#         info: { owner: root, group: root, mode: 0644, mtime: "{{ .CommitDate }}" }
+#       - src: NOTICE
+#         info: { owner: root, group: root, mode: 0644, mtime: "{{ .CommitDate }}" }
+#       - src: CREDITS
+#         info: { owner: root, group: root, mode: 0644, mtime: "{{ .CommitDate }}" }
 
 checksum:
   name_template: "{{ .ProjectName }}_{{ .Version }}_checksums.txt"
@@ -87,99 +90,100 @@ changelog:
       - "Merge pull request"
       - "Merge branch"
 
-nfpms:
-  - mtime: "{{ .CommitDate }}"
-    vendor: PGSTY
-    homepage: https://silo.pgsty.com
-    maintainer: "Ruohang Feng (@Vonng) <rh@vonng.com>"
-    description: SILO object storage console, community-maintained MinIO Console fork.
-    license: AGPL-3.0-or-later
-    section: utils
-    priority: optional
-    bindir: /usr/local/bin
-    formats:
-      - deb
-      - rpm
-      - apk
-    contents:
-      - src: LICENSE
-        dst: /usr/share/licenses/silo-console/LICENSE
-        file_info:
-          mtime: "{{ .CommitDate }}"
-          mode: 0644
-      - src: NOTICE
-        dst: /usr/share/licenses/silo-console/NOTICE
-        file_info:
-          mtime: "{{ .CommitDate }}"
-          mode: 0644
-      - src: CREDITS
-        dst: /usr/share/doc/silo-console/CREDITS
-        file_info:
-          mtime: "{{ .CommitDate }}"
-          mode: 0644
-      - src: systemd/README.md
-        dst: /usr/share/doc/silo-console/service.md
-        file_info:
-          mtime: "{{ .CommitDate }}"
-          mode: 0644
-      - src: packaging/debian/copyright
-        dst: /usr/share/doc/silo-console/copyright
-        packager: deb
-        file_info:
-          mtime: "{{ .CommitDate }}"
-          mode: 0644
-      # DEB/RPM packages retain the compatibility unit name, see systemd/README.md
-      - src: systemd/console.service
-        dst: /etc/systemd/system/minio-console.service
-        file_info:
-          mtime: "{{ .CommitDate }}"
-          mode: 0644
-          owner: root
-          group: root
-      - src: systemd/console.env
-        dst: /etc/default/console
-        type: config|noreplace
-        file_info:
-          mtime: "{{ .CommitDate }}"
-          mode: 0600
-          owner: root
-          group: root
-      - dst: /var/lib/silo-console
-        type: dir
-        file_info:
-          mtime: "{{ .CommitDate }}"
-          mode: 0750
-          owner: console-user
-          group: console-user
-      - dst: /etc/silo-console/certs/CAs
-        type: dir
-        file_info:
-          mtime: "{{ .CommitDate }}"
-          mode: 0750
-          owner: root
-          group: console-user
-    # Stock Alpine has no systemd. A single APK account-creation hook also
-    # avoids nFPM's nondeterministic map iteration for multiple APK scripts.
-    scripts:
-      preinstall: systemd/preinstall.sh
-    overrides:
-      deb:
-        scripts:
-          postinstall: systemd/reload.sh
-          postremove: systemd/reload.sh
-          preremove: systemd/preremove.sh
-      rpm:
-        scripts:
-          postinstall: systemd/reload.sh
-          postremove: systemd/reload.sh
-          preremove: systemd/preremove.sh
-    rpm:
-      group: Applications/File
-      compression: gzip:9
-    deb:
-      compression: gzip
-      fields:
-        License: AGPL-3.0-or-later
+# Linux packages (deb, rpm, apk) are disabled: the container image does not need them.
+# nfpms:
+#   - mtime: "{{ .CommitDate }}"
+#     vendor: PGSTY
+#     homepage: https://silo.pgsty.com
+#     maintainer: "Ruohang Feng (@Vonng) <rh@vonng.com>"
+#     description: SILO object storage console, community-maintained MinIO Console fork.
+#     license: AGPL-3.0-or-later
+#     section: utils
+#     priority: optional
+#     bindir: /usr/local/bin
+#     formats:
+#       - deb
+#       - rpm
+#       - apk
+#     contents:
+#       - src: LICENSE
+#         dst: /usr/share/licenses/silo-console/LICENSE
+#         file_info:
+#           mtime: "{{ .CommitDate }}"
+#           mode: 0644
+#       - src: NOTICE
+#         dst: /usr/share/licenses/silo-console/NOTICE
+#         file_info:
+#           mtime: "{{ .CommitDate }}"
+#           mode: 0644
+#       - src: CREDITS
+#         dst: /usr/share/doc/silo-console/CREDITS
+#         file_info:
+#           mtime: "{{ .CommitDate }}"
+#           mode: 0644
+#       - src: systemd/README.md
+#         dst: /usr/share/doc/silo-console/service.md
+#         file_info:
+#           mtime: "{{ .CommitDate }}"
+#           mode: 0644
+#       - src: packaging/debian/copyright
+#         dst: /usr/share/doc/silo-console/copyright
+#         packager: deb
+#         file_info:
+#           mtime: "{{ .CommitDate }}"
+#           mode: 0644
+#       # DEB/RPM packages retain the compatibility unit name, see systemd/README.md
+#       - src: systemd/console.service
+#         dst: /etc/systemd/system/minio-console.service
+#         file_info:
+#           mtime: "{{ .CommitDate }}"
+#           mode: 0644
+#           owner: root
+#           group: root
+#       - src: systemd/console.env
+#         dst: /etc/default/console
+#         type: config|noreplace
+#         file_info:
+#           mtime: "{{ .CommitDate }}"
+#           mode: 0600
+#           owner: root
+#           group: root
+#       - dst: /var/lib/silo-console
+#         type: dir
+#         file_info:
+#           mtime: "{{ .CommitDate }}"
+#           mode: 0750
+#           owner: console-user
+#           group: console-user
+#       - dst: /etc/silo-console/certs/CAs
+#         type: dir
+#         file_info:
+#           mtime: "{{ .CommitDate }}"
+#           mode: 0750
+#           owner: root
+#           group: console-user
+#     # Stock Alpine has no systemd. A single APK account-creation hook also
+#     # avoids nFPM's nondeterministic map iteration for multiple APK scripts.
+#     scripts:
+#       preinstall: systemd/preinstall.sh
+#     overrides:
+#       deb:
+#         scripts:
+#           postinstall: systemd/reload.sh
+#           postremove: systemd/reload.sh
+#           preremove: systemd/preremove.sh
+#       rpm:
+#         scripts:
+#           postinstall: systemd/reload.sh
+#           postremove: systemd/reload.sh
+#           preremove: systemd/preremove.sh
+#     rpm:
+#       group: Applications/File
+#       compression: gzip:9
+#     deb:
+#       compression: gzip
+#       fields:
+#         License: AGPL-3.0-or-later
 
 dockers_v2:
   # Release images go directly to the public GitHub Container Registry package. Snapshot tags stay local
@@ -249,11 +253,11 @@ sboms:
     cmd: bash
     args: ["../hack/generate-sbom.sh", "${artifact}", "${document}"]
     documents: ["{{ .ProjectName }}-{{ .Os }}-{{ .Arch }}.spdx.json"]
-  - id: package-sbom
-    artifacts: package
-    cmd: bash
-    args: ["../hack/generate-sbom.sh", "${artifact}", "${document}"]
-    documents: ["${artifact}.spdx.json"]
+  # - id: package-sbom
+  #   artifacts: package
+  #   cmd: bash
+  #   args: ["../hack/generate-sbom.sh", "${artifact}", "${document}"]
+  #   documents: ["${artifact}.spdx.json"]
 
   - id: source-sbom
     artifacts: source

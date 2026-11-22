@@ -1,5 +1,11 @@
 # Changelog
 
+## Release v1.0.3
+
+- Release only what the container image needs: build `linux/amd64` and
+  `linux/arm64` binaries and drop the Linux packages, bundles and other
+  platforms (disabled in `.goreleaser.yml`, not deleted).
+
 ## Release v1.0.2
 
 - Change the login page tagline to "S3-Compatible Object Storage" and update
