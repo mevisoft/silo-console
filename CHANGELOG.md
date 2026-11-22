@@ -1,5 +1,13 @@
 # Changelog
 
+## Release v1.0.0
+
+- Rebrand the Console UI as S3 LuisML: new logos, favicons, theme palette and
+  texts; MinIO/AGPL attributions are preserved.
+- Publish release images to GitHub Container Registry
+  (`ghcr.io/mevisoft/silo-console`) instead of Docker Hub, and drop the
+  upstream validation workflows from this fork.
+
 ## Release v2.7.2
 
 - Sync embedded release metadata (`2.7.2`), `docs/Embedding.md`, `docs/README.md`,
