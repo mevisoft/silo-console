@@ -5,7 +5,7 @@ project_name: silo-console
 release:
   name_template: "Release version {{.Tag}}"
   github:
-    owner: pgsty
+    owner: mevisoft
     name: silo-console
   # Keep GitHub release metadata in draft until verification is complete.
   draft: true
