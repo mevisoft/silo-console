@@ -1,29 +1,17 @@
 # Changelog
 
-## Release v1.0.3
-
-- Release only what the container image needs: build `linux/amd64` and
-  `linux/arm64` binaries and drop the Linux packages, bundles and other
-  platforms (disabled in `.goreleaser.yml`, not deleted).
-
-## Release v1.0.2
-
-- Change the login page tagline to "S3-Compatible Object Storage" and update
-  its translations.
-
-## Release v1.0.1
-
-- Remove the MinIO trademark notice from the login page; the trademark and
-  copyright notices remain on the License page.
-- Drop obsolete translation entries left by the login page rebrand.
-
 ## Release v1.0.0
 
-- Rebrand the Console UI as S3 LuisML: new logos, favicons, theme palette and
-  texts; MinIO/AGPL attributions are preserved.
+- Rebrand the Console UI as S3 LuisML: new logos, favicons, theme palette,
+  loader and texts; MinIO/AGPL attributions are preserved on the License page.
+- Change the login page tagline to "S3-Compatible Object Storage" and update
+  its translations; remove the MinIO notice from the login page.
 - Publish release images to GitHub Container Registry
   (`ghcr.io/mevisoft/silo-console`) instead of Docker Hub, and drop the
   upstream validation workflows from this fork.
+- Release only what the container image needs: build `linux/amd64` and
+  `linux/arm64` binaries and drop the Linux packages, bundles and other
+  platforms (disabled in `.goreleaser.yml`, not deleted).
 
 ## Release v2.7.2
 
