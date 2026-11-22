@@ -128,18 +128,10 @@ const zh: Record<string, string> = {
   "S3 Interface": "S3 接口",
   "Own the {store}": "掌控 {store}",
   "Object Store": "对象存储",
-  "{minio} fork maintained by {pgsty}, {agpl} License":
-    "由 {pgsty} 维护的 {minio} 分支，采用 {agpl} 许可证",
   "A high-performance object store that runs on any infrastructure — public cloud, private cloud, or bare metal.":
     "一个能在任意基础设施上运行的高性能对象存储 —— 公有云、私有云或裸金属。",
   "Erasure coding, encryption, and replication power data lakes, AI/ML, and fast backup & recovery.":
     "内建纠删码、加密与复制能力，为数据湖、AI / ML 以及快速备份恢复提供支撑。",
-  "MinIO® is a registered trademark of {minioInc}; S3 LuisML incorporates {minioSource}.":
-    "MinIO® 是 {minioInc} 的注册商标；S3 LuisML 包含 {minioSource}。",
-  "MinIO source code": "MinIO 源代码",
-  "S3 LuisML is maintained by {pgsty}, without MinIO affiliation, endorsement, or sponsorship.":
-    "S3 LuisML 由 {pgsty} 维护，与 MinIO 无任何隶属、背书或赞助关系。",
-  "S3 LuisML website": "S3 LuisML 官网",
   "Object Storage Console": "对象存储控制台",
 
   // ---- Login page: form, footer, errors ----------------------------------
@@ -158,7 +150,6 @@ const zh: Record<string, string> = {
   "The backend cannot be reached.": "无法连接到后端服务。",
   Retry: "重试",
   Documentation: "文档",
-  DOCS: "文档",
   Download: "下载",
   "Error from IDP": "IDP 返回错误",
   "Back to Login": "返回登录",

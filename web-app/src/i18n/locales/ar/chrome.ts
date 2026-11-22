@@ -127,18 +127,10 @@ const messages: Dictionary = {
   "S3 Interface": "واجهة S3",
   "Own the {store}": "تحكّم في {store}",
   "Object Store": "مخزن الكائنات",
-  "{minio} fork maintained by {pgsty}, {agpl} License":
-    "نسخة مشتقة من {minio} تتولى {pgsty} صيانتها، بترخيص {agpl}",
   "A high-performance object store that runs on any infrastructure — public cloud, private cloud, or bare metal.":
     "تخزين كائنات عالي الأداء يعمل على أي بنية تحتية: سحابة عامة أو خاصة أو خوادم فعلية.",
   "Erasure coding, encryption, and replication power data lakes, AI/ML, and fast backup & recovery.":
     "يدعم ترميز المحو والتشفير والنسخ المتماثل بحيرات البيانات والذكاء الاصطناعي والتعلّم الآلي والنسخ الاحتياطي والاستعادة السريعة.",
-  "MinIO® is a registered trademark of {minioInc}; S3 LuisML incorporates {minioSource}.":
-    "MinIO® علامة تجارية مسجلة لشركة {minioInc}؛ ويتضمن S3 LuisML ‏{minioSource}.",
-  "MinIO source code": "الشفرة المصدرية لـ MinIO",
-  "S3 LuisML is maintained by {pgsty}, without MinIO affiliation, endorsement, or sponsorship.":
-    "تتولى {pgsty} صيانة S3 LuisML دون ارتباط بشركة MinIO أو تأييد أو رعاية منها.",
-  "S3 LuisML website": "موقع S3 LuisML",
   "Object Storage Console": "وحدة تحكم التخزين الكائني",
   "Use Credentials": "استخدام بيانات الاعتماد",
   "Use STS": "استخدام STS",
@@ -155,7 +147,6 @@ const messages: Dictionary = {
   "The backend cannot be reached.": "يتعذّر الوصول إلى الخادم.",
   Retry: "إعادة المحاولة",
   Documentation: "الوثائق",
-  DOCS: "الوثائق",
   Download: "تنزيل",
   "Error from IDP": "خطأ من موفّر الهوية",
   "Back to Login": "العودة إلى تسجيل الدخول",

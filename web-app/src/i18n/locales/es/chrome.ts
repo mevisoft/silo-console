@@ -131,18 +131,10 @@ const messages: Dictionary = {
   "S3 Interface": "interfaz S3",
   "Own the {store}": "Controla tu {store}",
   "Object Store": "almacenamiento de objetos",
-  "{minio} fork maintained by {pgsty}, {agpl} License":
-    "Bifurcación de {minio} mantenida por {pgsty}, licencia {agpl}",
   "A high-performance object store that runs on any infrastructure — public cloud, private cloud, or bare metal.":
     "Almacenamiento de objetos de alto rendimiento para cualquier infraestructura: nube pública, nube privada o servidores físicos.",
   "Erasure coding, encryption, and replication power data lakes, AI/ML, and fast backup & recovery.":
     "La codificación de borrado, el cifrado y la replicación permiten crear lagos de datos, aplicaciones de IA/ML y copias de seguridad y recuperaciones rápidas.",
-  "MinIO® is a registered trademark of {minioInc}; S3 LuisML incorporates {minioSource}.":
-    "MinIO® es una marca registrada de {minioInc}; S3 LuisML incorpora {minioSource}.",
-  "MinIO source code": "el código fuente de MinIO",
-  "S3 LuisML is maintained by {pgsty}, without MinIO affiliation, endorsement, or sponsorship.":
-    "S3 LuisML es mantenido por {pgsty}, sin afiliación, respaldo ni patrocinio de MinIO.",
-  "S3 LuisML website": "Sitio web de S3 LuisML",
   "Object Storage Console": "Consola de almacenamiento de objetos",
   "Use Credentials": "Usar credenciales",
   "Use STS": "Usar STS",
@@ -159,7 +151,6 @@ const messages: Dictionary = {
   "The backend cannot be reached.": "No se puede acceder al servidor.",
   Retry: "Reintentar",
   Documentation: "Documentación",
-  DOCS: "DOCS",
   Download: "Descargar",
   "Error from IDP": "Error del IDP",
   "Back to Login": "Volver al acceso",

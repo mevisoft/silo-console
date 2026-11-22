@@ -127,18 +127,10 @@ const messages: Dictionary = {
   "S3 Interface": "S3 インターフェイス",
   "Own the {store}": "{store}を自分の手に",
   "Object Store": "オブジェクトストレージ",
-  "{minio} fork maintained by {pgsty}, {agpl} License":
-    "{pgsty} が保守する {minio} のフォーク、{agpl} ライセンス",
   "A high-performance object store that runs on any infrastructure — public cloud, private cloud, or bare metal.":
     "パブリッククラウド、プライベートクラウド、ベアメタルなど、あらゆるインフラで動作する高性能オブジェクトストレージ。",
   "Erasure coding, encryption, and replication power data lakes, AI/ML, and fast backup & recovery.":
     "イレイジャーコーディング、暗号化、レプリケーションにより、データレイク、AI/ML、高速なバックアップと復元を支えます。",
-  "MinIO® is a registered trademark of {minioInc}; S3 LuisML incorporates {minioSource}.":
-    "MinIO® は {minioInc} の登録商標です。S3 LuisML には {minioSource} が組み込まれています。",
-  "MinIO source code": "MinIO ソースコード",
-  "S3 LuisML is maintained by {pgsty}, without MinIO affiliation, endorsement, or sponsorship.":
-    "S3 LuisML は {pgsty} が保守しており、MinIO との提携、推奨、後援関係はありません。",
-  "S3 LuisML website": "S3 LuisML ウェブサイト",
   "Object Storage Console": "オブジェクトストレージコンソール",
   "Use Credentials": "認証情報を使用",
   "Use STS": "STS を使用",
@@ -155,7 +147,6 @@ const messages: Dictionary = {
   "The backend cannot be reached.": "サーバーに接続できません。",
   Retry: "再試行",
   Documentation: "ドキュメント",
-  DOCS: "資料",
   Download: "ダウンロード",
   "Error from IDP": "ID プロバイダーのエラー",
   "Back to Login": "ログインに戻る",

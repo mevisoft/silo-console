@@ -128,18 +128,10 @@ const messages: Dictionary = {
   "S3 Interface": "S3 Arayüzü",
   "Own the {store}": "{store}'na sahip olun",
   "Object Store": "Nesne Deposu",
-  "{minio} fork maintained by {pgsty}, {agpl} License":
-    "{pgsty} tarafından sürdürülen {minio} çatalı, {agpl} Lisansı",
   "A high-performance object store that runs on any infrastructure — public cloud, private cloud, or bare metal.":
     "Her türlü altyapıda (genel bulut, özel bulut veya yalın donanım) çalışan yüksek performanslı bir nesne deposu.",
   "Erasure coding, encryption, and replication power data lakes, AI/ML, and fast backup & recovery.":
     "Silme kodlaması, şifreleme ve çoğaltma; veri göllerine, AI/ML iş yüklerine ve hızlı yedekleme ile kurtarmaya güç verir.",
-  "MinIO® is a registered trademark of {minioInc}; S3 LuisML incorporates {minioSource}.":
-    "MinIO®, {minioInc} şirketinin tescilli ticari markasıdır; S3 LuisML, {minioSource}'nu içerir.",
-  "MinIO source code": "MinIO kaynak kodu",
-  "S3 LuisML is maintained by {pgsty}, without MinIO affiliation, endorsement, or sponsorship.":
-    "S3 LuisML, MinIO bağlantısı, onayı veya sponsorluğu olmadan {pgsty} tarafından sürdürülmektedir.",
-  "S3 LuisML website": "S3 LuisML web sitesi",
   "Object Storage Console": "Nesne Depolama Konsolu",
   "Use Credentials": "Kimlik Bilgilerini Kullan",
   "Use STS": "STS Kullan",
@@ -156,7 +148,6 @@ const messages: Dictionary = {
   "The backend cannot be reached.": "Arka uca ulaşılamıyor.",
   Retry: "Tekrar dene",
   Documentation: "Belgeler",
-  DOCS: "BELGELER",
   Download: "İndir",
   "Error from IDP": "IDP'den gelen hata",
   "Back to Login": "Girişe Geri Dön",

@@ -137,18 +137,10 @@ const pt: Record<string, string> = {
   "S3 Interface": "interface S3",
   "Own the {store}": "Tenha seu {store}",
   "Object Store": "armazenamento",
-  "{minio} fork maintained by {pgsty}, {agpl} License":
-    "Fork do {minio} mantido pela {pgsty}, licença {agpl}",
   "A high-performance object store that runs on any infrastructure — public cloud, private cloud, or bare metal.":
     "Um armazenamento de objetos de alto desempenho que roda em qualquer infraestrutura — nuvem pública, nuvem privada ou bare metal.",
   "Erasure coding, encryption, and replication power data lakes, AI/ML, and fast backup & recovery.":
     "Erasure coding, criptografia e replicação sustentam data lakes, IA/ML e backup e recuperação rápidos.",
-  "MinIO® is a registered trademark of {minioInc}; S3 LuisML incorporates {minioSource}.":
-    "MinIO® é uma marca registrada da {minioInc}; o S3 LuisML incorpora {minioSource}.",
-  "MinIO source code": "o código-fonte do MinIO",
-  "S3 LuisML is maintained by {pgsty}, without MinIO affiliation, endorsement, or sponsorship.":
-    "O S3 LuisML é mantido pela {pgsty}, sem afiliação, endosso ou patrocínio da MinIO.",
-  "S3 LuisML website": "Site do S3 LuisML",
   "Object Storage Console": "Console de armazenamento de objetos",
   "Use Credentials": "Usar credenciais",
   "Use STS": "Usar STS",
@@ -165,7 +157,6 @@ const pt: Record<string, string> = {
   "The backend cannot be reached.": "Não foi possível acessar o backend.",
   Retry: "Tentar novamente",
   Documentation: "Documentação",
-  DOCS: "DOCS",
   Download: "Baixar",
   "Error from IDP": "Erro do IDP",
   "Back to Login": "Voltar para o login",

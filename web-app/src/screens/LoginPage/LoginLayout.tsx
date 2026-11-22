@@ -345,31 +345,6 @@ const LoginLayout = ({ children, footer }: LoginLayoutProps) => {
             </span>
           </p>
           <div className="spacer" />
-          <p className="legal">
-            <span className="legalLine">
-              {interpolate(
-                t(
-                  "MinIO® is a registered trademark of {minioInc}; S3 LuisML incorporates {minioSource}.",
-                ),
-                {
-                  minioInc: (
-                    <a href="https://min.io" target="_blank" rel="noopener">
-                      MinIO, Inc.
-                    </a>
-                  ),
-                  minioSource: (
-                    <a
-                      href="https://github.com/minio/minio"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      {t("MinIO source code")}
-                    </a>
-                  ),
-                },
-              )}
-            </span>
-          </p>
         </BrandContent>
       </BrandPanel>
       <FormPanel>
