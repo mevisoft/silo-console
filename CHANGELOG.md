@@ -1,5 +1,10 @@
 # Changelog
 
+## Release v1.0.2
+
+- Change the login page tagline to "S3-Compatible Object Storage" and update
+  its translations.
+
 ## Release v1.0.1
 
 - Remove the MinIO trademark notice from the login page; the trademark and
