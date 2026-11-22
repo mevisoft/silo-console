@@ -100,7 +100,7 @@ $ git push origin my-new-feature
 
 ### Create a Pull Request
 
-Open a pull request against the `main` branch of `pgsty/silo-console`. Include
+Open a pull request against the `luisml` branch of `mevisoft/silo-console`. Include
 the motivation, test evidence, and compatibility or UI impact. Public product
 documentation belongs in [pgsty/silo.pgsty.com](https://github.com/pgsty/silo.pgsty.com).
 

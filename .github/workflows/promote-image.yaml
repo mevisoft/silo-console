@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   promote:
-    if: ${{ (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main') || (github.event_name == 'release' && !github.event.release.draft && !github.event.release.prerelease) }}
+    if: ${{ (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/luisml') || (github.event_name == 'release' && !github.event.release.draft && !github.event.release.prerelease) }}
     runs-on: ubuntu-latest
     permissions:
       contents: read

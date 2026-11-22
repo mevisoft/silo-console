@@ -17,7 +17,7 @@ contract retroactively; see [release-contract.md](release-contract.md).
 
 ## 1. Prepare one candidate commit
 
-1. Land the release changes on `main`.
+1. Land the release changes on `luisml`.
 2. Make the metadata change the last release-scope change: finalize the
    CHANGELOG heading, set `web-app/package.json`, and regenerate the embedded
    assets.
