@@ -1,5 +1,11 @@
 # Changelog
 
+## Release v1.0.1
+
+- Remove the MinIO trademark notice from the login page; the trademark and
+  copyright notices remain on the License page.
+- Drop obsolete translation entries left by the login page rebrand.
+
 ## Release v1.0.0
 
 - Rebrand the Console UI as S3 LuisML: new logos, favicons, theme palette and
